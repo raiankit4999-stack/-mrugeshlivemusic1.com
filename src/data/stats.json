@@ -1,0 +1,6 @@
+[
+  { "id": "events", "value": 500, "suffix": "+", "label": "Events Performed" },
+  { "id": "cities", "value": 100, "suffix": "+", "label": "Cities Covered" },
+  { "id": "audience", "value": 10000, "suffix": "+", "label": "Audience Entertained" },
+  { "id": "experience", "value": 15, "suffix": "+", "label": "Years of Experience" }
+]

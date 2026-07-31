@@ -1,0 +1,13 @@
+[
+  { "value": "wedding", "label": "Wedding Event" },
+  { "value": "garba", "label": "Garba Night" },
+  { "value": "reception", "label": "Reception" },
+  { "value": "sangeet", "label": "Sangeet" },
+  { "value": "mehndi", "label": "Mehndi" },
+  { "value": "haldi", "label": "Haldi" },
+  { "value": "bhakti-sandhya", "label": "Bhakti Sandhya" },
+  { "value": "birthday", "label": "Birthday Celebration" },
+  { "value": "corporate", "label": "Corporate Event" },
+  { "value": "celebrity", "label": "Celebrity Event" },
+  { "value": "other", "label": "Other" }
+]

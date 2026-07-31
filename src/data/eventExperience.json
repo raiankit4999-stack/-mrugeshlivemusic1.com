@@ -1,0 +1,8 @@
+[
+  { "id": "booking", "title": "Booking", "description": "Share your event details and lock in your date with a personal consultation.", "icon": "CalendarCheck" },
+  { "id": "preparation", "title": "Preparation", "description": "Setlist curation, song requests, and full production planning tailored to your event.", "icon": "ListChecks" },
+  { "id": "sound-check", "title": "Sound Check", "description": "On-site rehearsal and sound calibration hours before your guests arrive.", "icon": "Sliders" },
+  { "id": "performance", "title": "Performance", "description": "A high-energy live performance with full orchestra, vocals, and stage presence.", "icon": "Mic" },
+  { "id": "audience", "title": "Audience", "description": "Reading the crowd in real time to keep energy and engagement at its peak.", "icon": "Users2" },
+  { "id": "celebration", "title": "Celebration", "description": "An unforgettable finale that leaves your guests talking for years to come.", "icon": "PartyPopper" }
+]

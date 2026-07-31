@@ -1,0 +1,68 @@
+[
+  {
+    "id": "wedding",
+    "title": "Wedding Event",
+    "description": "Signature live music curated for your wedding day — from baraat to the last dance.",
+    "icon": "Heart"
+  },
+  {
+    "id": "garba",
+    "title": "Garba Nights",
+    "description": "High-energy traditional and modern Garba sets that keep the whole community dancing.",
+    "icon": "Music"
+  },
+  {
+    "id": "reception",
+    "title": "Reception",
+    "description": "Elegant live entertainment blending Bollywood, Gujarati, and international favourites.",
+    "icon": "PartyPopper"
+  },
+  {
+    "id": "live-instrumental",
+    "title": "Live Instrumental",
+    "description": "Tabla, keyboard, flute, violin and more — a full live orchestra experience.",
+    "icon": "Guitar"
+  },
+  {
+    "id": "celebrity",
+    "title": "Celebrity Events",
+    "description": "Premium production-grade performances for high-profile celebrity occasions.",
+    "icon": "Star"
+  },
+  {
+    "id": "birthday",
+    "title": "Birthday Celebration",
+    "description": "Lively, personalised musical celebrations for milestone birthdays.",
+    "icon": "Cake"
+  },
+  {
+    "id": "mehndi",
+    "title": "Mehndi",
+    "description": "Vibrant folk rhythms and playful live sets to colour your Mehndi ceremony.",
+    "icon": "Flower2"
+  },
+  {
+    "id": "haldi",
+    "title": "Haldi",
+    "description": "Joyful, upbeat live music to set the tone for your Haldi morning.",
+    "icon": "Sun"
+  },
+  {
+    "id": "bhakti-sandhya",
+    "title": "Bhakti Sandhya",
+    "description": "Soulful devotional evenings with heartfelt bhajans and live accompaniment.",
+    "icon": "Sparkles"
+  },
+  {
+    "id": "sangeet",
+    "title": "Sangeet",
+    "description": "Choreography-ready live sets and mashups that elevate every sangeet performance.",
+    "icon": "Mic2"
+  },
+  {
+    "id": "corporate",
+    "title": "Corporate Events",
+    "description": "Polished, professional live entertainment for galas, launches, and offsites.",
+    "icon": "Building2"
+  }
+]

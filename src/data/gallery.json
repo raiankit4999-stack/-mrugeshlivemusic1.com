@@ -1,0 +1,114 @@
+[
+  {
+    "id": "g1",
+    "src": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&q=80",
+    "alt": "Live crowd enjoying a Gujarati music performance",
+    "category": "Live Concerts",
+    "orientation": "landscape"
+  },
+  {
+    "id": "g2",
+    "src": "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=80",
+    "alt": "Stage lighting at a live musical event",
+    "category": "Live Concerts",
+    "orientation": "portrait"
+  },
+  {
+    "id": "g3",
+    "src": "https://images.unsplash.com/photo-1521337581100-8ca9a73a5f79?auto=format&fit=crop&w=1200&q=80",
+    "alt": "Audience silhouettes during a night concert",
+    "category": "Garba Nights",
+    "orientation": "landscape"
+  },
+  {
+    "id": "g4",
+    "src": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1200&q=80",
+    "alt": "Festival crowd celebrating with lights",
+    "category": "Garba Nights",
+    "orientation": "landscape"
+  },
+  {
+    "id": "g5",
+    "src": "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1200&q=80",
+    "alt": "Golden light rays over a live stage",
+    "category": "Wedding Events",
+    "orientation": "portrait"
+  },
+  {
+    "id": "g6",
+    "src": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1200&q=80",
+    "alt": "Indian wedding celebration decor",
+    "category": "Wedding Events",
+    "orientation": "landscape"
+  },
+  {
+    "id": "g7",
+    "src": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1200&q=80",
+    "alt": "Traditional wedding mandap decoration",
+    "category": "Wedding Events",
+    "orientation": "portrait"
+  },
+  {
+    "id": "g8",
+    "src": "https://images.unsplash.com/photo-1601979031925-424e53b6caaa?auto=format&fit=crop&w=1200&q=80",
+    "alt": "Indian celebration with festive lighting",
+    "category": "Wedding Events",
+    "orientation": "landscape"
+  },
+  {
+    "id": "g9",
+    "src": "https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=1200&q=80",
+    "alt": "Close up of piano keys on stage",
+    "category": "Live Instrumental",
+    "orientation": "landscape"
+  },
+  {
+    "id": "g10",
+    "src": "https://images.unsplash.com/photo-1527224857830-43a7acc85260?auto=format&fit=crop&w=1200&q=80",
+    "alt": "Drum kit set up for a live performance",
+    "category": "Live Instrumental",
+    "orientation": "portrait"
+  },
+  {
+    "id": "g11",
+    "src": "https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?auto=format&fit=crop&w=1200&q=80",
+    "alt": "Violinist performing with an orchestra",
+    "category": "Live Instrumental",
+    "orientation": "landscape"
+  },
+  {
+    "id": "g12",
+    "src": "https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=1200&q=80",
+    "alt": "Corporate event celebration with stage lighting",
+    "category": "Corporate Events",
+    "orientation": "landscape"
+  },
+  {
+    "id": "g13",
+    "src": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&w=1200&q=80",
+    "alt": "Live stage performance with dramatic lighting",
+    "category": "Corporate Events",
+    "orientation": "portrait"
+  },
+  {
+    "id": "g14",
+    "src": "https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=1200&q=80",
+    "alt": "Concert crowd with hands raised",
+    "category": "Live Concerts",
+    "orientation": "landscape"
+  },
+  {
+    "id": "g15",
+    "src": "https://images.unsplash.com/photo-1546456073-92b9f0a8d413?auto=format&fit=crop&w=1200&q=80",
+    "alt": "Event lighting rig above a live audience",
+    "category": "Corporate Events",
+    "orientation": "landscape"
+  },
+  {
+    "id": "g16",
+    "src": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=1200&q=80",
+    "alt": "Hands raised at a live music festival",
+    "category": "Live Concerts",
+    "orientation": "portrait"
+  }
+]
