@@ -52,7 +52,7 @@ export default function Footer() {
             alt="Mrugesh Beats"
             width={405}
             height={458}
-            className="h-16 w-auto mix-blend-screen mb-3"
+            className="h-16 w-auto mb-3"
           />
           <p className="text-sm text-stone leading-relaxed">
             Professional Live Musician based in Nadiad, Gujarat — bringing premium live

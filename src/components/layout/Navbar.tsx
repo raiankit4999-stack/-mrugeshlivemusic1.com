@@ -81,7 +81,7 @@ export default function Navbar() {
             width={405}
             height={458}
             priority
-            className="h-12 sm:h-14 w-auto mix-blend-screen"
+            className="h-12 sm:h-14 w-auto"
           />
         </button>
 
@@ -124,7 +124,7 @@ export default function Navbar() {
                 alt="Mrugesh Beats"
                 width={405}
                 height={458}
-                className="h-16 w-auto mix-blend-screen"
+                className="h-16 w-auto"
               />
             </SheetTitle>
             <nav className="flex flex-col gap-6 px-6 py-8">

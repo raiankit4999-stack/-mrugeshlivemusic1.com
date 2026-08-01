@@ -79,7 +79,7 @@ export default function Loader() {
                     width={405}
                     height={458}
                     priority
-                    className="relative z-10 w-44 sm:w-56 h-auto mix-blend-screen drop-shadow-[0_0_35px_rgba(212,175,55,0.45)]"
+                    className="relative z-10 w-44 sm:w-56 h-auto drop-shadow-[0_0_35px_rgba(212,175,55,0.45)]"
                   />
                 </motion.div>
               </motion.div>
