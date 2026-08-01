@@ -1,5 +1,6 @@
 [
   { "value": "wedding", "label": "Wedding Event" },
+  { "value": "destination-wedding", "label": "Destination Wedding" },
   { "value": "garba", "label": "Garba Night" },
   { "value": "reception", "label": "Reception" },
   { "value": "sangeet", "label": "Sangeet" },

@@ -22,6 +22,7 @@ import {
   Sliders,
   Mic,
   Users2,
+  Plane,
   type LucideIcon,
 } from "lucide-react";
 
@@ -49,4 +50,5 @@ export const iconMap: Record<string, LucideIcon> = {
   Sliders,
   Mic,
   Users2,
+  Plane,
 };

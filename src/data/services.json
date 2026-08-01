@@ -6,6 +6,12 @@
     "icon": "Heart"
   },
   {
+    "id": "destination-wedding",
+    "title": "Destination Weddings",
+    "description": "Full live band and production travelling with you — anywhere in India or abroad.",
+    "icon": "Plane"
+  },
+  {
     "id": "garba",
     "title": "Garba Nights",
     "description": "High-energy traditional and modern Garba sets that keep the whole community dancing.",
