@@ -29,8 +29,6 @@ export default function Contact() {
                     <br />
                     {siteConfig.address.line2}
                     <br />
-                    {siteConfig.address.line3}
-                    <br />
                     {siteConfig.address.city}, {siteConfig.address.state} -{" "}
                     {siteConfig.address.postalCode}
                   </p>

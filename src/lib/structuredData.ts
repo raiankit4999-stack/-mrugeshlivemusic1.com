@@ -2,7 +2,7 @@ import siteConfig from "@/data/siteConfig.json";
 
 const address = {
   "@type": "PostalAddress",
-  streetAddress: `${siteConfig.address.line1}, ${siteConfig.address.line2}, ${siteConfig.address.line3}`,
+  streetAddress: `${siteConfig.address.line1}, ${siteConfig.address.line2}`,
   addressLocality: siteConfig.address.city,
   addressRegion: siteConfig.address.state,
   postalCode: siteConfig.address.postalCode,

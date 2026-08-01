@@ -25,10 +25,11 @@ export default function About() {
           <div className="absolute -inset-4 rounded-3xl border border-gold/25" />
           <div className="relative h-full w-full overflow-hidden rounded-3xl shadow-luxury">
             <Image
-              src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?auto=format&fit=crop&w=900&q=80"
-              alt="Mrugesh Shukla, professional live musician"
+              src="/about-mrugesh.jpg"
+              alt="Mrugesh Shukla, professional live musician, performing on keyboard on stage"
               fill
               className="object-cover"
+              style={{ objectPosition: "54% center" }}
               sizes="(max-width: 1024px) 90vw, 480px"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
