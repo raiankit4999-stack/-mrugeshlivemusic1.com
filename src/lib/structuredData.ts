@@ -14,7 +14,7 @@ export const personJsonLd = {
   "@type": "Person",
   name: siteConfig.name,
   alternateName: siteConfig.brand,
-  jobTitle: "Gujarati Live Musician",
+  jobTitle: "Live Musician",
   description: siteConfig.description,
   url: siteConfig.siteUrl,
   telephone: siteConfig.phone,

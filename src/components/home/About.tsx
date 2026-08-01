@@ -26,7 +26,7 @@ export default function About() {
           <div className="relative h-full w-full overflow-hidden rounded-3xl shadow-luxury">
             <Image
               src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?auto=format&fit=crop&w=900&q=80"
-              alt="Mrugesh Shukla, professional Gujarati live musician"
+              alt="Mrugesh Shukla, professional live musician"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 90vw, 480px"

@@ -2,7 +2,7 @@
   { "id": "team", "title": "Professional Team", "description": "A dedicated crew handling sound, lighting, and stage management at every event.", "icon": "Users" },
   { "id": "sound", "title": "Premium Sound", "description": "Industry-grade sound systems delivering crystal-clear audio for any venue size.", "icon": "Speaker" },
   { "id": "hd-music", "title": "HD Music", "description": "Studio-quality HD backing tracks and live mixing for a flawless listening experience.", "icon": "AudioWaveform" },
-  { "id": "folk", "title": "Gujarati Folk", "description": "Authentic Gujarati folk and Garba repertoire rooted in tradition.", "icon": "Landmark" },
+  { "id": "folk", "title": "Folk & Garba", "description": "Authentic folk and Garba repertoire rooted in tradition.", "icon": "Landmark" },
   { "id": "modern", "title": "Modern Songs", "description": "The latest Bollywood and international hits woven seamlessly into every set.", "icon": "Disc3" },
   { "id": "orchestra", "title": "Live Orchestra", "description": "A full live band of skilled instrumentalists performing alongside every show.", "icon": "Music4" },
   { "id": "playlist", "title": "Customized Playlist", "description": "Every setlist is tailored to your event, your guests, and your story.", "icon": "ListMusic" }

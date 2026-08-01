@@ -80,7 +80,7 @@ export default function Hero() {
           transition={{ delay: 3.4, duration: 0.8 }}
           className="mt-6 max-w-xl text-base sm:text-lg text-stone"
         >
-          Gujarati Live Music for weddings, Garba nights, and celebrations that feel like a
+          Live Music for weddings, Garba nights, and celebrations that feel like a
           headline concert.
         </motion.p>
 

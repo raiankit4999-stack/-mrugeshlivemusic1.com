@@ -55,7 +55,7 @@ export default function Footer() {
             className="h-16 w-auto mix-blend-screen mb-3"
           />
           <p className="text-sm text-stone leading-relaxed">
-            Professional Gujarati Live Musician based in Nadiad, Gujarat — bringing premium live
+            Professional Live Musician based in Nadiad, Gujarat — bringing premium live
             entertainment to weddings, Garba nights, and celebrations across India.
           </p>
         </div>
