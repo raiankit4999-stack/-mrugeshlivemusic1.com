@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import siteConfig from "@/data/siteConfig.json";
 import { scrollToSection } from "@/lib/lenis";
 
@@ -46,7 +47,13 @@ export default function Footer() {
       <div className="divider-gold" />
       <div className="mx-auto max-w-7xl px-6 lg:px-10 py-16 grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
         <div>
-          <p className="font-display text-2xl text-gradient-gold mb-3">Mrugesh Beats</p>
+          <Image
+            src="/logo.png"
+            alt="Mrugesh Beats"
+            width={405}
+            height={458}
+            className="h-16 w-auto mix-blend-screen mb-3"
+          />
           <p className="text-sm text-stone leading-relaxed">
             Professional Gujarati Live Musician based in Nadiad, Gujarat — bringing premium live
             entertainment to weddings, Garba nights, and celebrations across India.

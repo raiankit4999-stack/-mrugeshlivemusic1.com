@@ -5,9 +5,8 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown, Play } from "lucide-react";
 import gsap from "gsap";
-import Image from "next/image";
-import siteConfig from "@/data/siteConfig.json";
 import MagneticButton from "@/components/ui/MagneticButton";
+import HeroBackground from "@/components/home/HeroBackground";
 import { scrollToSection } from "@/lib/lenis";
 
 const Scene = dynamic(() => import("@/components/3d/Scene"), { ssr: false });
@@ -44,29 +43,7 @@ export default function Hero() {
       className="relative flex min-h-[100svh] items-center justify-center overflow-hidden bg-background noise-overlay"
     >
       <div className="absolute inset-0">
-        {siteConfig.heroVideoUrl ? (
-          <video
-            className="h-full w-full object-cover animate-hero-zoom"
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster={siteConfig.heroPosterUrl}
-          >
-            <source src={siteConfig.heroVideoUrl} type="video/mp4" />
-          </video>
-        ) : (
-          <div className="relative h-full w-full animate-hero-zoom">
-            <Image
-              src={siteConfig.heroPosterUrl}
-              alt="Mrugesh Shukla live concert atmosphere"
-              fill
-              priority
-              className="object-cover"
-              sizes="100vw"
-            />
-          </div>
-        )}
+        <HeroBackground />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/40" />
         <div className="absolute inset-0 [background:radial-gradient(circle_at_50%_35%,rgba(212,175,55,0.22),transparent_60%)]" />

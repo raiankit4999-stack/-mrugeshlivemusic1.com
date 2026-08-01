@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Menu } from "lucide-react";
 import {
@@ -73,11 +74,15 @@ export default function Navbar() {
       )}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-10">
-        <button
-          onClick={() => scrollTo("home")}
-          className="font-display text-xl sm:text-2xl tracking-[0.15em] text-gradient-gold"
-        >
-          MRUGESH BEATS
+        <button onClick={() => scrollTo("home")} aria-label="Mrugesh Beats — Home">
+          <Image
+            src="/logo.png"
+            alt="Mrugesh Beats"
+            width={405}
+            height={458}
+            priority
+            className="h-12 sm:h-14 w-auto mix-blend-screen"
+          />
         </button>
 
         <nav className="hidden lg:flex items-center gap-8">
@@ -113,8 +118,14 @@ export default function Navbar() {
             <Menu size={28} />
           </SheetTrigger>
           <SheetContent side="right" className="bg-ink-soft border-gold/20">
-            <SheetTitle className="font-display text-gradient-gold px-4 pt-6 text-2xl">
-              Mrugesh Beats
+            <SheetTitle className="px-4 pt-6">
+              <Image
+                src="/logo.png"
+                alt="Mrugesh Beats"
+                width={405}
+                height={458}
+                className="h-16 w-auto mix-blend-screen"
+              />
             </SheetTitle>
             <nav className="flex flex-col gap-6 px-6 py-8">
               {NAV_ITEMS.map((item) => (

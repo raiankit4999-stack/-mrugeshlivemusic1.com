@@ -4,7 +4,12 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeUp, blurIn, viewportOnce } from "@/lib/motion";
 
-const BADGES = ["Wedding Specialist", "Bhakti Singer", "Garba Performer", "Corporate Performer"];
+const BADGES = [
+  "Band Leader — Mrugesh Beats",
+  "Tabla Visharad (Distinction)",
+  "Music Teacher, Delhi Public School",
+  "Founder, Mrugesh Beats Music Academy",
+];
 
 export default function About() {
   return (
@@ -28,9 +33,31 @@ export default function About() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
           </div>
-          <div className="absolute -bottom-6 -right-6 hidden sm:flex h-28 w-28 items-center justify-center rounded-full glass-gold shadow-gold-glow">
-            <span className="font-display text-3xl text-gradient-gold">15+</span>
+          <div className="absolute -bottom-6 -right-6 hidden sm:flex flex-col h-28 w-28 items-center justify-center rounded-full glass-gold shadow-gold-glow text-center leading-tight">
+            <span className="text-[10px] uppercase tracking-widest text-stone">Since</span>
+            <span className="font-display text-3xl text-gradient-gold">2007</span>
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, rotate: 0, y: 20 }}
+            whileInView={{ opacity: 1, rotate: -6, y: 0 }}
+            viewport={viewportOnce}
+            transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+            className="absolute -bottom-10 -left-6 hidden sm:block w-36 rounded-xl bg-white p-2 pb-8 shadow-luxury"
+          >
+            <div className="relative aspect-square w-full overflow-hidden rounded-sm">
+              <Image
+                src="/mrugesh-with-zakir.jpg"
+                alt="Mrugesh Shukla with Ustad Zakir Hussain"
+                fill
+                className="object-cover"
+                sizes="144px"
+              />
+            </div>
+            <p className="absolute inset-x-0 bottom-1.5 text-center font-display text-[11px] text-ink">
+              With Zakir Hussain
+            </p>
+          </motion.div>
         </motion.div>
 
         <div>
@@ -51,7 +78,7 @@ export default function About() {
             custom={1}
             className="font-display text-4xl sm:text-5xl lg:text-6xl text-white text-balance"
           >
-            A Voice That Turns Every Event Into a Celebration
+            A Musician, Mentor & Band Leader Since 2007
           </motion.h2>
           <motion.p
             variants={blurIn}
@@ -61,11 +88,24 @@ export default function About() {
             custom={2}
             className="mt-6 text-stone leading-relaxed"
           >
-            Based in Nadiad, Gujarat, Mrugesh Shukla — known on stage as Mrugesh Beats — has spent
-            over 15 years perfecting the art of live Gujarati music. From intimate Bhakti Sandhya
-            evenings to full-scale wedding productions with a live orchestra, his performances
-            blend tradition with a modern, celebrity-grade stage presence that keeps thousands of
-            guests on their feet.
+            Based in Nadiad, Gujarat, Mrugesh Shukla leads Mrugesh Beats — a live band built on
+            nearly two decades of stage and teaching experience since 2007. A Tabla Visharad
+            graduate with distinction, he serves as a Music Teacher at Delhi Public School and
+            personally tutors students in Tabla, Octapad, Keyboard, and Congo through one-on-one
+            and group sessions at Mrugesh Beats Music Academy — an examination centre recognised
+            by the Gujarat state government.
+          </motion.p>
+          <motion.p
+            variants={blurIn}
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewportOnce}
+            custom={3}
+            className="mt-4 text-stone leading-relaxed"
+          >
+            As band leader, he brings that same discipline and musicality to every wedding, Garba
+            night, and Bhakti Sandhya performance — blending tradition with a modern,
+            celebrity-grade stage presence that keeps thousands of guests on their feet.
           </motion.p>
 
           <motion.div
@@ -73,7 +113,7 @@ export default function About() {
             initial="hidden"
             whileInView="visible"
             viewport={viewportOnce}
-            custom={3}
+            custom={4}
             className="mt-8 flex flex-wrap gap-3"
           >
             {BADGES.map((badge) => (

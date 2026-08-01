@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { useLockBodyScroll } from "@/hooks/useLockBodyScroll";
 
-const NAME = "MRUGESH BEATS";
 const BAR_COUNT = 24;
-const NOTE_COUNT = 10;
+const NOTE_COUNT = 8;
 
 export default function Loader() {
   const [visible, setVisible] = useState(true);
@@ -14,7 +14,7 @@ export default function Loader() {
   useLockBodyScroll(visible);
 
   useEffect(() => {
-    const minTime = new Promise((resolve) => setTimeout(resolve, 2400));
+    const minTime = new Promise((resolve) => setTimeout(resolve, 2600));
     const ready =
       document.readyState === "complete"
         ? Promise.resolve()
@@ -36,7 +36,7 @@ export default function Loader() {
             {Array.from({ length: NOTE_COUNT }).map((_, i) => (
               <motion.span
                 key={i}
-                className="absolute text-gold/50 font-display"
+                className="absolute text-gold/40 font-display"
                 style={{
                   left: `${(i * 97) % 100}%`,
                   fontSize: `${16 + (i % 4) * 8}px`,
@@ -55,19 +55,34 @@ export default function Loader() {
             ))}
           </div>
 
-          <div className="relative z-10 flex flex-col items-center gap-8">
-            <div className="flex overflow-hidden">
-              {NAME.split("").map((char, i) => (
-                <motion.span
-                  key={i}
-                  className="font-display text-3xl sm:text-5xl tracking-[0.2em] text-gradient-gold"
-                  initial={{ y: "100%", opacity: 0 }}
-                  animate={{ y: "0%", opacity: 1 }}
-                  transition={{ duration: 0.7, delay: 0.3 + i * 0.045, ease: [0.16, 1, 0.3, 1] }}
+          <div className="relative z-10 flex flex-col items-center gap-10">
+            <div className="relative flex items-center justify-center">
+              <motion.div
+                aria-hidden
+                className="absolute h-56 w-56 sm:h-72 sm:w-72 rounded-full bg-gold/25 blur-3xl"
+                animate={{ scale: [0.85, 1.15, 0.85], opacity: [0.4, 0.75, 0.4] }}
+                transition={{ duration: 3.2, repeat: Infinity, ease: "easeInOut" }}
+              />
+              <motion.div
+                initial={{ scale: 0.7, opacity: 0, filter: "blur(14px)" }}
+                animate={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
+                transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
+                className="relative"
+              >
+                <motion.div
+                  animate={{ y: [0, -10, 0] }}
+                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                 >
-                  {char === " " ? " " : char}
-                </motion.span>
-              ))}
+                  <Image
+                    src="/logo.png"
+                    alt="Mrugesh Beats"
+                    width={405}
+                    height={458}
+                    priority
+                    className="relative z-10 w-44 sm:w-56 h-auto mix-blend-screen drop-shadow-[0_0_35px_rgba(212,175,55,0.45)]"
+                  />
+                </motion.div>
+              </motion.div>
             </div>
 
             <div className="flex items-end gap-[3px] h-8">
@@ -86,15 +101,6 @@ export default function Loader() {
                 />
               ))}
             </div>
-
-            <motion.p
-              className="text-stone text-xs tracking-[0.4em] uppercase font-sans"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1.4, duration: 1 }}
-            >
-              Live Entertainment
-            </motion.p>
           </div>
         </motion.div>
       )}
