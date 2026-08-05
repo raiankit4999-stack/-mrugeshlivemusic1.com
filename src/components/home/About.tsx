@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeUp, blurIn, viewportOnce } from "@/lib/motion";
+import Mandala from "@/components/ui/Mandala";
 
 const BADGES = [
   "Band Leader — Mrugesh Beats",
@@ -13,7 +14,8 @@ const BADGES = [
 
 export default function About() {
   return (
-    <section id="about" className="relative bg-background py-28 lg:py-36">
+    <section id="about" className="relative overflow-hidden bg-background py-28 lg:py-36">
+      <Mandala className="pointer-events-none absolute -right-40 -top-40 h-[520px] w-[520px] opacity-[0.08]" />
       <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2 lg:px-10">
         <motion.div
           variants={fadeUp}
@@ -32,7 +34,7 @@ export default function About() {
               style={{ objectPosition: "54% center" }}
               sizes="(max-width: 1024px) 90vw, 480px"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
           </div>
           <div className="absolute -bottom-6 -right-6 hidden sm:flex flex-col h-28 w-28 items-center justify-center rounded-full glass-gold shadow-gold-glow text-center leading-tight">
             <span className="text-[10px] uppercase tracking-widest text-stone">Since</span>
@@ -77,7 +79,7 @@ export default function About() {
             whileInView="visible"
             viewport={viewportOnce}
             custom={1}
-            className="font-display text-4xl sm:text-5xl lg:text-6xl text-white text-balance"
+            className="font-display text-4xl sm:text-5xl lg:text-6xl text-ink text-balance"
           >
             A Musician, Mentor & Band Leader Since 2007
           </motion.h2>

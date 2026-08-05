@@ -35,7 +35,7 @@ export default function InstrumentShowcase() {
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
                 sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 22vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-4">
                 <p className="font-display text-xl text-white">{instrument.name}</p>
               </div>

@@ -53,7 +53,7 @@ function VideoCard({ video, index }: { video: VideoItem; index: number }) {
             className="object-cover transition-transform duration-500 group-hover:scale-110"
             sizes="(max-width: 1024px) 100vw, 33vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/10 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
           <motion.span
             whileHover={{ scale: 1.15 }}
             className="absolute left-1/2 top-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full glass-gold text-gold shadow-gold-glow"

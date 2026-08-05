@@ -33,7 +33,7 @@ export default function WhyChooseUs() {
                   <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-gold/10 text-gold">
                     {Icon && <Icon size={24} />}
                   </div>
-                  <h3 className="font-display text-xl text-white">{item.title}</h3>
+                  <h3 className="font-display text-xl text-ink">{item.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-stone">{item.description}</p>
                 </GlowCard>
               </motion.div>

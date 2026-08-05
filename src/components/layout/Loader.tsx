@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { useLockBodyScroll } from "@/hooks/useLockBodyScroll";
+import Mandala from "@/components/ui/Mandala";
 
 const BAR_COUNT = 24;
 const NOTE_COUNT = 8;
@@ -14,7 +15,7 @@ export default function Loader() {
   useLockBodyScroll(visible);
 
   useEffect(() => {
-    const minTime = new Promise((resolve) => setTimeout(resolve, 2600));
+    const minTime = new Promise((resolve) => setTimeout(resolve, 3000));
     const ready =
       document.readyState === "complete"
         ? Promise.resolve()
@@ -27,16 +28,24 @@ export default function Loader() {
     <AnimatePresence>
       {visible && (
         <motion.div
-          className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-background"
+          className="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden bg-cream"
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.9, ease: "easeInOut" }}
         >
+          <div
+            className="pointer-events-none absolute inset-0"
+            style={{
+              backgroundImage:
+                "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Ccircle cx='30' cy='30' r='2.5' fill='%239b2c3e' fill-opacity='0.12'/%3E%3Ccircle cx='0' cy='0' r='2.5' fill='%239b2c3e' fill-opacity='0.12'/%3E%3Ccircle cx='60' cy='0' r='2.5' fill='%239b2c3e' fill-opacity='0.12'/%3E%3Ccircle cx='0' cy='60' r='2.5' fill='%239b2c3e' fill-opacity='0.12'/%3E%3Ccircle cx='60' cy='60' r='2.5' fill='%239b2c3e' fill-opacity='0.12'/%3E%3C/svg%3E\")",
+            }}
+          />
+
           <div className="pointer-events-none absolute inset-0 overflow-hidden">
             {Array.from({ length: NOTE_COUNT }).map((_, i) => (
               <motion.span
                 key={i}
-                className="absolute text-gold/40 font-display"
+                className="absolute text-maroon/35 font-display"
                 style={{
                   left: `${(i * 97) % 100}%`,
                   fontSize: `${16 + (i % 4) * 8}px`,
@@ -59,19 +68,22 @@ export default function Loader() {
             <div className="relative flex items-center justify-center">
               <motion.div
                 aria-hidden
-                className="absolute h-56 w-56 sm:h-72 sm:w-72 rounded-full bg-gold/25 blur-3xl"
-                animate={{ scale: [0.85, 1.15, 0.85], opacity: [0.4, 0.75, 0.4] }}
-                transition={{ duration: 3.2, repeat: Infinity, ease: "easeInOut" }}
-              />
+                className="absolute"
+                animate={{ rotate: 360 }}
+                transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
+              >
+                <Mandala className="absolute h-[520px] w-[520px] sm:h-[640px] sm:w-[640px]" />
+              </motion.div>
+
               <motion.div
-                initial={{ scale: 0.7, opacity: 0, filter: "blur(14px)" }}
+                initial={{ scale: 2.6, opacity: 0, filter: "blur(18px)" }}
                 animate={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
-                transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 2.2, ease: [0.16, 1, 0.3, 1] }}
                 className="relative"
               >
                 <motion.div
                   animate={{ y: [0, -10, 0] }}
-                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 2.2 }}
                 >
                   <Image
                     src="/logo.png"
@@ -79,7 +91,7 @@ export default function Loader() {
                     width={405}
                     height={458}
                     priority
-                    className="relative z-10 w-44 sm:w-56 h-auto drop-shadow-[0_0_35px_rgba(212,175,55,0.45)]"
+                    className="relative z-10 w-44 sm:w-56 h-auto drop-shadow-[0_10px_30px_rgba(155,44,62,0.25)]"
                   />
                 </motion.div>
               </motion.div>
@@ -89,7 +101,7 @@ export default function Loader() {
               {Array.from({ length: BAR_COUNT }).map((_, i) => (
                 <motion.span
                   key={i}
-                  className="w-[3px] rounded-full bg-gradient-to-t from-accent-bronze to-gold origin-bottom"
+                  className="w-[3px] rounded-full bg-gradient-to-t from-maroon to-gold origin-bottom"
                   style={{ height: "100%" }}
                   animate={{ scaleY: [0.2, 1, 0.3, 0.8, 0.2] }}
                   transition={{

@@ -57,7 +57,7 @@ export default function Testimonials() {
               className="glass-gold rounded-3xl p-8 sm:p-12 text-center shadow-luxury cursor-grab active:cursor-grabbing"
             >
               <Quote className="mx-auto mb-6 text-gold" size={36} />
-              <p className="font-display text-xl sm:text-2xl leading-relaxed text-white text-balance">
+              <p className="font-display text-xl sm:text-2xl leading-relaxed text-ink text-balance">
                 &ldquo;{testimonial.quote}&rdquo;
               </p>
 
@@ -72,7 +72,7 @@ export default function Testimonials() {
                   <Image src={testimonial.avatar} alt={testimonial.name} fill className="object-cover" sizes="48px" />
                 </div>
                 <div className="text-left">
-                  <p className="font-medium text-white">{testimonial.name}</p>
+                  <p className="font-medium text-ink">{testimonial.name}</p>
                   <p className="text-xs text-stone">{testimonial.role}</p>
                 </div>
               </div>

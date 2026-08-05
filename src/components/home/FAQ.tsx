@@ -31,7 +31,7 @@ export default function FAQ() {
               value={faq.id}
               className="glass mb-4 rounded-2xl border-none px-6 py-2"
             >
-              <AccordionTrigger className="font-display text-lg text-white hover:no-underline">
+              <AccordionTrigger className="font-display text-lg text-ink hover:no-underline">
                 {faq.question}
               </AccordionTrigger>
               <AccordionContent className="text-stone leading-relaxed">

@@ -88,7 +88,7 @@ export default function EventExperience() {
                     <span className="text-xs uppercase tracking-widest text-gold">
                       Step {i + 1}
                     </span>
-                    <h3 className="mt-1 font-display text-2xl text-white">{step.title}</h3>
+                    <h3 className="mt-1 font-display text-2xl text-ink">{step.title}</h3>
                     <p className="mt-2 text-sm text-stone leading-relaxed">{step.description}</p>
                   </div>
                 </div>

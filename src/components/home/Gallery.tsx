@@ -77,10 +77,10 @@ export default function Gallery() {
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
-              <div className="absolute inset-0 flex items-center justify-center bg-background/0 opacity-0 transition-all duration-300 group-hover:bg-background/40 group-hover:opacity-100">
-                <ZoomIn className="text-gold" size={28} />
+              <div className="absolute inset-0 flex items-center justify-center bg-black/0 opacity-0 transition-all duration-300 group-hover:bg-black/40 group-hover:opacity-100">
+                <ZoomIn className="text-[#f0d98c]" size={28} />
               </div>
-              <span className="absolute left-3 top-3 rounded-full bg-background/60 px-3 py-1 text-[10px] uppercase tracking-widest text-gold backdrop-blur">
+              <span className="absolute left-3 top-3 rounded-full bg-black/60 px-3 py-1 text-[10px] uppercase tracking-widest text-[#f0d98c] backdrop-blur">
                 {image.category}
               </span>
             </motion.button>
@@ -105,7 +105,7 @@ export default function Gallery() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[80] flex items-center justify-center bg-background/95 backdrop-blur-md p-4"
+            className="fixed inset-0 z-[80] flex items-center justify-center bg-black/95 backdrop-blur-md p-4"
             onClick={close}
           >
             <button

@@ -36,7 +36,7 @@ export default function Services() {
                   >
                     {Icon && <Icon size={26} />}
                   </motion.div>
-                  <h3 className="font-display text-2xl text-white">{service.title}</h3>
+                  <h3 className="font-display text-2xl text-ink">{service.title}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-stone">{service.description}</p>
                 </GlowCard>
               </motion.div>

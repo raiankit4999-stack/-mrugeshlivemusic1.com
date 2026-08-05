@@ -40,12 +40,12 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-[100svh] items-center justify-center overflow-hidden bg-background noise-overlay"
+      className="relative flex min-h-[100svh] items-center justify-center overflow-hidden bg-[#170e08] noise-overlay"
     >
       <div className="absolute inset-0">
         <HeroBackground />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/55 to-[#170e08]" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#170e08] via-transparent to-black/40" />
         <div className="absolute inset-0 [background:radial-gradient(circle_at_50%_35%,rgba(212,175,55,0.22),transparent_60%)]" />
       </div>
 
@@ -58,14 +58,14 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 2.2, duration: 0.8 }}
-          className="mb-6 text-xs sm:text-sm uppercase tracking-[0.5em] text-gold"
+          className="mb-6 text-xs sm:text-sm uppercase tracking-[0.5em] text-[#f0d98c]"
         >
           Live Entertainment &middot; Wedding Specialist
         </motion.p>
 
         <h1
           ref={titleRef}
-          className="font-display text-5xl sm:text-7xl lg:text-8xl tracking-wide text-gradient-gold"
+          className="font-display text-5xl sm:text-7xl lg:text-8xl tracking-wide text-gradient-gold-bright"
         >
           {TITLE.split("").map((char, i) => (
             <span key={i} className="inline-block overflow-hidden align-bottom">
@@ -78,7 +78,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 3.4, duration: 0.8 }}
-          className="mt-6 max-w-xl text-base sm:text-lg text-stone"
+          className="mt-6 max-w-xl text-base sm:text-lg text-white/80"
         >
           Live Music for weddings, Garba nights, and celebrations that feel like a
           headline concert.

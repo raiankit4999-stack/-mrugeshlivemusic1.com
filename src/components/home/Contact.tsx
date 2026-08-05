@@ -2,10 +2,12 @@ import { MapPin, Phone, Mail } from "lucide-react";
 import siteConfig from "@/data/siteConfig.json";
 import SectionHeading from "@/components/ui/SectionHeading";
 import BookingForm from "@/components/home/BookingForm";
+import Mandala from "@/components/ui/Mandala";
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative bg-ink-soft py-28 lg:py-36">
+    <section id="contact" className="relative overflow-hidden bg-ink-soft py-28 lg:py-36">
+      <Mandala className="pointer-events-none absolute -bottom-40 -left-40 h-[520px] w-[520px] opacity-[0.08]" />
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <SectionHeading
           eyebrow="Get In Touch"
@@ -22,7 +24,7 @@ export default function Contact() {
                 </span>
                 <div>
                   <p className="text-sm uppercase tracking-widest text-gold">Address</p>
-                  <p className="mt-2 text-white leading-relaxed">
+                  <p className="mt-2 text-ink leading-relaxed">
                     Mrugesh Shukla
                     <br />
                     {siteConfig.address.line1}
@@ -43,7 +45,7 @@ export default function Contact() {
                   <p className="text-sm uppercase tracking-widest text-gold">Phone</p>
                   <a
                     href={`tel:${siteConfig.phone}`}
-                    className="mt-2 block text-white hover:text-gold transition-colors"
+                    className="mt-2 block text-ink hover:text-gold transition-colors"
                   >
                     {siteConfig.phoneDisplay}
                   </a>
@@ -58,7 +60,7 @@ export default function Contact() {
                   <p className="text-sm uppercase tracking-widest text-gold">Email</p>
                   <a
                     href={`mailto:${siteConfig.email}`}
-                    className="mt-2 block text-white hover:text-gold transition-colors"
+                    className="mt-2 block text-ink hover:text-gold transition-colors"
                   >
                     {siteConfig.email}
                   </a>
@@ -70,7 +72,7 @@ export default function Contact() {
               <iframe
                 src={siteConfig.mapEmbedUrl}
                 title="Mrugesh Beats location on Google Maps"
-                className="h-72 w-full grayscale invert-[0.92] contrast-[1.1]"
+                className="h-72 w-full grayscale-[0.3] contrast-[1.05]"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />

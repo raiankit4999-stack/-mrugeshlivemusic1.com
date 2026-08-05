@@ -91,15 +91,18 @@ export default function Navbar() {
               key={item.id}
               onClick={() => scrollTo(item.id)}
               className={cn(
-                "relative text-sm tracking-wide uppercase text-stone transition-colors hover:text-gold",
-                active === item.id && "text-gold"
+                "relative text-sm tracking-wide uppercase transition-colors",
+                scrolled
+                  ? "text-stone hover:text-gold"
+                  : "text-white/85 hover:text-[#f0d98c]",
+                active === item.id && (scrolled ? "text-gold" : "text-[#f0d98c]")
               )}
             >
               {item.label}
               {active === item.id && (
                 <motion.span
                   layoutId="nav-underline"
-                  className="absolute -bottom-1.5 left-0 right-0 h-[1.5px] bg-gold"
+                  className={cn("absolute -bottom-1.5 left-0 right-0 h-[1.5px]", scrolled ? "bg-gold" : "bg-[#f0d98c]")}
                 />
               )}
             </button>
@@ -108,13 +111,21 @@ export default function Navbar() {
 
         <button
           onClick={() => scrollTo("contact")}
-          className="hidden lg:inline-flex items-center rounded-full border border-gold/50 px-5 py-2 text-sm tracking-wide uppercase text-gold transition-colors hover:bg-gold hover:text-ink"
+          className={cn(
+            "hidden lg:inline-flex items-center rounded-full border px-5 py-2 text-sm tracking-wide uppercase transition-colors",
+            scrolled
+              ? "border-gold/50 text-gold hover:bg-gold hover:text-ink"
+              : "border-[#f0d98c]/50 text-[#f0d98c] hover:bg-[#f0d98c] hover:text-ink"
+          )}
         >
           Book Now
         </button>
 
         <Sheet open={open} onOpenChange={setOpen}>
-          <SheetTrigger className="lg:hidden text-gold" aria-label="Open menu">
+          <SheetTrigger
+            className={cn("lg:hidden", scrolled ? "text-gold" : "text-white")}
+            aria-label="Open menu"
+          >
             <Menu size={28} />
           </SheetTrigger>
           <SheetContent side="right" className="bg-ink-soft border-gold/20">

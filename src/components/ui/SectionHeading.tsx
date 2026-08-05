@@ -36,7 +36,7 @@ export default function SectionHeading({
         whileInView="visible"
         viewport={viewportOnce}
         custom={1}
-        className="font-display text-4xl sm:text-5xl lg:text-6xl text-balance text-white"
+        className="font-display text-4xl sm:text-5xl lg:text-6xl text-balance text-ink"
       >
         {title}
       </motion.h2>
