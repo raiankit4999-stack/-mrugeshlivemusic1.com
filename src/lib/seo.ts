@@ -58,7 +58,4 @@ export const siteMetadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  icons: {
-    icon: "/favicon.ico",
-  },
 };
