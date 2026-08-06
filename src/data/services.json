@@ -60,10 +60,22 @@
     "icon": "Sparkles"
   },
   {
+    "id": "bhakti-sangeet",
+    "title": "Bhakti Sangeet",
+    "description": "Large-scale devotional music concerts and kirtans for temples, trusts, and satsang gatherings.",
+    "icon": "Flame"
+  },
+  {
     "id": "sangeet",
     "title": "Sangeet",
     "description": "Choreography-ready live sets and mashups that elevate every sangeet performance.",
     "icon": "Mic2"
+  },
+  {
+    "id": "sangeet-sandhya",
+    "title": "Sangeet Sandhya",
+    "description": "A live musical evening for cultural associations and community celebrations, beyond weddings.",
+    "icon": "Moon"
   },
   {
     "id": "corporate",

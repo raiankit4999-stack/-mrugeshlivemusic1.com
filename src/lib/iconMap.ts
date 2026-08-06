@@ -23,6 +23,8 @@ import {
   Mic,
   Users2,
   Plane,
+  Flame,
+  Moon,
   type LucideIcon,
 } from "lucide-react";
 
@@ -51,4 +53,6 @@ export const iconMap: Record<string, LucideIcon> = {
   Mic,
   Users2,
   Plane,
+  Flame,
+  Moon,
 };

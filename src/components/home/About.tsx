@@ -8,7 +8,7 @@ import Mandala from "@/components/ui/Mandala";
 const BADGES = [
   "Band Leader — Mrugesh Beats",
   "Tabla Visharad (Distinction)",
-  "Music Teacher, Delhi Public School",
+  "Music Teacher",
   "Founder, Mrugesh Beats Music Academy",
 ];
 
@@ -93,10 +93,9 @@ export default function About() {
           >
             Based in Nadiad, Gujarat, Mrugesh Shukla leads Mrugesh Beats — a live band built on
             nearly two decades of stage and teaching experience since 2007. A Tabla Visharad
-            graduate with distinction, he serves as a Music Teacher at Delhi Public School and
-            personally tutors students in Tabla, Octapad, Keyboard, and Congo through one-on-one
-            and group sessions at Mrugesh Beats Music Academy — an examination centre recognised
-            by the Gujarat state government.
+            graduate with distinction, he personally tutors students in Tabla, Octapad, Keyboard,
+            and Congo through one-on-one and group sessions at Mrugesh Beats Music Academy — an
+            examination centre recognised by the Gujarat state government.
           </motion.p>
           <motion.p
             variants={blurIn}

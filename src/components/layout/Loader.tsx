@@ -7,7 +7,8 @@ import { useLockBodyScroll } from "@/hooks/useLockBodyScroll";
 import Mandala from "@/components/ui/Mandala";
 
 const BAR_COUNT = 24;
-const NOTE_COUNT = 8;
+const NOTE_COUNT = 6;
+const PETAL_COUNT = 14;
 
 export default function Loader() {
   const [visible, setVisible] = useState(true);
@@ -33,15 +34,47 @@ export default function Loader() {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.9, ease: "easeInOut" }}
         >
-          <div
+          <motion.div
+            aria-hidden
             className="pointer-events-none absolute inset-0"
             style={{
-              backgroundImage:
-                "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Ccircle cx='30' cy='30' r='2.5' fill='%239b2c3e' fill-opacity='0.12'/%3E%3Ccircle cx='0' cy='0' r='2.5' fill='%239b2c3e' fill-opacity='0.12'/%3E%3Ccircle cx='60' cy='0' r='2.5' fill='%239b2c3e' fill-opacity='0.12'/%3E%3Ccircle cx='0' cy='60' r='2.5' fill='%239b2c3e' fill-opacity='0.12'/%3E%3Ccircle cx='60' cy='60' r='2.5' fill='%239b2c3e' fill-opacity='0.12'/%3E%3C/svg%3E\")",
+              background:
+                "radial-gradient(circle at 50% 40%, rgba(184,134,11,0.16), transparent 65%)",
             }}
+            animate={{ opacity: [0.5, 1, 0.5], scale: [1, 1.15, 1] }}
+            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
           />
 
           <div className="pointer-events-none absolute inset-0 overflow-hidden">
+            {Array.from({ length: PETAL_COUNT }).map((_, i) => {
+              const left = (i * 137.5) % 100;
+              const size = 10 + (i % 4) * 5;
+              const duration = 6 + (i % 6);
+              const drift = i % 2 === 0 ? 40 : -40;
+              const isMaroon = i % 3 === 0;
+              return (
+                <motion.span
+                  key={i}
+                  className={`absolute rounded-[0%_100%_0%_100%] ${
+                    isMaroon ? "bg-maroon/45" : "bg-gold/55"
+                  }`}
+                  style={{ left: `${left}%`, width: size, height: size * 0.75 }}
+                  initial={{ y: "-10vh", x: 0, opacity: 0, rotate: 0 }}
+                  animate={{
+                    y: "110vh",
+                    x: [0, drift, 0],
+                    opacity: [0, 1, 1, 0],
+                    rotate: 360,
+                  }}
+                  transition={{
+                    duration,
+                    delay: (i * 0.4) % 4,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
+                />
+              );
+            })}
             {Array.from({ length: NOTE_COUNT }).map((_, i) => (
               <motion.span
                 key={i}
