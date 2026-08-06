@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { useLockBodyScroll } from "@/hooks/useLockBodyScroll";
-import Mandala from "@/components/ui/Mandala";
 
 const BAR_COUNT = 24;
 const NOTE_COUNT = 6;
@@ -103,7 +102,12 @@ export default function Loader() {
 
           <div className="relative z-10 flex flex-col items-center gap-10">
             <div className="relative flex items-center justify-center">
-              <Mandala className="pointer-events-none absolute h-[520px] w-[520px] sm:h-[640px] sm:w-[640px]" />
+              <motion.div
+                aria-hidden
+                className="pointer-events-none absolute h-64 w-64 sm:h-80 sm:w-80 rounded-full bg-gold/20 blur-3xl"
+                animate={{ scale: [0.9, 1.15, 0.9], opacity: [0.4, 0.7, 0.4] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              />
 
               <motion.div
                 initial={{ scale: 2.6, opacity: 0, filter: "blur(18px)" }}

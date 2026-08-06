@@ -62,13 +62,13 @@ export default function HeroBackground() {
             exit={{ opacity: 0 }}
             transition={{ duration: 1.4, ease: "easeInOut" }}
           >
-            <div className="relative h-full w-full animate-hero-zoom">
+            <div className="relative h-full w-full animate-hero-zoom bg-black">
               <Image
                 src={image.src}
                 alt={image.alt}
                 fill
                 priority={index === 0}
-                className="object-cover"
+                className="object-contain sm:object-cover"
                 style={{ objectPosition: image.objectPosition }}
                 sizes="100vw"
               />
