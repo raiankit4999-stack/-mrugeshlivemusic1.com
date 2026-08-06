@@ -25,6 +25,8 @@ import {
   Plane,
   Flame,
   Moon,
+  Gem,
+  BookOpen,
   type LucideIcon,
 } from "lucide-react";
 
@@ -55,4 +57,6 @@ export const iconMap: Record<string, LucideIcon> = {
   Plane,
   Flame,
   Moon,
+  Gem,
+  BookOpen,
 };

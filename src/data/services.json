@@ -1,5 +1,11 @@
 [
   {
+    "id": "ring-ceremony",
+    "title": "Ring Ceremony",
+    "description": "Elegant live music to open your celebrations — the perfect soundtrack for your ring ceremony.",
+    "icon": "Gem"
+  },
+  {
     "id": "wedding",
     "title": "Wedding Event",
     "description": "Signature live music curated for your wedding day — from baraat to the last dance.",
@@ -30,6 +36,12 @@
     "icon": "Guitar"
   },
   {
+    "id": "vedic-event",
+    "title": "Vedic Event",
+    "description": "Authentic live accompaniment for Vedic rituals, havan, and traditional ceremonies.",
+    "icon": "BookOpen"
+  },
+  {
     "id": "celebrity",
     "title": "Celebrity Events",
     "description": "Premium production-grade performances for high-profile celebrity occasions.",
@@ -42,34 +54,16 @@
     "icon": "Cake"
   },
   {
-    "id": "mehndi",
-    "title": "Mehndi",
-    "description": "Vibrant folk rhythms and playful live sets to colour your Mehndi ceremony.",
+    "id": "mehndi-haldi",
+    "title": "Mehndi / Haldi",
+    "description": "Vibrant folk rhythms and joyful live sets to colour your Mehndi and Haldi ceremonies.",
     "icon": "Flower2"
-  },
-  {
-    "id": "haldi",
-    "title": "Haldi",
-    "description": "Joyful, upbeat live music to set the tone for your Haldi morning.",
-    "icon": "Sun"
-  },
-  {
-    "id": "bhakti-sandhya",
-    "title": "Bhakti Sandhya",
-    "description": "Soulful devotional evenings with heartfelt bhajans and live accompaniment.",
-    "icon": "Sparkles"
   },
   {
     "id": "bhakti-sangeet",
     "title": "Bhakti Sangeet",
     "description": "Large-scale devotional music concerts and kirtans for temples, trusts, and satsang gatherings.",
     "icon": "Flame"
-  },
-  {
-    "id": "sangeet",
-    "title": "Sangeet",
-    "description": "Choreography-ready live sets and mashups that elevate every sangeet performance.",
-    "icon": "Mic2"
   },
   {
     "id": "sangeet-sandhya",

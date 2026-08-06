@@ -8,22 +8,22 @@
   },
   {
     "id": "g2",
-    "src": "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=80",
-    "alt": "Microphone close-up on stage before a live performance",
+    "src": "/gallery-13.jpg",
+    "alt": "Mrugesh Shukla performing on keyboard on an outdoor stage",
     "category": "Live Concerts",
     "orientation": "portrait"
   },
   {
     "id": "g3",
-    "src": "https://images.unsplash.com/photo-1650709244890-cc35b30d8036?auto=format&fit=crop&w=1200&q=80",
-    "alt": "Women in traditional colourful ghagra choli spinning during Garba",
+    "src": "/gallery-3.jpg",
+    "alt": "Massive crowd dancing at a Garba Navratri celebration",
     "category": "Garba Nights",
     "orientation": "landscape"
   },
   {
     "id": "g4",
-    "src": "https://images.unsplash.com/photo-1774437679123-8503e9448334?auto=format&fit=crop&w=1200&q=80",
-    "alt": "Folk dancers in traditional attire performing an energetic group dance",
+    "src": "/gallery-5.jpg",
+    "alt": "Garba night crowd dancing under festive lighting",
     "category": "Garba Nights",
     "orientation": "landscape"
   },
@@ -50,57 +50,57 @@
   },
   {
     "id": "g8",
-    "src": "https://images.unsplash.com/photo-1585371843734-1800eada9acc?auto=format&fit=crop&w=1200&q=80",
-    "alt": "Bride and groom entrance with sparklers at an Indian wedding reception",
+    "src": "/gallery-16.jpg",
+    "alt": "Mrugesh Shukla performing on octapad and keyboard at a wedding reception",
     "category": "Wedding Events",
-    "orientation": "landscape"
+    "orientation": "portrait"
   },
   {
     "id": "g9",
-    "src": "https://images.unsplash.com/photo-1524392749318-209b690c93c6?auto=format&fit=crop&w=1200&q=80",
-    "alt": "Indian musician playing tabla in traditional attire",
+    "src": "/gallery-1.jpg",
+    "alt": "Mrugesh Shukla playing tabla",
     "category": "Live Instrumental",
     "orientation": "portrait"
   },
   {
     "id": "g10",
-    "src": "https://images.unsplash.com/photo-1568219656418-15c329312bf1?auto=format&fit=crop&w=1200&q=80",
-    "alt": "Close-up of hands playing tabla",
+    "src": "/gallery-15.jpg",
+    "alt": "Sitar player performing live on an outdoor stage",
     "category": "Live Instrumental",
-    "orientation": "landscape"
+    "orientation": "portrait"
   },
   {
     "id": "g11",
-    "src": "https://images.unsplash.com/photo-1621176212747-88770f71465d?auto=format&fit=crop&w=1200&q=80",
-    "alt": "Woman playing dhol drums at a live indoor celebration",
-    "category": "Live Instrumental",
-    "orientation": "portrait"
+    "src": "/gallery-6.jpg",
+    "alt": "Mrugesh Shukla at a large-scale Garba Navratri event",
+    "category": "Garba Nights",
+    "orientation": "landscape"
   },
   {
     "id": "g12",
-    "src": "https://images.unsplash.com/photo-1756367264241-a3b860c53b87?auto=format&fit=crop&w=1200&q=80",
-    "alt": "Ceremonial lamp lighting to open a corporate cultural event",
-    "category": "Corporate Events",
-    "orientation": "portrait"
-  },
-  {
-    "id": "g13",
-    "src": "https://images.unsplash.com/photo-1614964879999-62e7bfa8904d?auto=format&fit=crop&w=1200&q=80",
-    "alt": "Cultural dance performance at a corporate gala",
+    "src": "/gallery-2.jpg",
+    "alt": "Mrugesh Shukla at a televised music show appearance",
     "category": "Corporate Events",
     "orientation": "landscape"
   },
   {
-    "id": "g14",
-    "src": "https://images.unsplash.com/photo-1771718968046-6b8cee870812?auto=format&fit=crop&w=1200&q=80",
-    "alt": "Tabla player performing on an outdoor concert stage",
-    "category": "Live Concerts",
+    "id": "g13",
+    "src": "/gallery-10.jpg",
+    "alt": "Mrugesh Shukla with guest performers backstage at a live event",
+    "category": "Corporate Events",
     "orientation": "portrait"
   },
   {
+    "id": "g14",
+    "src": "/gallery-4.jpg",
+    "alt": "Mrugesh Shukla backstage with fellow musicians at a concert",
+    "category": "Live Concerts",
+    "orientation": "landscape"
+  },
+  {
     "id": "g15",
-    "src": "https://images.unsplash.com/photo-1774377767315-cb846a51725b?auto=format&fit=crop&w=1200&q=80",
-    "alt": "Musician performing with traditional Indian dance artwork backdrop",
+    "src": "/gallery-11.jpg",
+    "alt": "Mrugesh Shukla with a guest artist at a New Year live event",
     "category": "Corporate Events",
     "orientation": "portrait"
   },
@@ -109,6 +109,20 @@
     "src": "/mrugesh_shukla_nadiad.jpg",
     "alt": "Mrugesh Shukla on stage with fellow performers at a live event",
     "category": "Live Concerts",
+    "orientation": "portrait"
+  },
+  {
+    "id": "g17",
+    "src": "/gallery-14.jpg",
+    "alt": "Mrugesh Shukla performing a devotional Bhakti Sangeet set",
+    "category": "Live Concerts",
+    "orientation": "portrait"
+  },
+  {
+    "id": "g18",
+    "src": "/gallery-17.jpg",
+    "alt": "Flute player performing live on an outdoor stage",
+    "category": "Live Instrumental",
     "orientation": "portrait"
   }
 ]

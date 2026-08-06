@@ -103,14 +103,7 @@ export default function Loader() {
 
           <div className="relative z-10 flex flex-col items-center gap-10">
             <div className="relative flex items-center justify-center">
-              <motion.div
-                aria-hidden
-                className="absolute"
-                animate={{ rotate: 360 }}
-                transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-              >
-                <Mandala className="absolute h-[520px] w-[520px] sm:h-[640px] sm:w-[640px]" />
-              </motion.div>
+              <Mandala className="pointer-events-none absolute h-[520px] w-[520px] sm:h-[640px] sm:w-[640px]" />
 
               <motion.div
                 initial={{ scale: 2.6, opacity: 0, filter: "blur(18px)" }}

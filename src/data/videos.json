@@ -1,44 +1,30 @@
 [
   {
     "id": "v1",
-    "title": "Garba Night Highlights — Live Set",
+    "title": "Live Performance Highlights",
     "type": "mp4",
-    "src": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+    "src": "/video-1.mp4",
     "poster": "/hero-1.jpg"
   },
   {
     "id": "v2",
-    "title": "Wedding Sangeet — Live Instrumental",
+    "title": "Garba Night — Live Set",
     "type": "mp4",
-    "src": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "poster": "https://images.unsplash.com/photo-1614964879999-62e7bfa8904d?auto=format&fit=crop&w=1200&q=80"
+    "src": "/video-2.mp4",
+    "poster": "/gallery-3.jpg"
   },
   {
     "id": "v3",
-    "title": "Bhakti Sandhya — Devotional Evening",
+    "title": "Live Instrumental Showcase",
     "type": "mp4",
-    "src": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
-    "poster": "https://images.unsplash.com/photo-1756367264241-a3b860c53b87?auto=format&fit=crop&w=1200&q=80"
+    "src": "/video-3.mp4",
+    "poster": "/gallery-15.jpg"
   },
   {
     "id": "v4",
-    "title": "Corporate Live Orchestra Evening",
+    "title": "Behind the Scenes — Live Event",
     "type": "mp4",
-    "src": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "src": "/video-4.mp4",
     "poster": "/mrugesh_shukla_nadiad.jpg"
-  },
-  {
-    "id": "v5",
-    "title": "Reception Night — Modern & Folk Fusion",
-    "type": "mp4",
-    "src": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
-    "poster": "https://images.unsplash.com/photo-1585371843734-1800eada9acc?auto=format&fit=crop&w=1200&q=80"
-  },
-  {
-    "id": "v6",
-    "title": "Live Percussion Showcase",
-    "type": "mp4",
-    "src": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "poster": "https://images.unsplash.com/photo-1769947059310-bca7fa241a49?auto=format&fit=crop&w=1200&q=80"
   }
 ]

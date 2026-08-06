@@ -1,4 +1,5 @@
 import siteConfig from "@/data/siteConfig.json";
+import services from "@/data/services.json";
 
 const address = {
   "@type": "PostalAddress",
@@ -34,6 +35,18 @@ export const localBusinessJsonLd = {
   priceRange: "$$",
   address,
   areaServed: "Gujarat, India",
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Live Music & Event Services",
+    itemListElement: services.map((service) => ({
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: service.title,
+        description: service.description,
+      },
+    })),
+  },
 };
 
 export function buildFaqJsonLd(faqs: { question: string; answer: string }[]) {
