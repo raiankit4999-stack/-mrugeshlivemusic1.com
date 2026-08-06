@@ -35,8 +35,8 @@
     "image": "/instrument-guitar.jpg"
   },
   {
-    "id": "percussion",
-    "name": "Percussion",
+    "id": "drums",
+    "name": "Drums",
     "image": "/instrument-drums.jpg"
   },
   {

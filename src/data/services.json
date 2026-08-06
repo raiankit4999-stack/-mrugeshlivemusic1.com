@@ -6,12 +6,6 @@
     "icon": "Gem"
   },
   {
-    "id": "wedding",
-    "title": "Wedding Event",
-    "description": "Signature live music curated for your wedding day — from baraat to the last dance.",
-    "icon": "Heart"
-  },
-  {
     "id": "destination-wedding",
     "title": "Destination Weddings",
     "description": "Full live band and production travelling with you — anywhere in India or abroad.",
