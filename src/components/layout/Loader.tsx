@@ -8,7 +8,8 @@ import Mandala from "@/components/ui/Mandala";
 
 const BAR_COUNT = 24;
 const NOTE_COUNT = 6;
-const PETAL_COUNT = 14;
+const RING_COUNT = 5;
+const PARTICLE_COUNT = 18;
 
 export default function Loader() {
   const [visible, setVisible] = useState(true);
@@ -34,43 +35,46 @@ export default function Loader() {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.9, ease: "easeInOut" }}
         >
-          <motion.div
-            aria-hidden
-            className="pointer-events-none absolute inset-0"
-            style={{
-              background:
-                "radial-gradient(circle at 50% 40%, rgba(184,134,11,0.16), transparent 65%)",
-            }}
-            animate={{ opacity: [0.5, 1, 0.5], scale: [1, 1.15, 1] }}
-            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-          />
+          <div className="pointer-events-none absolute inset-0 flex items-center justify-center overflow-hidden">
+            {Array.from({ length: RING_COUNT }).map((_, i) => (
+              <motion.span
+                key={i}
+                className={`absolute rounded-full border ${
+                  i % 2 === 0 ? "border-gold/40" : "border-maroon/35"
+                }`}
+                style={{ width: 60, height: 60 }}
+                initial={{ scale: 1, opacity: 0.8 }}
+                animate={{ scale: 18, opacity: 0 }}
+                transition={{
+                  duration: 4.5,
+                  delay: i * 0.9,
+                  repeat: Infinity,
+                  ease: "easeOut",
+                }}
+              />
+            ))}
+          </div>
 
           <div className="pointer-events-none absolute inset-0 overflow-hidden">
-            {Array.from({ length: PETAL_COUNT }).map((_, i) => {
-              const left = (i * 137.5) % 100;
-              const size = 10 + (i % 4) * 5;
-              const duration = 6 + (i % 6);
-              const drift = i % 2 === 0 ? 40 : -40;
-              const isMaroon = i % 3 === 0;
+            {Array.from({ length: PARTICLE_COUNT }).map((_, i) => {
+              const left = (i * 61.8) % 100;
+              const top = (i * 37.2) % 100;
+              const size = 3 + (i % 3) * 2;
+              const isMaroon = i % 4 === 0;
               return (
                 <motion.span
                   key={i}
-                  className={`absolute rounded-[0%_100%_0%_100%] ${
-                    isMaroon ? "bg-maroon/45" : "bg-gold/55"
-                  }`}
-                  style={{ left: `${left}%`, width: size, height: size * 0.75 }}
-                  initial={{ y: "-10vh", x: 0, opacity: 0, rotate: 0 }}
+                  className={`absolute rounded-full ${isMaroon ? "bg-maroon/50" : "bg-gold/60"}`}
+                  style={{ left: `${left}%`, top: `${top}%`, width: size, height: size }}
                   animate={{
-                    y: "110vh",
-                    x: [0, drift, 0],
-                    opacity: [0, 1, 1, 0],
-                    rotate: 360,
+                    y: [0, -18, 0],
+                    opacity: [0.2, 0.9, 0.2],
                   }}
                   transition={{
-                    duration,
-                    delay: (i * 0.4) % 4,
+                    duration: 3 + (i % 4),
+                    delay: (i * 0.25) % 3,
                     repeat: Infinity,
-                    ease: "linear",
+                    ease: "easeInOut",
                   }}
                 />
               );
