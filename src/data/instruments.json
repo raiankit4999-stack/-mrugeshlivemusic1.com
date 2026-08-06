@@ -2,41 +2,41 @@
   {
     "id": "tabla",
     "name": "Tabla",
-    "image": "https://images.unsplash.com/photo-1527224857830-43a7acc85260?auto=format&fit=crop&w=800&q=80"
+    "image": "/gallery-1.jpg"
   },
   {
     "id": "keyboard",
     "name": "Keyboard",
-    "image": "https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=800&q=80"
+    "image": "/gallery-13.jpg"
   },
   {
     "id": "flute",
     "name": "Flute",
-    "image": "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?auto=format&fit=crop&w=800&q=80"
+    "image": "/gallery-17.jpg"
   },
   {
     "id": "harmonium",
     "name": "Harmonium",
-    "image": "https://images.unsplash.com/photo-1550985616-10810253b84d?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1643287928605-b8e1190615fa?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "octapad",
     "name": "Octapad",
-    "image": "https://images.unsplash.com/photo-1509824227185-9c5a01ceba0d?auto=format&fit=crop&w=800&q=80"
+    "image": "/gallery-16.jpg"
   },
   {
     "id": "violin",
     "name": "Violin",
-    "image": "https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1677254112848-af772a6661c5?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "guitar",
     "name": "Guitar",
-    "image": "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1608928328109-2532137a5369?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "percussion",
     "name": "Percussion",
-    "image": "https://images.unsplash.com/photo-1478147427282-58a87a120781?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1769947059310-bca7fa241a49?auto=format&fit=crop&w=800&q=80"
   }
 ]

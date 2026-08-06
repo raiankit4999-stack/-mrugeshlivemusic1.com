@@ -1,12 +1,22 @@
 [
   {
+    "src": "/mrugesh-with-zakir.jpg",
+    "alt": "Mrugesh Shukla with tabla legend Ustad Zakir Hussain",
+    "objectPosition": "68% 25%"
+  },
+  {
     "src": "/hero-1.jpg",
     "alt": "Mrugesh Shukla performing live on the octapad at a night event",
     "objectPosition": "62% 42%"
   },
   {
-    "src": "/mrugesh-with-zakir.jpg",
-    "alt": "Mrugesh Shukla with tabla legend Ustad Zakir Hussain",
-    "objectPosition": "68% 25%"
+    "src": "/gallery-4.jpg",
+    "alt": "Mrugesh Shukla backstage with fellow musicians at a concert",
+    "objectPosition": "44% 35%"
+  },
+  {
+    "src": "/gallery-2.jpg",
+    "alt": "Mrugesh Shukla at a televised music show appearance",
+    "objectPosition": "35% 40%"
   }
 ]
