@@ -8,7 +8,12 @@ export function setLenisInstance(lenis: Lenis | null) {
 
 export function scrollToSection(id: string) {
   const target = document.getElementById(id);
-  if (!target) return;
+
+  if (!target) {
+    // Section isn't on this page (e.g. viewing a blog post) — navigate home first.
+    window.location.href = `/#${id}`;
+    return;
+  }
 
   if (instance) {
     instance.scrollTo(target, { offset: 0 });

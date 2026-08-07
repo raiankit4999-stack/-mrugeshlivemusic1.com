@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Menu } from "lucide-react";
 import {
@@ -107,6 +108,15 @@ export default function Navbar() {
               )}
             </button>
           ))}
+          <Link
+            href="/blog"
+            className={cn(
+              "text-sm tracking-wide uppercase transition-colors",
+              scrolled ? "text-stone hover:text-gold" : "text-white/85 hover:text-[#f0d98c]"
+            )}
+          >
+            Blog
+          </Link>
         </nav>
 
         <button
@@ -151,6 +161,13 @@ export default function Navbar() {
                   {item.label}
                 </button>
               ))}
+              <Link
+                href="/blog"
+                onClick={() => setOpen(false)}
+                className="text-left text-lg uppercase tracking-wide text-stone hover:text-gold transition-colors"
+              >
+                Blog
+              </Link>
             </nav>
           </SheetContent>
         </Sheet>

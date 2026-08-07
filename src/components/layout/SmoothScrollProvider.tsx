@@ -30,6 +30,14 @@ export default function SmoothScrollProvider({ children }: { children: ReactNode
     });
     gsap.ticker.lagSmoothing(0);
 
+    if (window.location.hash) {
+      const id = window.location.hash.slice(1);
+      window.setTimeout(() => {
+        const target = document.getElementById(id);
+        if (target) lenis.scrollTo(target, { offset: 0, immediate: true });
+      }, 300);
+    }
+
     return () => {
       lenis.destroy();
       gsap.ticker.remove((time) => lenis.raf(time * 1000));

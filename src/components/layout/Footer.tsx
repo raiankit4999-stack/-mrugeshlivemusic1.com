@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import siteConfig from "@/data/siteConfig.json";
 import { scrollToSection } from "@/lib/lenis";
 
@@ -77,6 +78,11 @@ export default function Footer() {
                 </a>
               </li>
             ))}
+            <li>
+              <Link href="/blog" className="text-sm text-stone hover:text-gold transition-colors">
+                Blog
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -133,8 +139,19 @@ export default function Footer() {
       </div>
 
       <div className="divider-gold" />
-      <div className="mx-auto max-w-7xl px-6 lg:px-10 py-6 text-center text-xs text-stone tracking-wide">
-        © {year} Mrugesh Beats. All rights reserved.
+      <div className="mx-auto max-w-7xl px-6 lg:px-10 py-6 text-center text-xs text-stone tracking-wide space-y-1.5">
+        <p>© {year} Mrugesh Beats. All rights reserved.</p>
+        <p>
+          Developed and Managed By:{" "}
+          <a
+            href="https://www.rivavya.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gold hover:text-gold-soft transition-colors"
+          >
+            Rivavya Create and Trade LLP
+          </a>
+        </p>
       </div>
     </footer>
   );
