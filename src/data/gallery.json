@@ -103,5 +103,12 @@
     "alt": "Crowd cheering under dramatic stage lighting at a large celebrity event",
     "category": "Celebrity Events",
     "orientation": "landscape"
+  },
+  {
+    "id": "g16",
+    "src": "/mrugesh-guitar-live-performance.jpg",
+    "alt": "Mrugesh Shukla playing electric guitar on stage during a live performance",
+    "category": "Live Instrumental",
+    "orientation": "portrait"
   }
 ]
