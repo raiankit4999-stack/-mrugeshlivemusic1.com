@@ -105,9 +105,11 @@ export default function About() {
             custom={3}
             className="mt-4 text-stone leading-relaxed"
           >
-            As band leader, he brings that same discipline and musicality to every wedding, Garba
-            night, and Bhakti Sandhya performance — blending tradition with a modern,
-            celebrity-grade stage presence that keeps thousands of guests on their feet.
+            As band leader, he brings that same discipline and musicality to every Ring Ceremony,
+            wedding, Destination Wedding, Garba night, Reception, Vedic Event, Celebrity Event,
+            Birthday Celebration, Mehndi, Haldi, Bhakti Sangeet, Sangeet Sandhya, and Corporate
+            Event — blending tradition with a modern, celebrity-grade stage presence that keeps
+            thousands of guests on their feet.
           </motion.p>
           <motion.p
             variants={blurIn}

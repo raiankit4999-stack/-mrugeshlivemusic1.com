@@ -14,25 +14,25 @@
   {
     "id": "garba",
     "title": "Garba Nights",
-    "description": "High-energy traditional and modern Garba sets that keep the whole community dancing.",
+    "description": "High-energy folk and cultural Garba sets, blending traditional and modern beats that keep the whole community dancing.",
     "icon": "Music"
   },
   {
     "id": "reception",
     "title": "Reception",
-    "description": "Elegant live entertainment blending Bollywood, folk, and international favourites.",
+    "description": "Elegant live entertainment blending Bollywood and modern music for an unforgettable reception night.",
     "icon": "PartyPopper"
   },
   {
     "id": "live-instrumental",
     "title": "Live Instrumental",
-    "description": "Tabla, keyboard, flute, violin and more — a full live orchestra experience.",
+    "description": "Saxophone, guitar, drums, percussion, sitar and more — a full live orchestra experience.",
     "icon": "Guitar"
   },
   {
     "id": "vedic-event",
     "title": "Vedic Event",
-    "description": "Authentic live accompaniment for Vedic rituals, havan, and traditional ceremonies.",
+    "description": "Performing spiritual mantras with Brahmin shlokas, honouring traditional culture for authentic Vedic ceremonies.",
     "icon": "BookOpen"
   },
   {

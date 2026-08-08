@@ -8,20 +8,41 @@
   },
   {
     "id": "v2",
-    "title": "Garba Night — Live Set",
+    "title": "Garba Nights — Live Set",
     "type": "mp4",
-    "src": "/video-2.mp4",
+    "src": "/video-garba-nights.mp4",
     "poster": "/gallery-3.jpg"
   },
   {
     "id": "v3",
-    "title": "Live Instrumental Showcase",
+    "title": "Concert",
     "type": "mp4",
-    "src": "/video-instrumental.mp4",
-    "poster": "/instrument-sitar.jpg"
+    "src": "/video-concert.mp4",
+    "poster": "/gallery-4.jpg"
   },
   {
     "id": "v4",
+    "title": "Anchoring",
+    "type": "mp4",
+    "src": "/video-anchoring.mp4",
+    "poster": "/gallery-2.jpg"
+  },
+  {
+    "id": "v5",
+    "title": "Vedic Event",
+    "type": "mp4",
+    "src": "/video-vedic-event.mp4",
+    "poster": "/gallery-14.jpg"
+  },
+  {
+    "id": "v6",
+    "title": "Sound Check",
+    "type": "mp4",
+    "src": "/video-sound-check.mp4",
+    "poster": "/gallery-10.jpg"
+  },
+  {
+    "id": "v7",
     "title": "Behind the Scenes — Live Event",
     "type": "mp4",
     "src": "/video-4.mp4",

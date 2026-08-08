@@ -15,114 +15,93 @@
   },
   {
     "id": "g3",
-    "src": "/gallery-3.jpg",
-    "alt": "Massive crowd dancing at a Garba Navratri celebration",
-    "category": "Garba Nights",
-    "orientation": "landscape"
-  },
-  {
-    "id": "g4",
-    "src": "/gallery-5.jpg",
-    "alt": "Garba night crowd dancing under festive lighting",
-    "category": "Garba Nights",
-    "orientation": "landscape"
-  },
-  {
-    "id": "g5",
-    "src": "https://images.unsplash.com/photo-1587271636175-90d58cdad458?auto=format&fit=crop&w=1200&q=80",
-    "alt": "Indian wedding mandap ceremony under a floral canopy",
-    "category": "Wedding Events",
-    "orientation": "portrait"
-  },
-  {
-    "id": "g6",
-    "src": "https://images.unsplash.com/photo-1741201864879-c5e7f81c98b0?auto=format&fit=crop&w=1200&q=80",
-    "alt": "Groom placing a garland on the bride during an Indian wedding ceremony",
-    "category": "Wedding Events",
-    "orientation": "landscape"
-  },
-  {
-    "id": "g7",
-    "src": "https://images.unsplash.com/photo-1610173827002-62c0f1f05d04?auto=format&fit=crop&w=1200&q=80",
-    "alt": "Bride and groom celebrating with family in traditional Indian wedding attire",
-    "category": "Wedding Events",
-    "orientation": "portrait"
-  },
-  {
-    "id": "g8",
     "src": "/gujarati-wedding-varmala-nadiad-gujarat.jpg",
     "alt": "Bride and groom exchanging garlands at a Gujarati wedding — live music by Mrugesh Beats Music Academy, wedding band leader and musician serving Nadiad, Anand, Vadodara, Surat and Ahmedabad",
     "category": "Wedding Events",
     "orientation": "landscape"
   },
   {
-    "id": "g9",
+    "id": "g4",
     "src": "/gallery-1.jpg",
     "alt": "Mrugesh Shukla playing tabla",
     "category": "Live Instrumental",
     "orientation": "portrait"
   },
   {
-    "id": "g10",
-    "src": "https://images.unsplash.com/photo-1728221052130-810b42a6130e?auto=format&fit=crop&w=1200&q=80",
-    "alt": "Joyful groom celebrating at an Indian wedding procession",
-    "category": "Wedding Events",
-    "orientation": "portrait"
-  },
-  {
-    "id": "g11",
+    "id": "g5",
     "src": "/gallery-6.jpg",
     "alt": "Mrugesh Shukla at a large-scale Garba Navratri event",
     "category": "Garba Nights",
     "orientation": "landscape"
   },
   {
-    "id": "g12",
+    "id": "g6",
     "src": "/gallery-2.jpg",
     "alt": "Mrugesh Shukla at a televised music show appearance",
     "category": "Corporate Events",
     "orientation": "landscape"
   },
   {
-    "id": "g13",
+    "id": "g7",
     "src": "/gallery-10.jpg",
     "alt": "Mrugesh Shukla with guest performers backstage at a live event",
     "category": "Corporate Events",
     "orientation": "portrait"
   },
   {
-    "id": "g14",
+    "id": "g8",
     "src": "/gallery-4.jpg",
     "alt": "Mrugesh Shukla backstage with fellow musicians at a concert",
     "category": "Live Concerts",
     "orientation": "landscape"
   },
   {
-    "id": "g15",
+    "id": "g9",
     "src": "/gallery-11.jpg",
     "alt": "Mrugesh Shukla with a guest artist at a New Year live event",
     "category": "Corporate Events",
     "orientation": "portrait"
   },
   {
-    "id": "g16",
+    "id": "g10",
     "src": "/mrugesh_shukla_nadiad.jpg",
     "alt": "Mrugesh Shukla on stage with fellow performers at a live event",
     "category": "Live Concerts",
     "orientation": "portrait"
   },
   {
-    "id": "g17",
+    "id": "g11",
     "src": "/gallery-14.jpg",
     "alt": "Mrugesh Shukla performing a devotional Bhakti Sangeet set",
-    "category": "Live Concerts",
+    "category": "Bhakti Sangeet",
     "orientation": "portrait"
   },
   {
-    "id": "g18",
+    "id": "g12",
     "src": "/gallery-17.jpg",
     "alt": "Flute player performing live on an outdoor stage",
     "category": "Live Instrumental",
     "orientation": "portrait"
+  },
+  {
+    "id": "g13",
+    "src": "https://images.unsplash.com/photo-1543359905-c5d15c3a23dd?auto=format&fit=crop&w=1200&q=80",
+    "alt": "Decorated beach mandap set up for a destination wedding ceremony",
+    "category": "Destination Wedding",
+    "orientation": "portrait"
+  },
+  {
+    "id": "g14",
+    "src": "https://images.unsplash.com/photo-1630764883473-e8c2056f0589?auto=format&fit=crop&w=1200&q=80",
+    "alt": "Havan fire ritual performed by a pandit during a traditional Vedic ceremony",
+    "category": "Vedic Event",
+    "orientation": "landscape"
+  },
+  {
+    "id": "g15",
+    "src": "https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=1200&q=80",
+    "alt": "Crowd cheering under dramatic stage lighting at a large celebrity event",
+    "category": "Celebrity Events",
+    "orientation": "landscape"
   }
 ]
