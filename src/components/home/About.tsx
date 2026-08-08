@@ -109,6 +109,18 @@ export default function About() {
             night, and Bhakti Sandhya performance — blending tradition with a modern,
             celebrity-grade stage presence that keeps thousands of guests on their feet.
           </motion.p>
+          <motion.p
+            variants={blurIn}
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewportOnce}
+            custom={3.5}
+            className="mt-4 text-stone leading-relaxed"
+          >
+            The Mrugesh Beats live band spans Tabla, Sitar, Keyboard, Harmonium, Octapad, Flute,
+            Guitar, Dhol, and Drums — a full instrumental range that lets every performance move
+            fluidly between classical, folk, and contemporary sound.
+          </motion.p>
 
           <motion.div
             variants={fadeUp}

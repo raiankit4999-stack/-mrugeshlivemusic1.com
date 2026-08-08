@@ -1,6 +1,5 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown, Play } from "lucide-react";
@@ -8,8 +7,6 @@ import gsap from "gsap";
 import MagneticButton from "@/components/ui/MagneticButton";
 import HeroBackground from "@/components/home/HeroBackground";
 import { scrollToSection } from "@/lib/lenis";
-
-const Scene = dynamic(() => import("@/components/3d/Scene"), { ssr: false });
 
 const TITLE = "MRUGESH SHUKLA";
 
@@ -47,10 +44,6 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/55 to-[#170e08]" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#170e08] via-transparent to-black/40" />
         <div className="absolute inset-0 [background:radial-gradient(circle_at_50%_35%,rgba(212,175,55,0.22),transparent_60%)]" />
-      </div>
-
-      <div className="absolute inset-0">
-        <Scene />
       </div>
 
       <div className="relative z-10 flex flex-col items-center px-6 text-center">
