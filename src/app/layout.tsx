@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Poppins, Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { siteMetadata } from "@/lib/seo";
 import { personJsonLd, localBusinessJsonLd } from "@/lib/structuredData";
@@ -42,6 +43,21 @@ export default function RootLayout({
       lang="en"
       className={`${cormorant.variable} ${poppins.variable} ${inter.variable} h-full antialiased`}
     >
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-9DLW0ZK5EB"
+          strategy="afterInteractive"
+        />
+        <Script id="google-tag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-9DLW0ZK5EB');
+          `}
+        </Script>
+      </head>
       <body className="min-h-full flex flex-col bg-background text-foreground overflow-x-hidden">
         <script
           type="application/ld+json"
