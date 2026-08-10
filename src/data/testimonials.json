@@ -1,50 +1,30 @@
 [
   {
     "id": "t1",
-    "name": "Kavita Patel",
-    "role": "Bride, Wedding Sangeet — Anand",
-    "avatar": "https://images.unsplash.com/photo-1617297873650-aef8f4e00b9b?auto=format&fit=crop&w=200&q=80",
+    "name": "Kaval Rao",
+    "role": "Google Review",
     "rating": 5,
-    "quote": "Mrugesh ji turned our sangeet into a night nobody has stopped talking about. The energy, the song selection, the live instruments — everything was flawless."
+    "quote": "Excellent music leader. Very patient, innovative, and encouraging to the crowd for enjoying the event. Highly recommended for anyone looking for a live music entertainer."
   },
   {
     "id": "t2",
-    "name": "Ravi Desai",
-    "role": "Event Director, Corporate Gala — Ahmedabad",
-    "avatar": "https://images.unsplash.com/photo-1649433658557-54cf58577c68?auto=format&fit=crop&w=200&q=80",
+    "name": "Binal Vimal Patel",
+    "role": "Google Review — Music Academy",
     "rating": 5,
-    "quote": "We book Mrugesh Beats for every major corporate evening now. Professional team, premium sound, and a live orchestra that never misses a beat."
+    "quote": "Excellent music teacher! Very patient, knowledgeable, and encouraging. The online lessons are easy to understand and enjoyable. Highly recommended for anyone looking to learn music from home."
   },
   {
     "id": "t3",
-    "name": "Priya Shah",
-    "role": "Garba Committee Head — Nadiad",
-    "avatar": "https://images.unsplash.com/photo-1463335361701-e90f4c5045d0?auto=format&fit=crop&w=200&q=80",
+    "name": "Prem Patel",
+    "role": "Google Review — Garba Night",
     "rating": 5,
-    "quote": "Nine nights, nine sold-out crowds. His Garba sets blend traditional folk with modern beats perfectly — the entire township looks forward to it every year."
+    "quote": "Today was fun, man… Garba is like Mrugesh Beats."
   },
   {
     "id": "t4",
-    "name": "Jignesh Trivedi",
-    "role": "Groom, Wedding Reception — Vadodara",
-    "avatar": "https://images.unsplash.com/photo-1670110531916-41045e83cb0a?auto=format&fit=crop&w=200&q=80",
+    "name": "Pandit Ajit",
+    "role": "Google Review — Wedding & Vedic Ceremony",
     "rating": 5,
-    "quote": "From the first song to the last, the entire reception felt like a concert. Guests are still asking us who the singer was — an absolute celebrity-level performance."
-  },
-  {
-    "id": "t5",
-    "name": "Meera Joshi",
-    "role": "Organizer, Bhakti Sandhya — Kheda",
-    "avatar": "https://images.unsplash.com/photo-1631606929991-200006582c09?auto=format&fit=crop&w=200&q=80",
-    "rating": 5,
-    "quote": "The devotional evening he curated brought the entire community together in a way I've never seen. His voice carries so much emotion and devotion."
-  },
-  {
-    "id": "t6",
-    "name": "Sanjay Rana",
-    "role": "Father of the Bride — Surat",
-    "avatar": "https://images.unsplash.com/photo-1667382136327-5f78dc5cf835?auto=format&fit=crop&w=200&q=80",
-    "rating": 5,
-    "quote": "Booking Mrugesh Beats was the best decision for my daughter's wedding. Punctual, premium sound setup, and a playlist customised exactly to our family's taste."
+    "quote": "My best experience on my family's wedding was Garba and Vedic wedding songs. From my experience, I am 100% sure that Mrugesh Beats is the best for our area to make the event memorable."
   }
 ]

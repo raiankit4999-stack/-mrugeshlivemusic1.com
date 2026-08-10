@@ -1,7 +1,6 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, Quote, Star } from "lucide-react";
 import testimonials from "@/data/testimonials.json";
@@ -68,8 +67,13 @@ export default function Testimonials() {
               </div>
 
               <div className="mt-6 flex items-center justify-center gap-4">
-                <div className="relative h-12 w-12 overflow-hidden rounded-full border border-gold/40">
-                  <Image src={testimonial.avatar} alt={testimonial.name} fill className="object-cover" sizes="48px" />
+                <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gold/40 bg-gold/10 font-display text-sm text-gold">
+                  {testimonial.name
+                    .split(" ")
+                    .map((part) => part[0])
+                    .slice(0, 2)
+                    .join("")
+                    .toUpperCase()}
                 </div>
                 <div className="text-left">
                   <p className="font-medium text-ink">{testimonial.name}</p>
