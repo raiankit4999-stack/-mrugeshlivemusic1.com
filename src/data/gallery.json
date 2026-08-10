@@ -71,8 +71,8 @@
   },
   {
     "id": "g11",
-    "src": "/gallery-14.jpg",
-    "alt": "Mrugesh Shukla performing a devotional Bhakti Sangeet set",
+    "src": "/gallery-15.jpg",
+    "alt": "Mrugesh Shukla performing a devotional Bhakti Sangeet set on flute",
     "category": "Bhakti Sangeet",
     "orientation": "portrait"
   },
@@ -109,6 +109,13 @@
     "src": "/mrugesh-guitar-live-performance.jpg",
     "alt": "Mrugesh Shukla playing electric guitar on stage during a live performance",
     "category": "Live Instrumental",
+    "orientation": "portrait"
+  },
+  {
+    "id": "g17",
+    "src": "/gallery-14.jpg",
+    "alt": "Mrugesh Shukla performing on octapad at a wedding stage",
+    "category": "Live Concerts",
     "orientation": "portrait"
   }
 ]
