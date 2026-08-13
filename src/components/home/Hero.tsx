@@ -37,7 +37,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-[100svh] items-center justify-center overflow-hidden bg-[#170e08] noise-overlay"
+      className="relative flex min-h-[100svh] items-end justify-center overflow-hidden bg-[#170e08] noise-overlay"
     >
       <div className="absolute inset-0">
         <HeroBackground />
@@ -46,7 +46,7 @@ export default function Hero() {
         <div className="absolute inset-0 [background:radial-gradient(circle_at_50%_35%,rgba(212,175,55,0.22),transparent_60%)]" />
       </div>
 
-      <div className="relative z-10 flex flex-col items-center px-6 text-center">
+      <div className="relative z-10 flex flex-col items-center px-6 pb-20 sm:pb-24 text-center">
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
