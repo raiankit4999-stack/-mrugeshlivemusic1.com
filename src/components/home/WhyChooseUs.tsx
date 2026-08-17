@@ -12,7 +12,7 @@ export default function WhyChooseUs() {
     <section className="relative bg-background py-28 lg:py-36">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <SectionHeading
-          eyebrow="Why Mrugesh Beats"
+          eyebrow="Why Crystal Beats"
           title="Excellence in Every Detail"
           description="Every performance is backed by a team and a sound experience designed for celebrity-grade events."
         />

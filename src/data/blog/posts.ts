@@ -51,7 +51,7 @@ export const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Mrugesh Beats has led Garba nights across Nadiad, Anand, and Vadodara for well over a decade, blending traditional folk repertoire with modern fusion for crowds ranging from a few hundred to several thousand. If you're organising a Navratri event and want a live band that reads the floor rather than just playing a set list, get in touch through the booking form on this site."
+        text: "Crystal Beats has led Garba nights across Nadiad, Anand, and Vadodara for well over a decade, blending traditional folk repertoire with modern fusion for crowds ranging from a few hundred to several thousand. If you're organising a Navratri event and want a live band that reads the floor rather than just playing a set list, get in touch through the booking form on this site."
       }
     ]
   },
@@ -106,7 +106,7 @@ export const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Mrugesh Beats has performed at weddings across Nadiad, Anand, Vadodara, Surat, and Ahmedabad — from intimate varmala ceremonies to full-scale receptions with a live orchestra. If you're planning a wedding and want music that adapts function to function, reach out through the contact form."
+        text: "Crystal Beats has performed at weddings across Nadiad, Anand, Vadodara, Surat, and Ahmedabad — from intimate varmala ceremonies to full-scale receptions with a live orchestra. If you're planning a wedding and want music that adapts function to function, reach out through the contact form."
       }
     ]
   },
@@ -150,7 +150,7 @@ export const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Mrugesh Beats leads devotional evenings across Gujarat, from intimate home gatherings to large temple and trust-organised Bhakti Sangeet programs. If you're planning one, the booking form on this site is the fastest way to check availability."
+        text: "Crystal Beats leads devotional evenings across Gujarat, from intimate home gatherings to large temple and trust-organised Bhakti Sangeet programs. If you're planning one, the booking form on this site is the fastest way to check availability."
       }
     ]
   },
@@ -190,7 +190,7 @@ export const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Mrugesh Beats books and delivers both formats regularly — choreography-ready wedding Sangeet sets and standalone Sangeet Sandhya evenings for community and corporate audiences. When you fill out the booking form, selecting the correct event type helps set the right expectations from the first conversation."
+        text: "Crystal Beats books and delivers both formats regularly — choreography-ready wedding Sangeet sets and standalone Sangeet Sandhya evenings for community and corporate audiences. When you fill out the booking form, selecting the correct event type helps set the right expectations from the first conversation."
       }
     ]
   },
@@ -235,7 +235,7 @@ export const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Mrugesh Beats provides full live orchestra setups for wedding receptions across Gujarat — tabla, keyboard, guitar, and a live vocal lead, customised to your family's musical taste. Get in touch through the booking form to check availability for your date."
+        text: "Crystal Beats provides full live orchestra setups for wedding receptions across Gujarat — tabla, keyboard, guitar, and a live vocal lead, customised to your family's musical taste. Get in touch through the booking form to check availability for your date."
       }
     ]
   },
@@ -284,7 +284,7 @@ export const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Mrugesh Beats Music Academy in Nadiad offers one-on-one and group Tabla classes for beginners through advanced students, alongside Keyboard, Octapad, and Congo. If you're ready to start, or want to sit in on a trial session, reach out through the contact form on this site."
+        text: "Crystal Beats Music Academy in Nadiad offers one-on-one and group Tabla classes for beginners through advanced students, alongside Keyboard, Octapad, and Congo. If you're ready to start, or want to sit in on a trial session, reach out through the contact form on this site."
       }
     ]
   },
@@ -324,7 +324,7 @@ export const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Mrugesh Beats brings a live folk-forward setup — dhol, dholak, keyboard, and vocals — to Haldi and Mehndi functions across Gujarat, with playlists customised to your family's specific taste. Reach out through the booking form to discuss your date."
+        text: "Crystal Beats brings a live folk-forward setup — dhol, dholak, keyboard, and vocals — to Haldi and Mehndi functions across Gujarat, with playlists customised to your family's specific taste. Reach out through the booking form to discuss your date."
       }
     ]
   },
@@ -368,7 +368,7 @@ export const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Mrugesh Beats has performed at corporate galas, launches, and offsite celebrations across Ahmedabad, Vadodara, and Surat, with a full live orchestra and premium sound production. If you're planning a corporate event, the contact form on this site is the quickest way to check availability."
+        text: "Crystal Beats has performed at corporate galas, launches, and offsite celebrations across Ahmedabad, Vadodara, and Surat, with a full live orchestra and premium sound production. If you're planning a corporate event, the contact form on this site is the quickest way to check availability."
       }
     ]
   },
@@ -404,7 +404,7 @@ export const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Mrugesh Beats' live orchestra includes sitar, harmonium, tabla, and a full modern instrumental setup, allowing performances to move fluidly between classical, devotional, and contemporary repertoire within a single event. To learn more or book a performance, use the contact form on this site."
+        text: "Crystal Beats' live orchestra includes sitar, harmonium, tabla, and a full modern instrumental setup, allowing performances to move fluidly between classical, devotional, and contemporary repertoire within a single event. To learn more or book a performance, use the contact form on this site."
       }
     ]
   },
@@ -454,7 +454,7 @@ export const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Mrugesh Beats travels for destination weddings across India, bringing a full live band and production setup to resorts and venues outside Gujarat. If you're planning a destination wedding, use the booking form on this site to start the conversation early — logistics planning benefits from lead time."
+        text: "Crystal Beats travels for destination weddings across India, bringing a full live band and production setup to resorts and venues outside Gujarat. If you're planning a destination wedding, use the booking form on this site to start the conversation early — logistics planning benefits from lead time."
       }
     ]
   }

@@ -12,25 +12,36 @@ const keywords = [
   "Live Band Gujarat",
   "Wedding Music Gujarat",
   "Celebrity Singer Gujarat",
+  "Event Organiser Gujarat",
+  "Ring Ceremony Music Gujarat",
+  "Destination Wedding Band Gujarat",
+  "Vedic Event Music Gujarat",
+  "Sangeet Sandhya Gujarat",
+  "Corporate Event Live Band Gujarat",
+  "Live Band Ahmedabad",
+  "Live Band Surat",
+  "Live Band Vadodara",
+  "Live Band Rajkot",
+  "Live Band Gandhinagar",
   "Mrugesh Shukla",
-  "Mrugesh Beats",
+  "Crystal Beats",
 ];
 
-const title = "Mrugesh Shukla | Mrugesh Beats — Live Musician in Nadiad, Gujarat";
+const title = "Crystal Beats | Events by Mrugesh Shukla — Live Musician, Pan-Gujarat Bookings";
 const description =
-  "Mrugesh Shukla (Mrugesh Beats) is a professional live musician based in Nadiad, Gujarat. Book live music for weddings, Garba nights, Bhakti Sandhya, and corporate events across India.";
+  "Crystal Beats — Events by Mrugesh Shukla, a professional live music and event entertainment brand based in Nadiad, Gujarat. Now taking bookings from across Gujarat — Ahmedabad, Surat, Vadodara, Rajkot, Gandhinagar and beyond — for weddings, Garba nights, Vedic events, Bhakti Sangeet, and corporate events.";
 
 export const siteMetadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
   title: {
     default: title,
-    template: "%s | Mrugesh Beats",
+    template: "%s | Crystal Beats",
   },
   description,
   keywords,
   authors: [{ name: "Mrugesh Shukla" }],
   creator: "Mrugesh Shukla",
-  applicationName: "Mrugesh Beats",
+  applicationName: "Crystal Beats",
   category: "Music",
   alternates: {
     canonical: "/",
@@ -39,7 +50,7 @@ export const siteMetadata: Metadata = {
     type: "website",
     locale: "en_IN",
     url: siteConfig.siteUrl,
-    siteName: "Mrugesh Beats",
+    siteName: "Crystal Beats",
     title,
     description,
   },

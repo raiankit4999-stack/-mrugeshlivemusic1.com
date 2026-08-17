@@ -50,14 +50,14 @@ export default function Footer() {
         <div>
           <Image
             src="/logo.png"
-            alt="Mrugesh Beats"
+            alt="Crystal Beats"
             width={405}
             height={458}
             className="h-16 w-auto mb-3"
           />
           <p className="text-sm text-stone leading-relaxed">
-            Professional Live Musician based in Nadiad, Gujarat — bringing premium live
-            entertainment to weddings, Garba nights, and celebrations across India.
+            Professional live music and event entertainment based in Nadiad, Gujarat — now
+            booking weddings, Garba nights, and celebrations across every city in Gujarat and India.
           </p>
         </div>
 
@@ -140,7 +140,7 @@ export default function Footer() {
 
       <div className="divider-gold" />
       <div className="mx-auto max-w-7xl px-6 lg:px-10 py-6 text-center text-xs text-stone tracking-wide space-y-1.5">
-        <p>© {year} Mrugesh Beats. All rights reserved.</p>
+        <p>© {year} Crystal Beats. All rights reserved.</p>
         <p>
           Developed and Managed By:{" "}
           <a

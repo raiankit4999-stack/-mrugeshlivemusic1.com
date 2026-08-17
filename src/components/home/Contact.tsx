@@ -71,7 +71,7 @@ export default function Contact() {
             <div className="overflow-hidden rounded-3xl border border-gold/20 shadow-luxury">
               <iframe
                 src={siteConfig.mapEmbedUrl}
-                title="Mrugesh Beats location on Google Maps"
+                title="Crystal Beats location on Google Maps"
                 className="h-72 w-full grayscale-[0.3] contrast-[1.05]"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

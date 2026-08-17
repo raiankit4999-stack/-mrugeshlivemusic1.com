@@ -75,10 +75,10 @@ export default function Navbar() {
       )}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-10">
-        <button onClick={() => scrollTo("home")} aria-label="Mrugesh Beats — Home">
+        <button onClick={() => scrollTo("home")} aria-label="Crystal Beats — Home">
           <Image
             src="/logo.png"
-            alt="Mrugesh Beats"
+            alt="Crystal Beats"
             width={405}
             height={458}
             priority
@@ -142,7 +142,7 @@ export default function Navbar() {
             <SheetTitle className="px-4 pt-6">
               <Image
                 src="/logo.png"
-                alt="Mrugesh Beats"
+                alt="Crystal Beats"
                 width={405}
                 height={458}
                 className="h-16 w-auto"

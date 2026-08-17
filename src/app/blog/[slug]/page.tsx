@@ -136,7 +136,7 @@ export default async function BlogPostPage({
         </div>
 
         <div className="mt-12 rounded-2xl glass p-6 text-sm text-stone">
-          Written by the Mrugesh Beats team, in partnership with{" "}
+          Written by the Crystal Beats team, in partnership with{" "}
           <a
             href="https://www.rivavya.com"
             target="_blank"
@@ -151,7 +151,7 @@ export default async function BlogPostPage({
         <div className="mt-10 rounded-2xl border border-gold/30 p-6 text-center">
           <p className="font-display text-2xl text-ink">Planning an event?</p>
           <p className="mt-2 text-sm text-stone">
-            Book Mrugesh Beats for your next wedding, Garba night, or celebration.
+            Book Crystal Beats for your next wedding, Garba night, or celebration.
           </p>
           <Link
             href="/#contact"

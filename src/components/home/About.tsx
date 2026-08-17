@@ -6,10 +6,10 @@ import { fadeUp, blurIn, viewportOnce } from "@/lib/motion";
 import Mandala from "@/components/ui/Mandala";
 
 const BADGES = [
-  "Band Leader — Mrugesh Beats",
+  "Band Leader — Crystal Beats",
   "Tabla Visharad (Distinction)",
   "Music Teacher",
-  "Founder, Mrugesh Beats Music Academy",
+  "Founder, Crystal Beats Music Academy",
 ];
 
 export default function About() {
@@ -91,10 +91,10 @@ export default function About() {
             custom={2}
             className="mt-6 text-stone leading-relaxed"
           >
-            Based in Nadiad, Gujarat, Mrugesh Shukla leads Mrugesh Beats — a live band built on
+            Based in Nadiad, Gujarat, Mrugesh Shukla leads Crystal Beats — a live band built on
             nearly two decades of stage and teaching experience since 2007. A Tabla Visharad
             graduate with distinction, he personally tutors students in Tabla, Octapad, Keyboard,
-            and Congo through one-on-one and group sessions at Mrugesh Beats Music Academy — an
+            and Congo through one-on-one and group sessions at Crystal Beats Music Academy — an
             examination centre recognised by the Gujarat state government.
           </motion.p>
           <motion.p
@@ -119,7 +119,7 @@ export default function About() {
             custom={3.5}
             className="mt-4 text-stone leading-relaxed"
           >
-            The Mrugesh Beats live band spans Tabla, Sitar, Keyboard, Harmonium, Octapad, Flute,
+            The Crystal Beats live band spans Tabla, Sitar, Keyboard, Harmonium, Octapad, Flute,
             Guitar, Dhol, and Drums — a full instrumental range that lets every performance move
             fluidly between classical, folk, and contemporary sound.
           </motion.p>

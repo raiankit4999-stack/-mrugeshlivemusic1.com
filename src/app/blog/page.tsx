@@ -7,14 +7,14 @@ import siteConfig from "@/data/siteConfig.json";
 export const metadata: Metadata = {
   title: "Blog — Live Music, Wedding & Event Planning Guides",
   description:
-    "Practical guides on Garba nights, wedding music, Bhakti Sangeet, tabla lessons, and live entertainment planning from Mrugesh Beats, Nadiad, Gujarat.",
+    "Practical guides on Garba nights, wedding music, Bhakti Sangeet, tabla lessons, and live entertainment planning from Crystal Beats, Nadiad, Gujarat.",
   alternates: {
     canonical: "/blog",
   },
   openGraph: {
-    title: "Blog — Live Music, Wedding & Event Planning Guides | Mrugesh Beats",
+    title: "Blog — Live Music, Wedding & Event Planning Guides | Crystal Beats",
     description:
-      "Practical guides on Garba nights, wedding music, Bhakti Sangeet, tabla lessons, and live entertainment planning from Mrugesh Beats, Nadiad, Gujarat.",
+      "Practical guides on Garba nights, wedding music, Bhakti Sangeet, tabla lessons, and live entertainment planning from Crystal Beats, Nadiad, Gujarat.",
     url: `${siteConfig.siteUrl}/blog`,
   },
 };
@@ -24,7 +24,7 @@ export default function BlogPage() {
     <section className="relative bg-background py-32 lg:py-40">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <SectionHeading
-          eyebrow="From Mrugesh Beats"
+          eyebrow="From Crystal Beats"
           title="Live Music & Event Planning Guides"
           description="Practical, experience-based guides on Garba, weddings, Bhakti Sangeet, and learning Indian instruments."
         />

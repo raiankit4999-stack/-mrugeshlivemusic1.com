@@ -52,7 +52,7 @@ export default function Gallery() {
         <SectionHeading
           eyebrow="Moments"
           title="Live in Frame"
-          description="A glimpse into the energy, colour, and celebration of every Mrugesh Beats performance."
+          description="A glimpse into the energy, colour, and celebration of every Crystal Beats performance."
         />
 
         <div className="mt-16 columns-1 gap-5 sm:columns-2 lg:columns-3 [&>*]:mb-5">

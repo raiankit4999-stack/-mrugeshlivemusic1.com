@@ -21,7 +21,7 @@ export default function FAQ() {
         <SectionHeading
           eyebrow="Questions"
           title="Frequently Asked Questions"
-          description="Everything you need to know before booking Mrugesh Beats for your event."
+          description="Everything you need to know before booking Crystal Beats for your event."
         />
 
         <Accordion className="mt-14" defaultValue={[faqs[0].id]}>

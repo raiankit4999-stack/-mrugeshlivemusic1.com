@@ -36,7 +36,7 @@ export default function Loader() {
           >
             <Image
               src="/logo.png"
-              alt="Mrugesh Beats"
+              alt="Crystal Beats"
               width={405}
               height={458}
               priority
