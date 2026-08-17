@@ -10,13 +10,17 @@ export default function SectionHeading({
   description,
   align = "center",
   className,
+  as = "h2",
 }: {
   eyebrow?: string;
   title: string;
   description?: string;
   align?: "center" | "left";
   className?: string;
+  as?: "h1" | "h2";
 }) {
+  const MotionHeading = as === "h1" ? motion.h1 : motion.h2;
+
   return (
     <div className={cn(align === "center" ? "text-center mx-auto" : "text-left", "max-w-2xl", className)}>
       {eyebrow && (
@@ -30,7 +34,7 @@ export default function SectionHeading({
           {eyebrow}
         </motion.p>
       )}
-      <motion.h2
+      <MotionHeading
         variants={blurIn}
         initial="hidden"
         whileInView="visible"
@@ -39,7 +43,7 @@ export default function SectionHeading({
         className="font-display text-4xl sm:text-5xl lg:text-6xl text-balance text-ink"
       >
         {title}
-      </motion.h2>
+      </MotionHeading>
       {description && (
         <motion.p
           variants={blurIn}

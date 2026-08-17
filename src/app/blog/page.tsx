@@ -24,6 +24,7 @@ export default function BlogPage() {
     <section className="relative bg-background py-32 lg:py-40">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <SectionHeading
+          as="h1"
           eyebrow="From Crystal Beats"
           title="Live Music & Event Planning Guides"
           description="Practical, experience-based guides on Garba, weddings, Bhakti Sangeet, and learning Indian instruments."

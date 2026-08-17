@@ -22,6 +22,10 @@ export default function Hero() {
         <div className="absolute inset-0 [background:radial-gradient(circle_at_50%_35%,rgba(212,175,55,0.22),transparent_60%)]" />
       </div>
 
+      <h1 className="sr-only">
+        Crystal Beats — Events by Mrugesh Shukla | Live Musician &amp; Live Band Bookings Across Gujarat
+      </h1>
+
       <motion.button
         onClick={() => scrollTo("about")}
         aria-label="Scroll down"

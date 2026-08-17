@@ -27,9 +27,9 @@ const keywords = [
   "Crystal Beats",
 ];
 
-const title = "Crystal Beats | Events by Mrugesh Shukla — Live Musician, Pan-Gujarat Bookings";
+const title = "Crystal Beats | Live Music Across Gujarat — Mrugesh Shukla";
 const description =
-  "Crystal Beats — Events by Mrugesh Shukla, a professional live music and event entertainment brand based in Nadiad, Gujarat. Now taking bookings from across Gujarat — Ahmedabad, Surat, Vadodara, Rajkot, Gandhinagar and beyond — for weddings, Garba nights, Vedic events, Bhakti Sangeet, and corporate events.";
+  "Crystal Beats (Events by Mrugesh Shukla) — live music for weddings, Garba nights & corporate events across Gujarat: Ahmedabad, Surat, Vadodara, Rajkot & more.";
 
 export const siteMetadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),

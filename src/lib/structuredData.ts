@@ -1,5 +1,6 @@
 import siteConfig from "@/data/siteConfig.json";
 import services from "@/data/services.json";
+import testimonials from "@/data/testimonials.json";
 
 const address = {
   "@type": "PostalAddress",
@@ -66,6 +67,17 @@ export const localBusinessJsonLd = {
       },
     })),
   },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5",
+    reviewCount: String(testimonials.length),
+  },
+  review: testimonials.map((t) => ({
+    "@type": "Review",
+    author: { "@type": "Person", name: t.name },
+    reviewRating: { "@type": "Rating", ratingValue: String(t.rating), bestRating: "5" },
+    reviewBody: t.quote,
+  })),
 };
 
 export function buildFaqJsonLd(faqs: { question: string; answer: string }[]) {
