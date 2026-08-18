@@ -15,6 +15,14 @@ function InstagramIcon() {
   );
 }
 
+function FacebookIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className="h-[18px] w-[18px]">
+      <path d="M13.5 21v-7.5h2.5l.4-3H13.5V8.4c0-.87.24-1.46 1.49-1.46H16.5V4.3c-.26-.03-1.15-.11-2.19-.11-2.17 0-3.66 1.32-3.66 3.75v2.09H8.15v3h2.5V21h2.85z" />
+    </svg>
+  );
+}
+
 function YoutubeIcon() {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" className="h-[18px] w-[18px]">
@@ -107,6 +115,15 @@ export default function Footer() {
               className="flex h-10 w-10 items-center justify-center rounded-full border border-gold/30 text-gold hover:bg-gold hover:text-ink transition-colors"
             >
               <InstagramIcon />
+            </a>
+            <a
+              href={siteConfig.social.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-gold/30 text-gold hover:bg-gold hover:text-ink transition-colors"
+            >
+              <FacebookIcon />
             </a>
             <a
               href={siteConfig.social.youtube}

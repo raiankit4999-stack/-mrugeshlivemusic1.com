@@ -31,7 +31,7 @@ The website includes a blog at /blog with practical guides on Garba planning, we
 
 - Website: https://www.mrugeshlivemusic1.com
 - Phone / WhatsApp: +91 98795 14686
-- Email: mrugeshlivemusic1@gmail.com
+- Email: beats.livemusic1@gmail.com
 - Booking form on the website redirects to WhatsApp with event details pre-filled.
 
 ## Location
