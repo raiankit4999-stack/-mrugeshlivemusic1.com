@@ -17,9 +17,8 @@ export default function Hero() {
     >
       <div className="absolute inset-0">
         <HeroBackground />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/55 to-[#170e08]" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#170e08] via-transparent to-black/40" />
-        <div className="absolute inset-0 [background:radial-gradient(circle_at_50%_35%,rgba(212,175,55,0.22),transparent_60%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/5 to-[#170e08]/85" />
+        <div className="absolute inset-0 [background:radial-gradient(circle_at_50%_35%,rgba(212,175,55,0.12),transparent_60%)]" />
       </div>
 
       <h1 className="sr-only">
