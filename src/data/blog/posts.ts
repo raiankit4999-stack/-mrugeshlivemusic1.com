@@ -53,6 +53,20 @@ export const posts: BlogPost[] = [
         type: "paragraph",
         text: "Crystal Beats has led Garba nights across Nadiad, Anand, and Vadodara for well over a decade, blending traditional folk repertoire with modern fusion for crowds ranging from a few hundred to several thousand. If you're organising a Navratri event and want a live band that reads the floor rather than just playing a set list, get in touch through the booking form on this site."
       }
+    ],
+    faqs: [
+      {
+        question: "Should I hire a live band or just a DJ for Garba night?",
+        answer: "A live band, ideally — it can respond to the crowd in real time, stretching or cutting songs based on floor energy, which a recorded playlist can't do."
+      },
+      {
+        question: "How should a Garba night be sequenced?",
+        answer: "In three phases: a 45–60 minute warm-up with traditional Garba and Dandiya Raas, a high-energy peak section of fusion sets, and a 30-minute wind-down blending crowd favourites with a closing Aarti."
+      },
+      {
+        question: "What instruments does a traditional Garba band typically include?",
+        answer: "Dhol or dholak for rhythm, tabla and octapad for texture, keyboard for melody, and often harmonium for devotional interludes."
+      }
     ]
   },
   {
@@ -108,6 +122,20 @@ export const posts: BlogPost[] = [
         type: "paragraph",
         text: "Crystal Beats has performed at weddings across Nadiad, Anand, Vadodara, Surat, and Ahmedabad — from intimate varmala ceremonies to full-scale receptions with a live orchestra. If you're planning a wedding and want music that adapts function to function, reach out through the contact form."
       }
+    ],
+    faqs: [
+      {
+        question: "Should I book a live band, a solo singer, or a DJ for my wedding?",
+        answer: "It depends on the function and guest mix — a full live band suits large, multi-generational weddings, a solo singer works well for intimate functions, and a DJ is best reserved for late-night dance floors."
+      },
+      {
+        question: "When should I book a wedding band in Gujarat?",
+        answer: "3–6 months ahead for wedding season (roughly October through February), since the best live bands are often confirmed early for peak dates."
+      },
+      {
+        question: "What questions should I ask before booking a wedding band?",
+        answer: "Ask about playlist customisation across generations and languages, whether they bring their own sound system, how many musicians and which instruments are included, and their process for late song requests."
+      }
     ]
   },
   {
@@ -152,6 +180,20 @@ export const posts: BlogPost[] = [
         type: "paragraph",
         text: "Crystal Beats leads devotional evenings across Gujarat, from intimate home gatherings to large temple and trust-organised Bhakti Sangeet programs. If you're planning one, the booking form on this site is the fastest way to check availability."
       }
+    ],
+    faqs: [
+      {
+        question: "What does a Bhakti Sangeet evening typically include?",
+        answer: "Live harmonium and tabla accompaniment, a setlist that builds toward well-known bhajans, a closing Aarti, and space for audience participation rather than passive listening."
+      },
+      {
+        question: "What occasions are suited to a Bhakti Sangeet?",
+        answer: "Housewarmings, milestone birthdays, memorial gatherings, temple and trust events, and standalone community events tied to a festival calendar."
+      },
+      {
+        question: "What makes a devotional performer worth booking?",
+        answer: "Emotional authenticity and range matter more than technical skill alone — genuine grounding in classical and folk devotional repertoire, and the vocal control to sustain a two-to-three-hour set."
+      }
     ]
   },
   {
@@ -191,6 +233,16 @@ export const posts: BlogPost[] = [
       {
         type: "paragraph",
         text: "Crystal Beats books and delivers both formats regularly — choreography-ready wedding Sangeet sets and standalone Sangeet Sandhya evenings for community and corporate audiences. When you fill out the booking form, selecting the correct event type helps set the right expectations from the first conversation."
+      }
+    ],
+    faqs: [
+      {
+        question: "What is the difference between Sangeet and Sangeet Sandhya?",
+        answer: "Sangeet is the pre-wedding celebration built around family and friend choreography; Sangeet Sandhya is a broader musical evening, closer in spirit to a concert, used for community, cultural association, and corporate events."
+      },
+      {
+        question: "Why does it matter which term I use when booking?",
+        answer: "Because each requires different preparation — a wedding Sangeet needs backing tracks and mashups cued to specific choreography, while a Sangeet Sandhya needs a performer who can carry a full live set on their own."
       }
     ]
   },
@@ -236,6 +288,16 @@ export const posts: BlogPost[] = [
       {
         type: "paragraph",
         text: "Crystal Beats provides full live orchestra setups for wedding receptions across Gujarat — tabla, keyboard, guitar, and a live vocal lead, customised to your family's musical taste. Get in touch through the booking form to check availability for your date."
+      }
+    ],
+    faqs: [
+      {
+        question: "Why is live music better than a DJ for a wedding reception?",
+        answer: "A live band can react to the room in real time — extending or shortening songs, shifting tempo for key moments — and it creates a far more dynamic visual backdrop for photos and video than a DJ booth."
+      },
+      {
+        question: "Can I combine live music and a DJ at my wedding?",
+        answer: "Yes — the most common approach is a live band or orchestra for the ceremony, entrance, and early reception, followed by a DJ set for late-night dancing once the formal moments are over."
       }
     ]
   },
@@ -286,6 +348,16 @@ export const posts: BlogPost[] = [
         type: "paragraph",
         text: "Crystal Beats Music Academy in Nadiad offers one-on-one and group Tabla classes for beginners through advanced students, alongside Keyboard, Octapad, and Congo. If you're ready to start, or want to sit in on a trial session, reach out through the contact form on this site."
       }
+    ],
+    faqs: [
+      {
+        question: "What should I expect in my first year of learning tabla?",
+        answer: "Months 1–3 focus on basic strokes and hand position, months 4–6 introduce theka (rhythm cycles) starting with Teentaal, and months 7–12 build repertoire, speed, and first accompaniment experience."
+      },
+      {
+        question: "How often should a beginner practice tabla?",
+        answer: "20–30 minutes daily is more effective than a longer once-a-week session, since muscle memory needs regular repetition rather than marathon practice."
+      }
     ]
   },
   {
@@ -325,6 +397,16 @@ export const posts: BlogPost[] = [
       {
         type: "paragraph",
         text: "Crystal Beats brings a live folk-forward setup — dhol, dholak, keyboard, and vocals — to Haldi and Mehndi functions across Gujarat, with playlists customised to your family's specific taste. Reach out through the booking form to discuss your date."
+      }
+    ],
+    faqs: [
+      {
+        question: "What kind of music suits a Haldi ceremony?",
+        answer: "Light, joyful Gujarati folk and light Bollywood with a strong, simple rhythm that's easy for all generations to dance to without choreography."
+      },
+      {
+        question: "Why book a live band for Haldi and Mehndi instead of a playlist?",
+        answer: "A live band can take song requests on the spot, a live dhol player can walk through the crowd, and energy can be adjusted instantly since Haldi and Mehndi timing often runs long or short."
       }
     ]
   },
@@ -370,6 +452,16 @@ export const posts: BlogPost[] = [
         type: "paragraph",
         text: "Crystal Beats has performed at corporate galas, launches, and offsite celebrations across Ahmedabad, Vadodara, and Surat, with a full live orchestra and premium sound production. If you're planning a corporate event, the contact form on this site is the quickest way to check availability."
       }
+    ],
+    faqs: [
+      {
+        question: "How should live music be structured at a corporate event?",
+        answer: "It depends on the format — a smaller ensemble playing softly during dinner and transitions for award nights, a full orchestra with high energy from the start for offsites, or a short standalone segment for product launches."
+      },
+      {
+        question: "What logistics should I confirm before booking a corporate orchestra?",
+        answer: "Venue decibel restrictions, stage and power requirements for a full live setup, and the run-of-show timing around speeches and awards."
+      }
     ]
   },
   {
@@ -405,6 +497,16 @@ export const posts: BlogPost[] = [
       {
         type: "paragraph",
         text: "Crystal Beats' live orchestra includes sitar, harmonium, tabla, and a full modern instrumental setup, allowing performances to move fluidly between classical, devotional, and contemporary repertoire within a single event. To learn more or book a performance, use the contact form on this site."
+      }
+    ],
+    faqs: [
+      {
+        question: "What role does sitar play in a live performance?",
+        answer: "Its sympathetic strings give it a naturally layered resonance, letting a single sustained note feel textured rather than flat — which is why it remains central to classical interludes despite being technically demanding to play."
+      },
+      {
+        question: "Why is harmonium important in devotional music?",
+        answer: "It provides the sustained harmonic foundation that lets a vocalist or group lead a call-and-response bhajan without losing pitch reference."
       }
     ]
   },
@@ -455,6 +557,16 @@ export const posts: BlogPost[] = [
       {
         type: "paragraph",
         text: "Crystal Beats travels for destination weddings across India, bringing a full live band and production setup to resorts and venues outside Gujarat. If you're planning a destination wedding, use the booking form on this site to start the conversation early — logistics planning benefits from lead time."
+      }
+    ],
+    faqs: [
+      {
+        question: "What should I confirm before booking music for a destination wedding?",
+        answer: "Whether travel, accommodation, and equipment transport are included in the package, load-in and sound-check timing with the venue, and the venue's power supply and backup arrangements."
+      },
+      {
+        question: "How does destination wedding entertainment differ from a local wedding?",
+        answer: "Multiple functions are often compressed into three or four consecutive days, so the entertainment team needs to cover a wide range — devotional, high-energy, and formal reception — without much recovery time between events."
       }
     ]
   }

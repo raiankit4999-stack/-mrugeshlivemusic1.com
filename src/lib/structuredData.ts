@@ -35,6 +35,11 @@ export const localBusinessJsonLd = {
   telephone: siteConfig.phone,
   priceRange: "$$",
   address,
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 22.6939,
+    longitude: 72.8615,
+  },
   areaServed: [
     { "@type": "AdministrativeArea", name: "Gujarat, India" },
     { "@type": "City", name: "Ahmedabad" },
@@ -91,6 +96,24 @@ export function buildFaqJsonLd(faqs: { question: string; answer: string }[]) {
         "@type": "Answer",
         text: faq.answer,
       },
+    })),
+  };
+}
+
+export function buildHowToJsonLd(
+  name: string,
+  description: string,
+  steps: { title: string; description: string }[]
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name,
+    description,
+    step: steps.map((step) => ({
+      "@type": "HowToStep",
+      name: step.title,
+      text: step.description,
     })),
   };
 }

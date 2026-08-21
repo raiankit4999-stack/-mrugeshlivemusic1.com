@@ -14,4 +14,5 @@ export type BlogPost = {
   tags: string[];
   readingTime: string;
   content: BlogBlock[];
+  faqs?: { question: string; answer: string }[];
 };

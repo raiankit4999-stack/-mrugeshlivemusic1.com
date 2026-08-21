@@ -54,5 +54,12 @@
     "type": "mp4",
     "src": "/video-bhakti-sangeet.mp4",
     "poster": "/gallery-15.jpg"
+  },
+  {
+    "id": "v9",
+    "title": "Music Academy",
+    "type": "mp4",
+    "src": "/video-music-academy.mp4",
+    "poster": "/instrument-octapad.jpg"
   }
 ]

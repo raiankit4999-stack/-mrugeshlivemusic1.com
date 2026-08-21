@@ -6,6 +6,7 @@ import { posts } from "@/data/blog/posts";
 import BlogContent from "@/components/blog/BlogContent";
 import BlogCard from "@/components/blog/BlogCard";
 import siteConfig from "@/data/siteConfig.json";
+import { buildFaqJsonLd } from "@/lib/structuredData";
 
 export function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
@@ -75,6 +76,8 @@ export default async function BlogPostPage({
     mainEntityOfPage: `${siteConfig.siteUrl}/blog/${post.slug}`,
   };
 
+  const faqJsonLd = post.faqs && post.faqs.length > 0 ? buildFaqJsonLd(post.faqs) : null;
+
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -101,6 +104,12 @@ export default async function BlogPostPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
 
       <div className="mx-auto max-w-3xl px-6 lg:px-10">
         <nav aria-label="Breadcrumb" className="mb-8 text-xs uppercase tracking-widest text-stone">
@@ -134,6 +143,20 @@ export default async function BlogPostPage({
         <div className="mt-10">
           <BlogContent blocks={post.content} />
         </div>
+
+        {post.faqs && post.faqs.length > 0 && (
+          <div className="mt-12">
+            <h2 className="font-display text-2xl sm:text-3xl text-ink">Frequently Asked Questions</h2>
+            <div className="mt-6 space-y-6">
+              {post.faqs.map((faq, i) => (
+                <div key={i}>
+                  <h3 className="font-display text-lg text-ink">{faq.question}</h3>
+                  <p className="mt-2 text-stone leading-relaxed">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         <div className="mt-12 rounded-2xl glass p-6 text-sm text-stone">
           Written by the Crystal Beats team, in partnership with{" "}

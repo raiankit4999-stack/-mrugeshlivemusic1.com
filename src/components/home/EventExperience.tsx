@@ -6,6 +6,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import eventExperience from "@/data/eventExperience.json";
 import { iconMap } from "@/lib/iconMap";
 import SectionHeading from "@/components/ui/SectionHeading";
+import { buildHowToJsonLd } from "@/lib/structuredData";
+
+const howToJsonLd = buildHowToJsonLd(
+  "Your Event Experience with Crystal Beats",
+  "A seamless journey from the first conversation to the final encore.",
+  eventExperience.map((step) => ({ title: step.title, description: step.description }))
+);
 
 export default function EventExperience() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -55,6 +62,10 @@ export default function EventExperience() {
 
   return (
     <section id="experience" ref={sectionRef} className="relative bg-ink-soft py-28 lg:py-36">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
+      />
       <div className="mx-auto max-w-5xl px-6 lg:px-10">
         <SectionHeading
           eyebrow="The Journey"
