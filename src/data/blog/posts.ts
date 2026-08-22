@@ -3,9 +3,9 @@ import type { BlogPost } from "./types";
 export const posts: BlogPost[] = [
   {
     slug: "garba-night-planning-guide",
-    title: "How to Plan the Perfect Garba Night: A Complete Guide for Navratri Organisers",
+    title: "Garba Night Planning Guide for Navratri Organisers",
     excerpt:
-      "From choosing the right live band to sequencing your setlist, here's what actually makes a Garba night unforgettable — not just loud.",
+      "From choosing the right live band to sequencing your setlist — here's what makes a Garba night unforgettable. Read the full guide.",
     date: "2026-01-12",
     coverImage: "/gallery-3.jpg",
     coverAlt: "Massive crowd dancing at a Garba Navratri celebration",
@@ -45,6 +45,42 @@ export const posts: BlogPost[] = [
         type: "paragraph",
         text: "This sounds obvious, but it's the most commonly skipped step under event-day time pressure. A proper sound check — ideally 2–3 hours before doors open — lets the band calibrate for the specific venue acoustics and catch equipment issues while there's still time to fix them."
       },
+      { type: "heading", text: "6. Brief your band on your specific community's Garba style" },
+      {
+        type: "paragraph",
+        text: "Gujarat's Garba traditions vary meaningfully by region and community — Kutchi, Saurashtra, and central Gujarat styles differ in tempo, footwork complexity, and preferred dandiya patterns. A band that's mostly played for one region's crowd can misjudge pacing for another. Before booking, ask whether your performer has played for your specific community or region before, and share a few reference tracks or last year's favourites so they can calibrate their set rather than guess."
+      },
+      { type: "heading", text: "7. Plan multi-night Navratri bookings differently from a single event" },
+      {
+        type: "paragraph",
+        text: "Most societies and trusts run Garba across multiple consecutive nights, not just one, and that changes what you should look for in a band. A performer used to single-event bookings can burn through their strongest material on night one. A band experienced with multi-night Navratri runs paces its repertoire across the full run, holds a few crowd favourites back for later nights, and can tell whether attendance and energy are building or dipping night to night so it can adjust the setlist accordingly rather than repeating the same sequence every evening."
+      },
+      { type: "heading", text: "Plan for Gujarat's Navratri weather" },
+      {
+        type: "paragraph",
+        text: "Late September and October evenings in Gujarat can still be warm and humid for the first hour or two, which affects both performer stamina and how quickly the crowd builds energy. Experienced Garba bands often stretch the warm-up phase a little longer on particularly warm nights, letting the floor build gradually rather than pushing peak intensity before people have adjusted to the heat. If your venue is fully outdoor, it's also worth asking about shade or cooling near the stage — a band performing at full energy for three to four hours needs that consideration as much as your guests do."
+      },
+      { type: "heading", text: "Booking a band that also handles the technical side" },
+      {
+        type: "paragraph",
+        text: "Many Navratri organisers assume sound engineering is a separate booking from the band itself, which can create confusion about who's responsible when something doesn't sound right. Ask upfront whether your performer's package includes their own sound engineer and equipment, or whether you need to coordinate a separate vendor — and if it's separate, make sure the two teams do at least one call together before the event so equipment compatibility isn't discovered for the first time on the night."
+      },
+      { type: "heading", text: "What organisers wish they'd asked earlier" },
+      {
+        type: "paragraph",
+        text: "Committees who've run Garba nights for several years consistently mention the same regret: not locking in their band early enough for peak Navratri dates, and not clarifying cancellation or rescheduling terms in case of unexpected weather or venue changes. Building both into your planning timeline from the start avoids scrambling for a replacement performer during the busiest week of the year."
+      },
+      { type: "heading", text: "Common mistakes that quietly ruin a Garba night" },
+      {
+        type: "list",
+        items: [
+          "Overbooking the sound system's wattage for the ground size while underbooking the number of live musicians — volume isn't the same as energy.",
+          "Locking the setlist too rigidly in advance and leaving no room for the band to read the crowd live.",
+          "Scheduling the sound check too close to doors-open, leaving no buffer to fix equipment issues.",
+          "Assuming a band that's excellent at weddings will automatically translate to Garba — the two require different pacing and repertoire instincts.",
+          "Not agreeing in advance who handles crowd-facing announcements — start times, prize draws, safety instructions — which often falls awkwardly between the organiser and performer if it isn't settled beforehand."
+        ]
+      },
       {
         type: "quote",
         text: "Nine nights, nine sold-out crowds — the difference was never the ground or the lighting. It was that the band read the crowd every single night."
@@ -71,9 +107,9 @@ export const posts: BlogPost[] = [
   },
   {
     slug: "choosing-wedding-band-gujarat",
-    title: "Choosing the Right Wedding Band in Gujarat: What Every Couple Should Know",
+    title: "Wedding Band in Gujarat: How to Choose the Right One",
     excerpt:
-      "Live band, solo singer, or DJ? Here's a practical framework for deciding what's right for your wedding — and the questions to ask before you book.",
+      "Live band, solo singer, or DJ? A practical framework for what's right for your wedding, plus questions to ask. Read the full guide.",
     date: "2026-01-20",
     coverImage: "/gujarati-wedding-varmala-nadiad-gujarat.jpg",
     coverAlt: "Bride and groom exchanging garlands at a Gujarati wedding",
@@ -118,6 +154,46 @@ export const posts: BlogPost[] = [
         type: "paragraph",
         text: "Wedding season in Gujarat (roughly October through February) books up fast, and the best live bands are often confirmed 3–6 months ahead for peak dates. If your wedding falls in this window, treat the music booking with the same urgency as your venue."
       },
+      { type: "heading", text: "What actually changes the price" },
+      {
+        type: "paragraph",
+        text: "Wedding band pricing in Gujarat varies widely — often two to three times between a basic four-piece setup and a full orchestra with premium sound. The biggest cost drivers are the number of musicians, whether the package includes a dedicated sound and lighting crew, how many functions and hours are covered, and how peak the date is. A Saturday in peak wedding season costs more than a weekday in the off-season, and that difference usually reflects genuine demand rather than padding."
+      },
+      { type: "heading", text: "How many hours of coverage do you actually need?" },
+      {
+        type: "paragraph",
+        text: "Couples often underestimate this and either overpay for unused hours or run out of coverage mid-event. A typical varmala runs 30–45 minutes of live music, a reception often needs 3–4 hours split between background and dance-floor sets, and a full Sangeet can run 4–5 hours including rehearsed acts. Map out your actual function timings before requesting quotes, rather than asking for a generic 'full day' package that may not match what you actually need."
+      },
+      { type: "heading", text: "Red flags when comparing quotes" },
+      {
+        type: "list",
+        items: [
+          "A quote with no breakdown of how many musicians or which instruments are included — ask directly rather than assuming.",
+          "No mention of a backup plan for equipment failure or a musician falling ill close to the date.",
+          "Reluctance to have even a brief call before booking — a performer who won't talk through your specific functions in advance is unlikely to customise much on the day either.",
+          "Pricing well below the market range for your city on a peak wedding season date, which is often a sign of a smaller, less experienced setup being presented as a full band."
+        ]
+      },
+      { type: "heading", text: "Regional and generational music mixes at Gujarati weddings" },
+      {
+        type: "paragraph",
+        text: "Gujarati wedding guest lists often span three generations and multiple regional backgrounds within the state — Kutch, Saurashtra, and central Gujarat each carry slightly different folk traditions and song preferences, and NRI family members returning for the wedding may expect a heavier Bollywood or fusion presence than relatives based locally. A band that can genuinely move between these without any one group feeling left out is worth more than one with a narrower, deeper specialty in just a single style."
+      },
+      { type: "heading", text: "What happens during a typical booking process" },
+      {
+        type: "paragraph",
+        text: "Most bookings start with an enquiry call covering your date, venue, and rough function list, followed by a detailed conversation about each function's timing and musical preferences once you've shortlisted a performer. A written agreement should follow, confirming hours, instruments, pricing, and payment terms before any advance is paid. In the weeks before the wedding, expect at least one follow-up call to finalise song requests and confirm final logistics — if a performer disappears entirely between booking and the event itself, that's worth raising as a concern well before the date rather than after."
+      },
+      { type: "heading", text: "Handling last-minute changes gracefully" },
+      {
+        type: "paragraph",
+        text: "Indian weddings are notorious for schedule shifts — a baraat that starts late, a ceremony that runs long, a function that gets compressed at the last minute. A band with genuine multi-function wedding experience treats this as normal rather than disruptive, and can compress or extend a set on the fly without the quality dropping. When you're evaluating a performer, it's worth asking directly how they've handled major schedule changes on past wedding days — a specific, calm answer is a good sign; vague reassurance is not."
+      },
+      { type: "heading", text: "What a good pre-booking conversation looks like" },
+      {
+        type: "paragraph",
+        text: "Before you sign anything, a good wedding band should be willing to walk through your function list, ask about your families' regional and generational music taste, and give you a realistic recommendation for each function rather than a single one-size-fits-all package. If a performer can't answer specific questions about how they'd handle your varmala differently from your reception, that's usually a sign they haven't done this often enough to have real answers ready."
+      },
       {
         type: "paragraph",
         text: "Crystal Beats has performed at weddings across Nadiad, Anand, Vadodara, Surat, and Ahmedabad — from intimate varmala ceremonies to full-scale receptions with a live orchestra. If you're planning a wedding and want music that adapts function to function, reach out through the contact form."
@@ -142,7 +218,7 @@ export const posts: BlogPost[] = [
     slug: "bhakti-sangeet-significance",
     title: "The Significance of Bhakti Sangeet in Modern Celebrations",
     excerpt:
-      "Devotional music hasn't lost relevance in contemporary events — if anything, families are asking for it more. Here's why, and how to plan one well.",
+      "Devotional music hasn't lost relevance — families are asking for it more. Here's why, and how to plan one well. Read the guide.",
     date: "2026-02-02",
     coverImage: "/gallery-14.jpg",
     coverAlt: "Mrugesh Shukla performing a devotional Bhakti Sangeet set",
@@ -172,6 +248,57 @@ export const posts: BlogPost[] = [
         type: "paragraph",
         text: "Technical skill matters less here than emotional authenticity and range. A strong Bhakti Sangeet performer needs a genuine grounding in classical and folk devotional repertoire, the vocal control to sustain a two-to-three-hour set without losing intimacy, and — critically — the instinct to read a room that isn't there to dance, but to feel something."
       },
+      { type: "heading", text: "Bhajan Sandhya, kirtan, and satsang — related but distinct formats" },
+      {
+        type: "paragraph",
+        text: "'Bhakti Sangeet' is often used as an umbrella term, but it helps to know the format options within it. A Bhajan Sandhya centres on structured devotional songs performed by the lead artist with the audience joining the chorus. A kirtan leans more toward call-and-response chanting, often built around repeated names or short devotional phrases that build in intensity. A satsang is broader still, sometimes including short spiritual readings or reflections between musical segments. Telling your performer which format you have in mind — or asking them to recommend one based on the occasion — shapes the evening more than almost any other single decision."
+      },
+      { type: "heading", text: "Choosing the right setting and time of day" },
+      {
+        type: "paragraph",
+        text: "Bhakti Sangeet events work well both indoors and outdoors, but the setting should match the mood you want. An evening start, around dusk, tends to suit the reflective tone best — the transition from daylight to evening mirrors the way a good setlist itself builds from gentle to intense and back to calm. Indoor temple halls or community centres offer better acoustics for the quieter opening and closing sections, while a courtyard or open ground works well for a larger crowd during the participatory middle stretch."
+      },
+      { type: "heading", text: "What to plan yourself, and what to leave to the performer" },
+      {
+        type: "paragraph",
+        text: "Families booking a Bhakti Sangeet should decide in advance which specific bhajans or deities hold personal significance for the occasion — a housewarming might lean toward Ganesh or Lakshmi bhajans, a memorial toward more reflective compositions — and roughly how long they want the evening to run. Beyond that, the pacing, key, and transitions between songs are usually best left to an experienced performer; over-scripting the setlist can work against the very thing that makes a Bhakti Sangeet powerful, which is the ability to read the room and extend a moment that's genuinely landing."
+      },
+      { type: "heading", text: "How long should a Bhakti Sangeet evening run?" },
+      {
+        type: "paragraph",
+        text: "Most programs run two to three hours, long enough to build a genuine arc — a gentle opening, a participatory middle section, and a closing Aarti — without losing the audience's attention. Shorter 60–90 minute versions work well for smaller home gatherings, or as one segment within a larger event such as a housewarming that also includes a meal."
+      },
+      { type: "heading", text: "Why sound quality matters differently here" },
+      {
+        type: "paragraph",
+        text: "A Bhakti Sangeet audience is listening far more closely than a Garba or Sangeet crowd, which makes clarity more important than sheer volume. Harmonium and vocal tone need to come through cleanly rather than being buried under bass-heavy amplification. A performer experienced in this format usually mixes for warmth over output, and it's worth asking your sound engineer specifically about this rather than assuming a standard event PA setup will translate well."
+      },
+      { type: "heading", text: "Booking a Bhakti Sangeet as part of a larger celebration" },
+      {
+        type: "paragraph",
+        text: "Families increasingly fold a Bhakti Sangeet evening into a larger multi-day wedding or festival calendar — often the evening before the main ceremony, or as a quieter counterpart to a high-energy Sangeet on a different night. When combining it with other functions, give the devotional evening its own clearly bounded time slot rather than treating it as a warm-up act for something louder; rushing the transition undercuts the reflective mood that makes the format work in the first place."
+      },
+      { type: "heading", text: "Questions to ask before booking a devotional performer" },
+      {
+        type: "list",
+        items: [
+          "Which specific bhajans, deities, or traditions do you have the most experience performing?",
+          "Can you lead a call-and-response format if our guests want to participate actively?",
+          "How do you typically structure a two-to-three-hour set to keep it from feeling repetitive?",
+          "Do you bring your own harmonium and tabla accompanist, or is that arranged separately?"
+        ]
+      },
+      { type: "heading", text: "A short planning checklist" },
+      {
+        type: "list",
+        items: [
+          "Decide the format — Bhajan Sandhya, kirtan, or satsang — and share it with your performer early.",
+          "Confirm timing; an evening start generally suits the mood best.",
+          "Share any bhajans or deities with personal significance to the occasion.",
+          "Confirm the seating arrangement, since Bhakti Sangeet audiences are typically seated rather than standing.",
+          "Ask about sound levels in advance — a devotional evening needs clarity and warmth, not the loud, bass-heavy setup used for Garba or Sangeet."
+        ]
+      },
       {
         type: "quote",
         text: "The devotional evening he curated brought the entire community together in a way I've never seen. His voice carries so much emotion and devotion."
@@ -200,7 +327,7 @@ export const posts: BlogPost[] = [
     slug: "sangeet-vs-sangeet-sandhya",
     title: "Sangeet vs Sangeet Sandhya: What's the Difference?",
     excerpt:
-      "Two terms that sound almost identical but mean very different things for your event planning. Here's how to tell them apart.",
+      "Two terms that sound identical but mean very different things for your event planning. Here's how to tell them apart — read on.",
     date: "2026-02-10",
     coverImage: "https://images.unsplash.com/photo-1610173827002-62c0f1f05d04?auto=format&fit=crop&w=1200&q=80",
     coverAlt: "Bride and groom celebrating with family in traditional Indian wedding attire",
@@ -230,6 +357,57 @@ export const posts: BlogPost[] = [
           "If you tell your booking contact 'Sangeet' when you actually mean a general musical evening (or vice versa), you may end up with the wrong kind of preparation on the performer's side."
         ]
       },
+      { type: "heading", text: "Where the terms come from" },
+      {
+        type: "paragraph",
+        text: "'Sangeet' simply means music or song in Hindi and Gujarati, and its use for the pre-wedding celebration is a relatively modern convention that grew alongside choreographed family performances becoming a fixture of Indian weddings. 'Sandhya' means evening, so 'Sangeet Sandhya' translates literally to 'an evening of music' — a much older and more general phrase, used for any live musical program held in the evening, wedding or not. Understanding the literal roots makes it easier to remember why one term implies a specific wedding function and the other doesn't."
+      },
+      { type: "heading", text: "A side-by-side comparison" },
+      {
+        type: "list",
+        items: [
+          "Purpose: Sangeet celebrates the couple through family performances; Sangeet Sandhya showcases a live musical program for its own sake.",
+          "Audience role: at a Sangeet, guests often perform; at a Sangeet Sandhya, guests primarily watch and listen.",
+          "Structure: Sangeet follows a sequence of pre-rehearsed acts with music cued to each; Sangeet Sandhya follows a performer-led set that flows more like a concert.",
+          "Typical duration: a wedding Sangeet often runs 3–4 hours including act changeovers; a Sangeet Sandhya typically runs 90 minutes to 2 hours as a continuous live set.",
+          "Who books it: Sangeet is booked by the couple's families as one function in a wedding calendar; Sangeet Sandhya is booked by cultural associations, corporate teams, or community trusts independent of any wedding."
+        ]
+      },
+      { type: "heading", text: "When you'd book a Sangeet Sandhya instead of a Sangeet" },
+      {
+        type: "list",
+        items: [
+          "A cultural association's annual evening celebrating a festival or community milestone.",
+          "A corporate offsite or annual day that wants a live music segment without any choreography involved.",
+          "A felicitation or retirement evening honouring a community member, with live music as the centrepiece rather than background.",
+          "A standalone ticketed or invite-only concert-style evening organised by a trust or society, unconnected to any wedding."
+        ]
+      },
+      { type: "heading", text: "How the two formats sometimes overlap" },
+      {
+        type: "paragraph",
+        text: "In practice, some events blend elements of both. A wedding Sangeet might open with 20–30 minutes of a live performer's own set before the family acts begin, functioning briefly like a mini Sangeet Sandhya to warm up the room. Conversely, a standalone Sangeet Sandhya organised by a cultural association might include one or two short guest performances from community members, borrowing a little of the participatory spirit of a wedding Sangeet. These hybrids work fine as long as everyone involved — performer, organisers, and any participating guests — knows which segments are scripted and which are the performer's own live set."
+      },
+      { type: "heading", text: "Booking tips specific to each format" },
+      {
+        type: "list",
+        items: [
+          "For a wedding Sangeet: share your choreography timings and specific mashup requests at least a few weeks in advance, since backing tracks often need to be custom-edited to match rehearsed routines.",
+          "For a wedding Sangeet: confirm whether the performer can also emcee between acts, since many events need someone to keep the evening moving between family performances.",
+          "For a Sangeet Sandhya: confirm the expected set length and genre range up front, since this format relies far more on the performer's own repertoire and reading of the room.",
+          "For a Sangeet Sandhya: clarify the audience size and seating format, since a large formal auditorium and a smaller community hall call for noticeably different stage setups and sound levels."
+        ]
+      },
+      { type: "heading", text: "Why some performers specialise in only one format" },
+      {
+        type: "paragraph",
+        text: "A few performers deliberately focus on just one of these formats rather than offering both. A Sangeet specialist invests heavily in mashup editing and choreography-timing tools, since that's a genuinely different skill set from carrying a live set solo. A Sangeet Sandhya specialist invests more in vocal range and repertoire depth, since they're the main draw for the full evening rather than a backing track for family performances. Neither approach is wrong — it's worth asking directly which side of this a performer leans toward if your event sits close to the line between the two."
+      },
+      { type: "heading", text: "A quick way to know which one you mean" },
+      {
+        type: "paragraph",
+        text: "If there's a couple, a wedding calendar, and family members rehearsing choreographed acts, you're planning a Sangeet. If there's no couple and no choreography — just a live music program built around a performer's set — you're planning a Sangeet Sandhya, even if the event happens to be tied to a wedding-adjacent celebration like an engagement or reception. When in doubt, describe the actual structure of your event to your booking contact rather than relying on the label alone; a good performer will confirm which format fits before finalising the booking."
+      },
       {
         type: "paragraph",
         text: "Crystal Beats books and delivers both formats regularly — choreography-ready wedding Sangeet sets and standalone Sangeet Sandhya evenings for community and corporate audiences. When you fill out the booking form, selecting the correct event type helps set the right expectations from the first conversation."
@@ -250,7 +428,7 @@ export const posts: BlogPost[] = [
     slug: "live-music-vs-dj-wedding",
     title: "Why Live Music Beats a DJ for Your Wedding Reception",
     excerpt:
-      "DJs are easier to book and often cheaper. Here's the honest case for why live music still wins for the moments that matter most.",
+      "DJs are easier to book and cheaper. Here's the honest case for why live music still wins for the moments that matter. Read on.",
     date: "2026-02-18",
     coverImage: "/gallery-13.jpg",
     coverAlt: "Mrugesh Shukla performing on keyboard on an outdoor stage",
@@ -280,10 +458,50 @@ export const posts: BlogPost[] = [
           "Guests genuinely remember live performances longer — there's a reason 'the singer was incredible' is one of the most common pieces of wedding feedback."
         ]
       },
+      { type: "heading", text: "What guests actually remember afterward" },
+      {
+        type: "paragraph",
+        text: "Ask couples a few months after their wedding what they remember about the entertainment, and it's rarely a specific track that gets mentioned — it's a moment: a vocalist nailing the couple's favourite song live, a band reading the room and stretching a song exactly when the floor was at its peak. Recorded music can deliver a great party. It's live performance that tends to produce the moments people are still talking about at the next family wedding."
+      },
       { type: "heading", text: "The practical case for a hybrid approach" },
       {
         type: "paragraph",
         text: "If budget is a real constraint, the most common solution is a live band or orchestra for the ceremony, entrance, and early reception, followed by a DJ set for late-night dancing once the formal moments are over. This gets you the emotional impact of live music where it matters most, without doubling your entertainment budget."
+      },
+      { type: "heading", text: "What a DJ genuinely does better" },
+      {
+        type: "paragraph",
+        text: "This is worth being honest about. A skilled DJ has access to a far larger and more current song library than any live band can rehearse, can blend genres and eras seamlessly for a packed late-night dance floor, and generally costs less for the same number of hours. For the stretch of the night that's purely about open dancing to whatever's trending, a good DJ is often the better tool for the job — which is exactly why so many Gujarati weddings now book both rather than treating it as an either-or decision."
+      },
+      { type: "heading", text: "Sound quality considerations most couples don't think about" },
+      {
+        type: "paragraph",
+        text: "A live vocalist performing well-mixed sound in a good room can sound noticeably warmer and more present than a recorded track played through the same PA system — recordings are mixed for headphones and car speakers, not for a banquet hall with hard floors and high ceilings. On the other hand, a live band is only as good as its sound engineer; a poorly mixed live vocal can sound worse than a clean recording. Ask any live band you're considering who handles their sound mixing and whether they bring their own engineer, rather than relying on whoever the venue provides."
+      },
+      { type: "heading", text: "Questions to ask before choosing live music over a DJ-only plan" },
+      {
+        type: "list",
+        items: [
+          "How large is your live repertoire, and can you learn a small number of specific requests ahead of our date?",
+          "Do you bring your own sound engineer, or rely on the venue's setup?",
+          "Can your band transition smoothly into a DJ-style late set, or do we need to book both separately with a clear handover time?",
+          "What happens if a musician is unwell close to the date — do you have a backup player on call?"
+        ]
+      },
+      { type: "heading", text: "How to evaluate a live band's repertoire before booking" },
+      {
+        type: "paragraph",
+        text: "Ask for videos of actual live performances rather than polished studio recordings — a studio track tells you little about how a band sounds in a real room with real crowd noise. Watching footage from an actual wedding reception, ideally one similar in size to yours, gives a far more honest sense of vocal stamina, sound mixing, and stage presence than any promotional reel edited for social media."
+      },
+      { type: "heading", text: "The lighting and staging difference" },
+      {
+        type: "paragraph",
+        text: "A live band interacts with venue lighting in a way a DJ booth doesn't — musicians moving, a vocalist working the stage, instruments catching light differently than a stationary booth setup. If photography and videography matter to you, ask your venue's lighting team and your band to coordinate on stage lighting specifically for the live segment, since generic ambient lighting often underserves a live performance compared to a DJ set where the visual focus is usually the dance floor rather than the stage itself."
+      },
+      { type: "heading", text: "A realistic reception timeline blending both" },
+      {
+        type: "paragraph",
+        text: "A common structure that works well: live band or orchestra for the couple's entrance and the first 60–90 minutes of the reception, including dinner background music and a handful of dance numbers; a short transition where the band eases the energy into a more open format; then a DJ takes over for the remainder of the night once the formal moments are done and the crowd wants continuous, high-tempo dance music. Agreeing this handover time with both parties in advance avoids any awkward overlap or dead air between sets."
       },
       {
         type: "paragraph",
@@ -303,9 +521,9 @@ export const posts: BlogPost[] = [
   },
   {
     slug: "learning-tabla-beginners-guide",
-    title: "A Beginner's Guide to Learning Tabla: What to Expect in Your First Year",
+    title: "Learning Tabla: A Beginner's Guide to Year One",
     excerpt:
-      "Thinking about starting tabla classes? Here's an honest look at the learning curve, practice habits, and milestones for your first twelve months.",
+      "Thinking about tabla classes? An honest look at the learning curve and milestones for your first twelve months. Read the guide.",
     date: "2026-02-25",
     coverImage: "/gallery-1.jpg",
     coverAlt: "Mrugesh Shukla playing tabla",
@@ -344,6 +562,46 @@ export const posts: BlogPost[] = [
           "Record yourself occasionally. It's uncomfortable, but hearing your own timing and tone is far more useful than assuming you sound the way you think you do."
         ]
       },
+      { type: "heading", text: "Adult beginners vs children learning tabla" },
+      {
+        type: "paragraph",
+        text: "Adult beginners often progress faster through the conceptual side — understanding taal structure and rhythm theory — but can find the physical hand conditioning more uncomfortable than children do, since young hands adapt to new physical patterns more readily. Children typically need shorter, more frequent practice sessions with a lot of encouragement, while adults can usually sustain longer, more focused sessions but should be patient with soreness and stiffness in the first few weeks, which is a normal part of building the right hand strength and flexibility."
+      },
+      { type: "heading", text: "Choosing an instrument: what beginners actually need" },
+      {
+        type: "paragraph",
+        text: "A common early question is whether to buy a traditional wooden-shell dayan and metal bayan or start on a more affordable practice set. For genuine beginners, a decent entry-level set is completely fine for the first several months — what matters far more at this stage is consistent tuning and a teacher who checks your set-up periodically, since a poorly tuned tabla makes it much harder to develop accurate pitch sense. Upgrading to a higher-quality instrument makes more sense once you're a few months in and can actually hear the difference it makes."
+      },
+      { type: "heading", text: "What a first lesson actually looks like" },
+      {
+        type: "paragraph",
+        text: "A first tabla lesson rarely involves playing a recognisable rhythm at all. Expect to spend most of it on posture — how the tabla sits in front of you, how your wrists and forearms are angled — and on isolating individual strokes one at a time, often without even combining two strokes in sequence yet. This can feel slow if you're expecting to play something immediately, but rushing past this stage is the single most common reason students develop tension or incorrect hand position that takes far longer to unlearn later than it would have taken to build correctly from the start."
+      },
+      { type: "heading", text: "One-on-one vs group classes: which suits a beginner better" },
+      {
+        type: "paragraph",
+        text: "One-on-one classes let a teacher catch and correct subtle timing or hand-position errors immediately, which matters most in the first few months when bad habits are easiest to form and hardest to notice yourself. Group classes are often more affordable and add a social, motivating element, and can work well once basic strokes are reasonably solid and a student is ready to start playing alongside others. Many students start one-on-one for the first few months and move into a group setting once foundations are in place."
+      },
+      { type: "heading", text: "Common early mistakes that slow progress" },
+      {
+        type: "list",
+        items: [
+          "Practising fast before strokes are clean — speed should follow accuracy, not replace it.",
+          "Skipping taal counting and relying on 'feel' alone, which makes timing errors much harder to self-correct later.",
+          "Long gaps between practice sessions, which forces the hands to relearn muscle memory from scratch each time rather than build on it.",
+          "Comparing your pace of progress to other students rather than to your own baseline — tabla progress is genuinely uneven and depends heavily on prior musical exposure."
+        ]
+      },
+      { type: "heading", text: "What to look for in a tabla teacher" },
+      {
+        type: "paragraph",
+        text: "Formal qualifications like a Visharad matter, but for a beginner, teaching style matters just as much as the teacher's own playing ability — someone who performs beautifully isn't automatically good at explaining hand position to a first-time student. Look for a teacher with genuine experience teaching absolute beginners specifically, not just advanced students, and ask whether they offer a trial class before you commit to a longer course. A teacher's patience during the slow, frustrating first few months often matters more to whether a student sticks with tabla long-term than any other single factor."
+      },
+      { type: "heading", text: "Signs you're ready to move beyond the basics" },
+      {
+        type: "paragraph",
+        text: "Most teachers look for a few signs before introducing more advanced kaydas or a second taal: your basic theka stays steady even when you're momentarily distracted or talking, your hand position no longer needs constant correction, and you can maintain a consistent tempo without a metronome for at least a minute or two. These usually appear somewhere in the second half of the first year for students practising consistently, though the exact timing varies genuinely from student to student."
+      },
       {
         type: "paragraph",
         text: "Crystal Beats Music Academy in Nadiad offers one-on-one and group Tabla classes for beginners through advanced students, alongside Keyboard, Octapad, and Congo. If you're ready to start, or want to sit in on a trial session, reach out through the contact form on this site."
@@ -364,7 +622,7 @@ export const posts: BlogPost[] = [
     slug: "haldi-mehndi-song-ideas",
     title: "Top Song Ideas for Your Haldi and Mehndi Ceremony",
     excerpt:
-      "The right playlist for Haldi and Mehndi is playful, not just popular. Here's how to think about pacing your setlist across both functions.",
+      "The right playlist for Haldi and Mehndi is playful, not just popular. Here's how to pace your setlist. Read the full guide.",
     date: "2026-03-03",
     coverImage: "https://images.unsplash.com/photo-1587271636175-90d58cdad458?auto=format&fit=crop&w=1200&q=80",
     coverAlt: "Indian wedding mandap ceremony under a floral canopy",
@@ -394,6 +652,60 @@ export const posts: BlogPost[] = [
           "Energy can be dialled up or down instantly depending on how the afternoon is going — useful since Haldi and Mehndi timing often runs long or short unpredictably."
         ]
       },
+      { type: "heading", text: "Structuring a Haldi playlist by moment" },
+      {
+        type: "list",
+        items: [
+          "Arrival and setup (first 15–20 minutes): gentle, welcoming folk instrumentals as guests settle in — this is background energy, not the main event yet.",
+          "The main ritual (20–30 minutes): upbeat, traditional Gujarati folk with simple, repetitive rhythms that let everyone participate without needing to know choreography.",
+          "Post-ritual celebration (remaining time): a mix of folk and light Bollywood dance numbers, building energy as the formal ritual winds down and open dancing takes over."
+        ]
+      },
+      { type: "heading", text: "Structuring a Mehndi playlist across a longer function" },
+      {
+        type: "paragraph",
+        text: "Because Mehndi runs longer, the playlist needs more range across the afternoon. Start with relaxed, melodic songs that don't compete with conversation while the first guests are having henna applied. As more guests finish and the crowd loosens up, shift into moderately upbeat folk and Bollywood favourites that invite a little movement without demanding full-floor dancing. Reserve the highest-energy songs for the final 30–45 minutes, once most henna application is done and guests are free to actually dance rather than sit carefully still."
+      },
+      { type: "heading", text: "Songs and styles to avoid" },
+      {
+        type: "paragraph",
+        text: "Slow romantic ballads, heavy classical pieces, and anything written for the more solemn moments of a wedding — varmala or pheras — tend to feel out of place at Haldi and Mehndi. These functions are meant to feel light and communal, not reflective. If a song makes the room go quiet and still rather than smiling and swaying, it's probably better suited to a different function on your wedding calendar."
+      },
+      { type: "heading", text: "Keeping multiple generations engaged at once" },
+      {
+        type: "paragraph",
+        text: "Haldi and Mehndi guest lists usually span grandparents through young cousins, all in the same space at the same time — unlike a late-night reception dance floor where the crowd naturally skews younger. The safest approach is folk-forward songs with simple, well-known rhythms that older guests recognise and younger guests still find genuinely fun, rather than splitting the set into an 'older generation' block and a 'younger generation' block that never quite land together. A live band with genuine multi-generational wedding experience usually already knows how to read this balance without needing it spelled out."
+      },
+      { type: "heading", text: "Coordinating music with the ritual moments themselves" },
+      {
+        type: "paragraph",
+        text: "Haldi in particular often includes a brief ritual component led by family elders or a priest before the playful part of the function begins. Music should stay soft or pause entirely during this segment out of respect for the moment, then build back up once the ritual portion concludes and the more informal celebration takes over. Briefing your band on roughly when this ritual moment happens — even an approximate time window — avoids the awkwardness of upbeat music playing over a quiet family moment."
+      },
+      { type: "heading", text: "Working within noise and timing restrictions" },
+      {
+        type: "paragraph",
+        text: "Haldi and Mehndi are often held at home or in a housing society common area rather than a dedicated event venue, which can mean stricter noise limits and timing windows than a banquet hall. Check with your society or venue about any restrictions well before finalising your performer's setup, since a full sound system built for an open banquet lawn may need scaling down considerably for a residential courtyard or terrace."
+      },
+      { type: "heading", text: "Working with a live band on song requests" },
+      {
+        type: "paragraph",
+        text: "One advantage of live music here is that family members can request specific songs on the spot — a favourite from a particular aunt's generation, a regional folk number specific to your community — and a good live band can usually accommodate at least some of these in the moment, something a fixed digital playlist simply can't do gracefully. It's worth telling your performer in advance that you'd like to leave room for live requests, so they can plan a flexible setlist rather than a fully locked one."
+      },
+      { type: "heading", text: "Coordinating the setlist with photography moments" },
+      {
+        type: "paragraph",
+        text: "If your photographer has planned specific shots — the bride's entrance, a group family photo, a candid dance moment — sharing that rough shot list with your band lets them time a particular song or energy shift to match. A live band can hold a quieter instrumental passage while a formal photo is being set up, then lift straight into a livelier number the moment the photographer signals they're done, which a fixed digital playlist running on autopilot can't coordinate nearly as smoothly."
+      },
+      { type: "heading", text: "A sample structure you can hand to your performer" },
+      {
+        type: "list",
+        items: [
+          "0–20 minutes: gentle folk instrumentals for arrival and setup.",
+          "20–50 minutes: traditional Gujarati folk for the main Haldi or Mehndi ritual.",
+          "50–90 minutes (Mehndi only): a relaxed mix as henna application continues.",
+          "Final 30–45 minutes: upbeat folk and Bollywood favourites, with room for family song requests, to close the function on an energetic note."
+        ]
+      },
       {
         type: "paragraph",
         text: "Crystal Beats brings a live folk-forward setup — dhol, dholak, keyboard, and vocals — to Haldi and Mehndi functions across Gujarat, with playlists customised to your family's specific taste. Reach out through the booking form to discuss your date."
@@ -414,7 +726,7 @@ export const posts: BlogPost[] = [
     slug: "live-orchestra-corporate-events",
     title: "How to Choose a Live Orchestra for Corporate Events",
     excerpt:
-      "Corporate entertainment has different constraints than weddings — timing, tone, and audience diversity. Here's how to book it right.",
+      "Corporate entertainment has different constraints than weddings — timing, tone, audience. Here's how to book it right. Read on.",
     date: "2026-03-11",
     coverImage: "/gallery-2.jpg",
     coverAlt: "Mrugesh Shukla at a televised music show appearance",
@@ -448,6 +760,51 @@ export const posts: BlogPost[] = [
           "Set length and timing around the formal program: give your performer the run-of-show in advance so they can plan transitions around speeches and awards rather than working around them live."
         ]
       },
+      { type: "heading", text: "Building a feedback loop for recurring events" },
+      {
+        type: "paragraph",
+        text: "If your company runs the same event annually, a short debrief with your events or HR team a week or two after — what worked musically, what felt off, which moments landed — makes next year's booking noticeably easier to brief. Sharing that feedback directly with your performer, rather than just filing it away internally, also helps them fine-tune the set for your specific audience over repeated bookings instead of starting from a blank slate each time."
+      },
+      { type: "heading", text: "Budgeting for corporate live music" },
+      {
+        type: "paragraph",
+        text: "Corporate bookings often run shorter than wedding functions — typically 1–3 hours of actual performance — but come with higher production expectations: cleaner sound, professional stage presentation, and sometimes coordination with existing AV or event-production vendors already hired for the evening. Because of this, per-hour corporate rates can look higher than wedding rates at first glance, even though total booking cost is often lower simply because the hours are fewer. It's worth asking your performer to break down what's included in production quality versus pure performance time when comparing quotes."
+      },
+      { type: "heading", text: "Working with event planners and AV teams already in place" },
+      {
+        type: "paragraph",
+        text: "Most corporate events already have an event management company and AV vendor booked before entertainment is finalised. A live orchestra needs to slot into that existing plan rather than operate independently — sharing stage space, working within an existing lighting rig, and coordinating sound levels with whatever system the AV team is running for speeches and presentations. Loop your performer into a call with the event planner and AV vendor well before the date, rather than introducing them to each other for the first time at load-in."
+      },
+      { type: "heading", text: "Live music for hybrid and streamed events" },
+      {
+        type: "paragraph",
+        text: "If your corporate event is being live-streamed or recorded for internal use, tell your performer early — streaming audio needs a direct feed from the sound board rather than a room microphone picking up ambient noise, and this needs to be arranged with the AV team in advance rather than improvised on the day. A performer with corporate experience will usually already know to ask about this; if they don't bring it up themselves, raise it yourself before the date.",
+      },
+      { type: "heading", text: "Vocal-led sets vs purely instrumental performances" },
+      {
+        type: "paragraph",
+        text: "For formal programs with speeches and awards, a purely instrumental ensemble is often the safer choice during the structured parts of the evening — it fills silence and adds atmosphere without competing with announcements. A vocal-led set works better once the formal program has ended and the event shifts into a more social, celebratory mode. Many corporate bookings use both within the same evening: instrumental during dinner and the formal segment, vocal-led once the program wraps."
+      },
+      { type: "heading", text: "In-house hotel band vs an independent performer" },
+      {
+        type: "paragraph",
+        text: "Many hotels and banquet venues offer an in-house band as part of the venue package, which can be convenient since they already know the space. The trade-off is repertoire and customisation — an in-house act typically plays a fixed, general-purpose set built to suit any client rather than one shaped specifically around your company culture, brand event, or audience. An independent performer costs more to bring in separately but can build a set genuinely tailored to your event, coordinate directly with your specific run-of-show, and bring instrumentation the venue's default act may not offer."
+      },
+      { type: "heading", text: "Multi-city events and consistency" },
+      {
+        type: "paragraph",
+        text: "Companies running the same annual event across multiple cities — Ahmedabad this year, Surat the next — sometimes find value in booking the same performer across locations, even with the added travel cost. Familiarity with your company's culture, past feedback on what worked, and consistent production quality can matter more for brand perception than the marginal savings from hiring a new local act at every stop. If this applies to your organisation, raise it directly with your performer; many are open to structuring a standing arrangement for recurring annual events."
+      },
+      { type: "heading", text: "A sample run-of-show for an awards evening" },
+      {
+        type: "list",
+        items: [
+          "Guest arrival: soft instrumental music as an ambient welcome.",
+          "Dinner and formal program: continued instrumental backing, pausing or dropping to near-silence during speeches and award announcements.",
+          "Post-program: transition to a fuller, vocal-led live set as the formal segment closes and the room shifts into a social mood.",
+          "Closing: a higher-energy set for any remaining social time before the event wraps."
+        ]
+      },
       {
         type: "paragraph",
         text: "Crystal Beats has performed at corporate galas, launches, and offsite celebrations across Ahmedabad, Vadodara, and Surat, with a full live orchestra and premium sound production. If you're planning a corporate event, the contact form on this site is the quickest way to check availability."
@@ -468,7 +825,7 @@ export const posts: BlogPost[] = [
     slug: "sitar-harmonium-classical-music",
     title: "The Art of Sitar and Harmonium in Indian Classical Music",
     excerpt:
-      "Two instruments, two very different roles — here's what makes sitar and harmonium foundational to Indian classical and devotional music.",
+      "Two instruments, two very different roles — what makes sitar and harmonium foundational to Indian classical music. Read on.",
     date: "2026-03-18",
     coverImage: "/instrument-sitar.jpg",
     coverAlt: "Sitar player performing live on an outdoor stage",
@@ -494,6 +851,46 @@ export const posts: BlogPost[] = [
         type: "paragraph",
         text: "Even in setups built around keyboard, tabla, and modern instrumentation, a live band that can bring in sitar for a classical interlude or harmonium for a devotional segment offers a range that a purely modern ensemble can't. For Bhakti Sangeet, Vedic events, and traditional wedding functions especially, these instruments aren't nostalgic add-ons — they're often what gives the performance its emotional authenticity."
       },
+      { type: "heading", text: "What to listen for in a well-played sitar segment" },
+      {
+        type: "paragraph",
+        text: "A skilled sitar player doesn't just play the correct notes — they use meend, the technique of bending a string to slide smoothly between pitches, to give a phrase its emotional shape rather than treating each note as a separate, isolated event. Listen for how a note sustains and subtly shifts in tone even after it's plucked; that's the sympathetic strings doing their work. This is also why sitar is difficult to feature briefly — a rushed two-minute interlude rarely does the instrument justice, and experienced performers usually ask for at least five to seven minutes of uninterrupted space to let a sitar segment build properly."
+      },
+      { type: "heading", text: "Learning sitar vs harmonium: which is more accessible to start" },
+      {
+        type: "paragraph",
+        text: "Harmonium is generally the more approachable instrument for a beginner — it uses a keyboard layout that's intuitive if you already have some musical background, and produces a full, in-tune sound immediately since the reeds are pre-tuned. Sitar has a much steeper learning curve: correct hand position, string tension, and fretting technique take considerably longer to develop, and the instrument itself requires more maintenance. Many classical music programs introduce harmonium or a similar keyboard instrument first, with sitar taken up later or by students specifically drawn to melodic instruments over rhythm or harmony."
+      },
+      { type: "heading", text: "When to specifically request sitar or harmonium in your booking" },
+      {
+        type: "list",
+        items: [
+          "Vedic events and havan ceremonies, where a live sitar or harmonium interlude adds a layer of traditional authenticity around the ritual.",
+          "Bhakti Sangeet and devotional evenings, where harmonium is close to essential for authentic bhajan accompaniment.",
+          "Wedding functions with a classical or traditional theme, where a sitar interlude during a quieter moment — the mandap setup, or a seated dinner segment — adds a distinctive touch most modern bands don't offer.",
+          "Cultural association evenings or Sangeet Sandhya programs built around a classical or semi-classical theme."
+        ]
+      },
+      { type: "heading", text: "Common misconceptions about classical instruments in modern events" },
+      {
+        type: "paragraph",
+        text: "A common assumption is that sitar and harmonium only suit fully classical or strictly traditional events, and would feel out of place in a modern wedding or corporate set. In practice, a skilled live band weaves a short sitar or harmonium passage into an otherwise contemporary set as a deliberate change of pace — during a seated dinner segment, a quiet transition between high-energy blocks, or a reflective moment during a mandap ceremony — rather than committing an entire event to a purely classical program. Used this way, these instruments add texture and depth rather than shifting the whole event's tone."
+      },
+      { type: "heading", text: "Sitar and harmonium in a wedding context specifically" },
+      {
+        type: "paragraph",
+        text: "During the mandap ceremony itself, a soft sitar or harmonium accompaniment underneath the priest's recitation can add a layer of traditional atmosphere without overpowering the ritual — something a full band at normal volume can't do as gracefully. During a seated dinner, a short classical interlude gives guests a genuine listening moment between louder dance segments elsewhere in the evening. These aren't the instruments that carry an entire wedding, but used at the right moments, they're often what guests remember as the most distinctive part of the live music."
+      },
+      { type: "heading", text: "How to request these instruments without over-specifying" },
+      {
+        type: "paragraph",
+        text: "It's enough to tell your performer you'd like sitar or harmonium featured, and roughly which moment of the event you have in mind — the entry, the dinner segment, a devotional interlude. Beyond that, let an experienced performer decide the exact placement and duration; over-specifying the timing to the minute often works against the instrument's strength, which is its ability to read the room and extend or shorten a passage based on how it's actually landing in the moment."
+      },
+      { type: "heading", text: "Setup considerations for live events" },
+      {
+        type: "paragraph",
+        text: "Sitar is genuinely sensitive to humidity and temperature swings, which can affect tuning stability during a long outdoor event — this is one reason experienced performers ask about shade and covered stage options specifically when sitar is part of the booking. Harmonium is more forgiving but still needs a tuning check before each performance, since reed instruments can drift slightly over time and with travel. If you're booking either instrument for an outdoor destination wedding or an open-ground Vedic event, it's worth raising these setup needs with your performer well before the date."
+      },
       {
         type: "paragraph",
         text: "Crystal Beats' live orchestra includes sitar, harmonium, tabla, and a full modern instrumental setup, allowing performances to move fluidly between classical, devotional, and contemporary repertoire within a single event. To learn more or book a performance, use the contact form on this site."
@@ -512,9 +909,9 @@ export const posts: BlogPost[] = [
   },
   {
     slug: "destination-wedding-music-checklist",
-    title: "Planning a Destination Wedding in Gujarat: A Music & Entertainment Checklist",
+    title: "Destination Wedding Music Checklist for Gujarat",
     excerpt:
-      "Destination weddings add logistics that local weddings don't have to think about. Here's a practical checklist for the music and entertainment side.",
+      "Destination weddings add logistics local weddings don't have. A practical music and entertainment checklist. Read the full guide.",
     date: "2026-03-25",
     coverImage: "https://images.unsplash.com/photo-1728221052130-810b42a6130e?auto=format&fit=crop&w=1200&q=80",
     coverAlt: "Joyful groom celebrating at an Indian wedding procession",
@@ -524,6 +921,11 @@ export const posts: BlogPost[] = [
       {
         type: "paragraph",
         text: "Destination weddings — whether at a resort a few hours from home or further afield — add a layer of logistics that local weddings simply don't have. The music and entertainment side is often where couples underestimate the planning needed, since it depends on travel, venue coordination, and equipment transport in ways a hometown wedding doesn't."
+      },
+      { type: "heading", text: "Planning for travel disruption" },
+      {
+        type: "paragraph",
+        text: "Flight delays and cancellations happen, and a destination wedding leaves less room to absorb them than a local booking does. Ask your performer directly what their contingency plan looks like if travel is disrupted close to the date — whether they build in a buffer day before the first function, and whether they have a backup musician on call for any role that can't be delayed. A performer with genuine destination wedding experience will usually already have a clear answer to this rather than needing to think it through on the spot."
       },
       { type: "heading", text: "Confirm travel and logistics early" },
       {
@@ -543,6 +945,40 @@ export const posts: BlogPost[] = [
       {
         type: "paragraph",
         text: "Outdoor destination venues are beautiful but unpredictable. Ask your performer and venue coordinator about a covered backup option for the stage and equipment, and confirm this is agreed in writing rather than assumed. Live instruments, in particular, are sensitive to humidity and direct sun exposure over long outdoor sets."
+      },
+      { type: "heading", text: "Local band vs one that travels with you" },
+      {
+        type: "paragraph",
+        text: "For destination weddings within Gujarat or nearby states, couples sometimes consider hiring a local performer near the venue instead of bringing their own band along. The trade-off is real: a local band knows the venue's acoustics and logistics, but a band that's already worked with your family — and already understands your musical taste across every function — can deliver a far more personalised set without a first-time briefing call trying to cover everything a long-term relationship would already know. For weddings with three or more functions across the trip, most families find that consistency is worth more than local familiarity, and a good travelling band will coordinate directly with the venue in advance to close that gap anyway."
+      },
+      { type: "heading", text: "Equipment: what travels well, and what doesn't" },
+      {
+        type: "paragraph",
+        text: "Keyboards, sound systems, and most percussion travel reasonably well with standard flight-case protection. Instruments like sitar and harmonium are more sensitive — temperature swings and rough handling during transit can affect tuning and structural integrity, so ask your performer how they handle instrument transport, especially for flights rather than road travel. It's also worth confirming who is responsible for excess baggage charges for instrument cases, since this is a cost couples sometimes overlook until the invoice arrives."
+      },
+      { type: "heading", text: "Coordinating with your destination wedding planner" },
+      {
+        type: "paragraph",
+        text: "If you've hired a destination wedding planner, loop your music and entertainment vendor into the same coordination calls as your decor and catering teams, rather than managing them separately. Stage placement, power distribution, and load-in timing all interact with decor setup and catering service timing, and misalignment here is one of the most common last-minute stress points at destination weddings. A planner who's used to coordinating live performers will usually raise this themselves; if yours hasn't worked with a live band before, be proactive about introducing the two parties early."
+      },
+      { type: "heading", text: "Budgeting for a destination wedding band" },
+      {
+        type: "paragraph",
+        text: "Expect a destination booking to cost more than the same band's local rate, largely because of travel, accommodation, and the extra days musicians are away from other work. Ask for a clear breakdown of what's included — travel class, number of nights of accommodation, meals — rather than a single bundled figure, so you can compare quotes accurately across different performers and understand exactly what you're paying for beyond the performance itself."
+      },
+      { type: "heading", text: "Managing guest travel and the entertainment schedule together" },
+      {
+        type: "paragraph",
+        text: "Destination weddings often move large groups of guests together — shared flights, group transfers, a single check-in window — which means function start times can be less flexible than at a local wedding where guests trickle in individually. If most of your guests are arriving on the same flight or transfer schedule, share that timing with your performer so the first function's music can be planned around a realistic arrival window rather than a start time that assumes everyone is already in place."
+      },
+      { type: "heading", text: "A day-by-day example for a three-function destination wedding" },
+      {
+        type: "list",
+        items: [
+          "Day 1, evening: arrival and sound check at the venue, followed by a Sangeet Sandhya or welcome dinner set.",
+          "Day 2, evening: Haldi or Mehndi in the late afternoon with a folk-forward set, transitioning into a devotional Bhakti Sandhya if your family has requested one.",
+          "Day 3: wedding ceremony live accompaniment in the morning, followed by a full reception orchestra set in the evening, with a DJ handover for late-night dancing if planned."
+        ]
       },
       { type: "heading", text: "A simple pre-booking checklist" },
       {
