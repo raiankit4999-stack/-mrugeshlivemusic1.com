@@ -27,7 +27,7 @@ const keywords = [
   "Crystal Beats",
 ];
 
-const title = "Crystal Beats | Live Music Across Gujarat — Mrugesh Shukla";
+const title = "Crystal Beats | Live Music in Gujarat — Mrugesh Shukla";
 const description =
   "Crystal Beats (Events by Mrugesh Shukla) — live music for weddings, Garba nights & corporate events across Gujarat: Ahmedabad, Surat, Vadodara, Rajkot & more.";
 
