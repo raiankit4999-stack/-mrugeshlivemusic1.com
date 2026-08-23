@@ -4,11 +4,9 @@ import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Play } from "lucide-react";
-import videos from "@/data/videos.json";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { fadeUp, viewportOnce } from "@/lib/motion";
-
-type VideoItem = (typeof videos)[number];
+import type { VideoItem } from "@/lib/videos";
 
 function VideoCard({ video, index }: { video: VideoItem; index: number }) {
   const [playing, setPlaying] = useState(false);
@@ -69,7 +67,7 @@ function VideoCard({ video, index }: { video: VideoItem; index: number }) {
   );
 }
 
-export default function VideoGallery() {
+export default function VideoGallery({ videos }: { videos: VideoItem[] }) {
   return (
     <section id="videos" className="relative bg-background py-28 lg:py-36">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">

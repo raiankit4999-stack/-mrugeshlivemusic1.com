@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { posts } from "@/data/blog/posts";
+import { getAllPosts } from "@/lib/posts";
 import BlogCard from "@/components/blog/BlogCard";
 import SectionHeading from "@/components/ui/SectionHeading";
 import siteConfig from "@/data/siteConfig.json";
@@ -19,7 +19,9 @@ export const metadata: Metadata = {
   },
 };
 
-export default function BlogPage() {
+export default async function BlogPage() {
+  const posts = await getAllPosts();
+
   return (
     <section className="relative bg-background py-32 lg:py-40">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">

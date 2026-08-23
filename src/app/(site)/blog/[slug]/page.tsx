@@ -2,14 +2,16 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { posts } from "@/data/blog/posts";
+import { posts as staticPosts } from "@/data/blog/posts";
+import { getAllPosts, getPostBySlug } from "@/lib/posts";
 import BlogContent from "@/components/blog/BlogContent";
+import MarkdownContent from "@/components/blog/MarkdownContent";
 import BlogCard from "@/components/blog/BlogCard";
 import siteConfig from "@/data/siteConfig.json";
 import { buildFaqJsonLd } from "@/lib/structuredData";
 
 export function generateStaticParams() {
-  return posts.map((post) => ({ slug: post.slug }));
+  return staticPosts.map((post) => ({ slug: post.slug }));
 }
 
 export async function generateMetadata({
@@ -18,27 +20,30 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const post = posts.find((p) => p.slug === slug);
+  const post = await getPostBySlug(slug);
   if (!post) return {};
 
+  const title = post.metaTitle ?? post.title;
+  const description = post.metaDescription ?? post.excerpt;
+
   return {
-    title: post.title,
-    description: post.excerpt,
+    title,
+    description,
     alternates: {
       canonical: `/blog/${post.slug}`,
     },
     openGraph: {
       type: "article",
-      title: post.title,
-      description: post.excerpt,
+      title,
+      description,
       url: `${siteConfig.siteUrl}/blog/${post.slug}`,
       publishedTime: post.date,
       images: [{ url: post.coverImage }],
     },
     twitter: {
       card: "summary_large_image",
-      title: post.title,
-      description: post.excerpt,
+      title,
+      description,
     },
   };
 }
@@ -49,10 +54,11 @@ export default async function BlogPostPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const post = posts.find((p) => p.slug === slug);
+  const post = await getPostBySlug(slug);
   if (!post) notFound();
 
-  const otherPosts = posts.filter((p) => p.slug !== slug).slice(0, 3);
+  const allPosts = await getAllPosts();
+  const otherPosts = allPosts.filter((p) => p.slug !== slug).slice(0, 3);
 
   const blogPostingJsonLd = {
     "@context": "https://schema.org",
@@ -141,7 +147,11 @@ export default async function BlogPostPage({
         </div>
 
         <div className="mt-10">
-          <BlogContent blocks={post.content} />
+          {post.blocks ? (
+            <BlogContent blocks={post.blocks} />
+          ) : (
+            <MarkdownContent markdown={post.bodyMarkdown ?? ""} />
+          )}
         </div>
 
         {post.faqs && post.faqs.length > 0 && (
