@@ -9,7 +9,7 @@ export default function Stats() {
   return (
     <section className="relative bg-ink-soft py-20 lg:py-28 noise-overlay">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
-        <div className="grid grid-cols-2 gap-10 lg:grid-cols-4">
+        <div className="grid grid-cols-2 gap-10 sm:grid-cols-3 lg:grid-cols-5">
           {stats.map((stat, i) => (
             <motion.div
               key={stat.id}

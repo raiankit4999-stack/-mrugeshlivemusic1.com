@@ -1,6 +1,7 @@
 [
-  { "id": "events", "value": 500, "suffix": "+", "label": "Events Performed" },
-  { "id": "cities", "value": 100, "suffix": "+", "label": "Cities Covered" },
-  { "id": "audience", "value": 10000, "suffix": "+", "label": "Audience Entertained" },
+  { "id": "events", "value": 1000, "suffix": "+", "label": "Events Performed" },
+  { "id": "cities", "value": 500, "suffix": "+", "label": "Cities Covered" },
+  { "id": "countries", "value": 5, "suffix": "+", "label": "Countries" },
+  { "id": "audience", "value": 1, "suffix": " Million+", "label": "Audience Entertained" },
   { "id": "experience", "value": 18, "suffix": "+", "label": "Years of Experience" }
 ]
