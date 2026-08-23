@@ -4,29 +4,29 @@ import { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, X, ZoomIn } from "lucide-react";
-import galleryImages from "@/data/gallery.json";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { fadeUp, viewportOnce } from "@/lib/motion";
+import type { GalleryItem } from "@/lib/gallery";
 
 const PAGE_SIZE = 8;
 
-export default function Gallery() {
+export default function Gallery({ images }: { images: GalleryItem[] }) {
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
-  const visibleImages = galleryImages.slice(0, visibleCount);
+  const visibleImages = images.slice(0, visibleCount);
 
   const close = useCallback(() => setActiveIndex(null), []);
   const showNext = useCallback(
-    () => setActiveIndex((prev) => (prev === null ? null : (prev + 1) % galleryImages.length)),
-    []
+    () => setActiveIndex((prev) => (prev === null ? null : (prev + 1) % images.length)),
+    [images.length]
   );
   const showPrev = useCallback(
     () =>
       setActiveIndex((prev) =>
-        prev === null ? null : (prev - 1 + galleryImages.length) % galleryImages.length
+        prev === null ? null : (prev - 1 + images.length) % images.length
       ),
-    []
+    [images.length]
   );
 
   useEffect(() => {
@@ -44,7 +44,7 @@ export default function Gallery() {
     };
   }, [activeIndex, close, showNext, showPrev]);
 
-  const active = activeIndex !== null ? galleryImages[activeIndex] : null;
+  const active = activeIndex !== null ? images[activeIndex] : null;
 
   return (
     <section id="gallery" className="relative bg-ink-soft py-28 lg:py-36">
@@ -87,7 +87,7 @@ export default function Gallery() {
           ))}
         </div>
 
-        {visibleCount < galleryImages.length && (
+        {visibleCount < images.length && (
           <div className="mt-12 flex justify-center">
             <button
               onClick={() => setVisibleCount((c) => c + PAGE_SIZE)}

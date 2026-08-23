@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Poppins, Inter } from "next/font/google";
 import Script from "next/script";
-import "./globals.css";
+import "../globals.css";
 import { siteMetadata } from "@/lib/seo";
 import { personJsonLd, localBusinessJsonLd } from "@/lib/structuredData";
 import SmoothScrollProvider from "@/components/layout/SmoothScrollProvider";

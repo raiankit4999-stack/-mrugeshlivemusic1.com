@@ -1,0 +1,70 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Post {
+  id              String   @id @default(cuid())
+  slug            String   @unique
+  title           String
+  metaTitle       String?
+  metaDescription String?
+  excerpt         String
+  coverImage      String
+  coverAlt        String
+  bodyMarkdown    String
+  tags            String[] @default([])
+  readingTime     String
+  published       Boolean  @default(true)
+  publishedAt     DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  createdAt       DateTime @default(now())
+
+  @@index([published, publishedAt])
+}
+
+model Event {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  image       String
+  imageAlt    String
+  eventDate   DateTime
+  location    String
+  published   Boolean  @default(true)
+  order       Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([published, eventDate])
+}
+
+model GalleryImage {
+  id          String   @id @default(cuid())
+  imageUrl    String
+  alt         String
+  category    String?
+  orientation String   @default("landscape")
+  published   Boolean  @default(true)
+  order       Int      @default(0)
+  createdAt   DateTime @default(now())
+
+  @@index([published, order])
+}
+
+model Video {
+  id        String   @id @default(cuid())
+  title     String
+  videoUrl  String
+  posterUrl String
+  type      String   @default("youtube")
+  published Boolean  @default(true)
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+
+  @@index([published, order])
+}

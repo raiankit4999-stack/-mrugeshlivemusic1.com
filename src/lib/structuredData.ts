@@ -29,7 +29,7 @@ export const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: siteConfig.brand,
-  image: siteConfig.heroPosterUrl,
+  image: `${siteConfig.siteUrl}/about-mrugesh.jpg`,
   description: siteConfig.description,
   url: siteConfig.siteUrl,
   telephone: siteConfig.phone,

@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { BlogPost } from "@/data/blog/types";
+import type { UnifiedPost } from "@/lib/posts";
 
-export default function BlogCard({ post }: { post: BlogPost }) {
+export default function BlogCard({ post }: { post: UnifiedPost }) {
   const date = new Date(post.date).toLocaleDateString("en-IN", {
     year: "numeric",
     month: "long",
