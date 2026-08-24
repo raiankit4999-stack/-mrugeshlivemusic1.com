@@ -1,10 +1,10 @@
 "use client";
 
 import { useActionState } from "react";
-import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import SubmitButton from "@/components/admin/SubmitButton";
+import FileUploadField from "@/components/admin/FileUploadField";
 import type { GalleryFormState } from "./actions";
 
 type Defaults = {
@@ -25,20 +25,13 @@ export default function GalleryImageForm({
 
   return (
     <form action={formAction} className="max-w-md space-y-5">
-      <div className="space-y-1.5">
-        <Label htmlFor="imageFile">Image</Label>
-        <div className="relative mb-2 aspect-square w-40 overflow-hidden rounded-lg border border-border">
-          <Image src={defaults.imageUrl} alt="Current" fill className="object-cover" />
-        </div>
-        <input
-          id="imageFile"
-          name="imageFile"
-          type="file"
-          accept="image/*"
-          className="block w-full text-sm text-stone file:mr-3 file:rounded-lg file:border-0 file:bg-primary file:px-3 file:py-1.5 file:text-sm file:text-primary-foreground"
-        />
-        <p className="text-xs text-stone">Leave blank to keep the current image.</p>
-      </div>
+      <FileUploadField
+        name="imageUrl"
+        label="Image"
+        kind="image"
+        currentUrl={defaults.imageUrl}
+        helpText="Choose a new file to replace the current image, or leave it as is."
+      />
 
       <div className="space-y-1.5">
         <Label htmlFor="alt">Alt text (for SEO)</Label>

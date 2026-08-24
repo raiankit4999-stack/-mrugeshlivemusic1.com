@@ -1,11 +1,11 @@
 "use client";
 
 import { useActionState } from "react";
-import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import SubmitButton from "@/components/admin/SubmitButton";
+import FileUploadField from "@/components/admin/FileUploadField";
 import type { EventFormState } from "./actions";
 
 type EventDefaults = {
@@ -63,22 +63,13 @@ export default function EventForm({
         <Textarea id="description" name="description" defaultValue={defaults.description} required rows={4} />
       </div>
 
-      <div className="space-y-1.5">
-        <Label htmlFor="imageFile">Event image</Label>
-        {defaults.image && (
-          <div className="relative mb-2 aspect-video w-full max-w-sm overflow-hidden rounded-lg border border-border">
-            <Image src={defaults.image} alt="Current event image" fill className="object-cover" />
-          </div>
-        )}
-        <input
-          id="imageFile"
-          name="imageFile"
-          type="file"
-          accept="image/*"
-          className="block w-full text-sm text-stone file:mr-3 file:rounded-lg file:border-0 file:bg-primary file:px-3 file:py-1.5 file:text-sm file:text-primary-foreground"
-          required={!defaults.image}
-        />
-      </div>
+      <FileUploadField
+        name="imageUrl"
+        label="Event image"
+        kind="image"
+        currentUrl={defaults.image}
+        required
+      />
 
       <div className="space-y-1.5">
         <Label htmlFor="imageAlt">Image alt text (for SEO)</Label>

@@ -3,7 +3,6 @@
 import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { prisma } from "@/lib/prisma";
-import { uploadImageIfProvided } from "@/lib/blobUpload";
 
 export type EventFormState = { error?: string };
 
@@ -37,12 +36,7 @@ export async function createEventAction(_prev: EventFormState, formData: FormDat
     return { error: "A valid event date is required." };
   }
 
-  let image: string | null;
-  try {
-    image = await uploadImageIfProvided(formData.get("imageFile") as File | null);
-  } catch (error) {
-    return { error: error instanceof Error ? error.message : "Image upload failed." };
-  }
+  const image = String(formData.get("imageUrl") ?? "").trim();
   if (!image) return { error: "An event image is required." };
 
   await prisma.event.create({
@@ -80,13 +74,8 @@ export async function updateEventAction(
   const existing = await prisma.event.findUnique({ where: { id } });
   if (!existing) return { error: "Event not found." };
 
-  let image = existing.image;
-  try {
-    const uploaded = await uploadImageIfProvided(formData.get("imageFile") as File | null);
-    if (uploaded) image = uploaded;
-  } catch (error) {
-    return { error: error instanceof Error ? error.message : "Image upload failed." };
-  }
+  const uploadedImage = String(formData.get("imageUrl") ?? "").trim();
+  const image = uploadedImage || existing.image;
 
   await prisma.event.update({
     where: { id },

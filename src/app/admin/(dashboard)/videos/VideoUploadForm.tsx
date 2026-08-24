@@ -4,17 +4,21 @@ import { useActionState, useRef, useEffect, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import SubmitButton from "@/components/admin/SubmitButton";
+import FileUploadField from "@/components/admin/FileUploadField";
 import { addVideoAction, type VideoFormState } from "./actions";
 
 export default function VideoUploadForm() {
   const [state, formAction] = useActionState(addVideoAction, {} as VideoFormState);
   const [sourceType, setSourceType] = useState<"youtube" | "upload">("youtube");
+  const [resetKey, setResetKey] = useState(0);
   const formRef = useRef<HTMLFormElement>(null);
   const prevErrorRef = useRef<string | undefined>(undefined);
 
   useEffect(() => {
+    // Clear the form after a successful submit (no error this time, but a previous action ran).
     if (prevErrorRef.current !== undefined && !state.error) {
       formRef.current?.reset();
+      setResetKey((k) => k + 1);
     }
     prevErrorRef.current = state.error ?? "";
   }, [state]);
@@ -58,33 +62,18 @@ export default function VideoUploadForm() {
           <Input id="youtubeUrl" name="youtubeUrl" placeholder="https://www.youtube.com/watch?v=..." />
         </div>
       ) : (
-        <div className="space-y-1.5 sm:col-span-2">
-          <Label htmlFor="videoFile">Video file (mp4)</Label>
-          <input
-            id="videoFile"
-            name="videoFile"
-            type="file"
-            accept="video/*"
-            className="block w-full text-sm text-stone file:mr-3 file:rounded-lg file:border-0 file:bg-primary file:px-3 file:py-1.5 file:text-sm file:text-primary-foreground"
-          />
+        <div className="sm:col-span-2">
+          <FileUploadField key={`video-${resetKey}`} name="videoUrl" label="Video file" kind="video" />
         </div>
       )}
 
-      <div className="space-y-1.5 sm:col-span-2">
-        <Label htmlFor="posterFile">Thumbnail image</Label>
-        <input
-          id="posterFile"
-          name="posterFile"
-          type="file"
-          accept="image/*"
-          required
-          className="block w-full text-sm text-stone file:mr-3 file:rounded-lg file:border-0 file:bg-primary file:px-3 file:py-1.5 file:text-sm file:text-primary-foreground"
-        />
+      <div className="sm:col-span-2">
+        <FileUploadField key={`poster-${resetKey}`} name="posterUrl" label="Thumbnail image" kind="image" required />
       </div>
 
       {state.error && <p className="text-sm text-destructive sm:col-span-2">{state.error}</p>}
       <div className="sm:col-span-2">
-        <SubmitButton pendingText="Uploading...">Add video</SubmitButton>
+        <SubmitButton pendingText="Saving...">Add video</SubmitButton>
       </div>
     </form>
   );

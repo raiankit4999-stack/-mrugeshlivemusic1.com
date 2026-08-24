@@ -3,7 +3,6 @@
 import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { prisma } from "@/lib/prisma";
-import { uploadImageIfProvided } from "@/lib/blobUpload";
 
 export type GalleryFormState = { error?: string };
 
@@ -17,12 +16,7 @@ export async function addGalleryImageAction(
 
   if (!alt) return { error: "Alt text is required for SEO." };
 
-  let imageUrl: string | null;
-  try {
-    imageUrl = await uploadImageIfProvided(formData.get("imageFile") as File | null);
-  } catch (error) {
-    return { error: error instanceof Error ? error.message : "Image upload failed." };
-  }
+  const imageUrl = String(formData.get("imageUrl") ?? "").trim();
   if (!imageUrl) return { error: "Please choose an image to upload." };
 
   const last = await prisma.galleryImage.findFirst({ orderBy: { order: "desc" } });
@@ -56,13 +50,8 @@ export async function updateGalleryImageAction(
   const existing = await prisma.galleryImage.findUnique({ where: { id } });
   if (!existing) return { error: "Image not found." };
 
-  let imageUrl = existing.imageUrl;
-  try {
-    const uploaded = await uploadImageIfProvided(formData.get("imageFile") as File | null);
-    if (uploaded) imageUrl = uploaded;
-  } catch (error) {
-    return { error: error instanceof Error ? error.message : "Image upload failed." };
-  }
+  const uploaded = String(formData.get("imageUrl") ?? "").trim();
+  const imageUrl = uploaded || existing.imageUrl;
 
   await prisma.galleryImage.update({
     where: { id },
