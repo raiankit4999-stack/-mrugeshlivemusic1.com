@@ -1,6 +1,8 @@
 import { cookies } from "next/headers";
 import { SignJWT, jwtVerify } from "jose";
 import bcrypt from "bcryptjs";
+import { prisma } from "@/lib/prisma";
+import { safeQuery } from "@/lib/safeQuery";
 
 export const SESSION_COOKIE = "admin_session";
 const SESSION_DURATION_SECONDS = 60 * 60 * 24 * 7; // 7 days
@@ -55,12 +57,58 @@ export async function clearSessionCookie() {
   store.delete(SESSION_COOKIE);
 }
 
-export async function verifyCredentials(username: string, password: string): Promise<boolean> {
-  const adminUsername = process.env.ADMIN_USERNAME;
-  const adminPasswordHash = process.env.ADMIN_PASSWORD_HASH;
-  if (!adminUsername || !adminPasswordHash) {
-    throw new Error("ADMIN_USERNAME / ADMIN_PASSWORD_HASH environment variables are not set");
+type ActiveCredentials = { username: string; passwordHash: string; source: "db" | "env" };
+
+/**
+ * The admin's current username + password hash. Prefers the AdminSettings
+ * database row (set once the admin changes their credentials from
+ * /admin/settings) and falls back to the ADMIN_USERNAME / ADMIN_PASSWORD_HASH
+ * environment variables until then.
+ */
+export async function getActiveCredentials(): Promise<ActiveCredentials> {
+  const dbSettings = await safeQuery(() => prisma.adminSettings.findFirst(), null);
+  if (dbSettings) {
+    return { username: dbSettings.username, passwordHash: dbSettings.passwordHash, source: "db" };
   }
-  if (username !== adminUsername) return false;
-  return bcrypt.compare(password, adminPasswordHash);
+
+  const envUsername = process.env.ADMIN_USERNAME;
+  const envHash = process.env.ADMIN_PASSWORD_HASH;
+  if (!envUsername || !envHash) {
+    throw new Error("Admin login isn't configured yet — set ADMIN_USERNAME and ADMIN_PASSWORD_HASH.");
+  }
+  return { username: envUsername, passwordHash: envHash, source: "env" };
+}
+
+export async function verifyCredentials(username: string, password: string): Promise<boolean> {
+  const active = await getActiveCredentials();
+  if (username !== active.username) return false;
+  return bcrypt.compare(password, active.passwordHash);
+}
+
+/**
+ * Changes the admin username and/or password. Requires the current password
+ * to authorize the change. Pass null for newPassword to keep it unchanged.
+ */
+export async function updateCredentials(
+  currentPassword: string,
+  newUsername: string,
+  newPassword: string | null
+): Promise<void> {
+  const active = await getActiveCredentials();
+  const valid = await bcrypt.compare(currentPassword, active.passwordHash);
+  if (!valid) {
+    throw new Error("Current password is incorrect.");
+  }
+
+  const passwordHash = newPassword ? await bcrypt.hash(newPassword, 10) : active.passwordHash;
+  const existing = await prisma.adminSettings.findFirst();
+
+  if (existing) {
+    await prisma.adminSettings.update({
+      where: { id: existing.id },
+      data: { username: newUsername, passwordHash },
+    });
+  } else {
+    await prisma.adminSettings.create({ data: { username: newUsername, passwordHash } });
+  }
 }

@@ -1,5 +1,15 @@
 import Link from "next/link";
-import { LayoutDashboard, Newspaper, CalendarDays, Images, Video, LogOut, ExternalLink } from "lucide-react";
+import {
+  LayoutDashboard,
+  Newspaper,
+  CalendarDays,
+  Images,
+  Video,
+  Quote,
+  Settings,
+  LogOut,
+  ExternalLink,
+} from "lucide-react";
 import { logoutAction } from "@/app/admin/actions";
 
 const links = [
@@ -8,6 +18,8 @@ const links = [
   { href: "/admin/events", label: "Events", icon: CalendarDays },
   { href: "/admin/gallery", label: "Gallery", icon: Images },
   { href: "/admin/videos", label: "Videos", icon: Video },
+  { href: "/admin/testimonials", label: "Reviews", icon: Quote },
+  { href: "/admin/settings", label: "Settings", icon: Settings },
 ];
 
 export default function AdminNav() {
@@ -44,6 +56,14 @@ export default function AdminNav() {
             Sign out
           </button>
         </form>
+        <a
+          href="https://www.rivavya.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-2.5 pt-2 text-xs text-stone/70 hover:text-gold transition-colors"
+        >
+          Built by Rivavya Create and Trade LLP
+        </a>
       </div>
     </aside>
   );

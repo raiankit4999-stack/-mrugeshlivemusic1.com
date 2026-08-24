@@ -68,3 +68,26 @@ model Video {
 
   @@index([published, order])
 }
+
+model Testimonial {
+  id        String   @id @default(cuid())
+  name      String
+  role      String?
+  quote     String
+  rating    Int      @default(5)
+  published Boolean  @default(true)
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+
+  @@index([published, order])
+}
+
+// Single-row table holding the current admin login. Falls back to the
+// ADMIN_USERNAME / ADMIN_PASSWORD_HASH env vars until the admin changes
+// their credentials from /admin/settings for the first time.
+model AdminSettings {
+  id           String   @id @default(cuid())
+  username     String
+  passwordHash String
+  updatedAt    DateTime @updatedAt
+}

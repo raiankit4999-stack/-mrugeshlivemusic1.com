@@ -14,12 +14,14 @@ import Contact from "@/components/home/Contact";
 import { getUpcomingEvents } from "@/lib/events";
 import { getGalleryImages } from "@/lib/gallery";
 import { getVideos } from "@/lib/videos";
+import { getTestimonials } from "@/lib/testimonials";
 
 export default async function Home() {
-  const [events, galleryImages, videos] = await Promise.all([
+  const [events, galleryImages, videos, testimonials] = await Promise.all([
     getUpcomingEvents(),
     getGalleryImages(),
     getVideos(),
+    getTestimonials(),
   ]);
 
   return (
@@ -34,7 +36,7 @@ export default async function Home() {
       <VideoGallery videos={videos} />
       <Stats />
       <WhyChooseUs />
-      <Testimonials />
+      <Testimonials testimonials={testimonials} />
       <FAQ />
       <Contact />
     </>

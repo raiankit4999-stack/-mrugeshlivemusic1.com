@@ -3,17 +3,17 @@
 import { useCallback, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, Quote, Star } from "lucide-react";
-import testimonials from "@/data/testimonials.json";
 import SectionHeading from "@/components/ui/SectionHeading";
+import type { Testimonial } from "@prisma/client";
 
-export default function Testimonials() {
+export default function Testimonials({ testimonials }: { testimonials: Testimonial[] }) {
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
 
-  const next = useCallback(() => setIndex((i) => (i + 1) % testimonials.length), []);
+  const next = useCallback(() => setIndex((i) => (i + 1) % testimonials.length), [testimonials.length]);
   const prev = useCallback(
     () => setIndex((i) => (i - 1 + testimonials.length) % testimonials.length),
-    []
+    [testimonials.length]
   );
 
   useEffect(() => {
@@ -23,6 +23,7 @@ export default function Testimonials() {
   }, [next, paused]);
 
   const testimonial = testimonials[index];
+  if (!testimonial) return null;
 
   return (
     <section

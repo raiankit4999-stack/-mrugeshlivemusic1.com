@@ -3,7 +3,8 @@ import { Cormorant_Garamond, Poppins, Inter } from "next/font/google";
 import Script from "next/script";
 import "../globals.css";
 import { siteMetadata } from "@/lib/seo";
-import { personJsonLd, localBusinessJsonLd } from "@/lib/structuredData";
+import { personJsonLd, buildLocalBusinessJsonLd } from "@/lib/structuredData";
+import { getTestimonials } from "@/lib/testimonials";
 import SmoothScrollProvider from "@/components/layout/SmoothScrollProvider";
 import Loader from "@/components/layout/Loader";
 import Navbar from "@/components/layout/Navbar";
@@ -33,11 +34,14 @@ const inter = Inter({
 
 export const metadata: Metadata = siteMetadata;
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const testimonials = await getTestimonials();
+  const localBusinessJsonLd = buildLocalBusinessJsonLd(testimonials);
+
   return (
     <html
       lang="en"
