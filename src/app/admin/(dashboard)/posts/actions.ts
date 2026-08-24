@@ -4,7 +4,6 @@ import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { prisma } from "@/lib/prisma";
 import { slugify } from "@/lib/slugify";
-import { uploadImageIfProvided } from "@/lib/blobUpload";
 import { wordsToReadingTime } from "@/lib/posts";
 
 export type PostFormState = { error?: string };
@@ -48,12 +47,7 @@ export async function createPostAction(_prev: PostFormState, formData: FormData)
   const existing = await prisma.post.findUnique({ where: { slug: fields.slug } });
   if (existing) return { error: `The slug "${fields.slug}" is already in use. Choose a different one.` };
 
-  let coverImage: string | null;
-  try {
-    coverImage = await uploadImageIfProvided(formData.get("coverImageFile") as File | null);
-  } catch (error) {
-    return { error: error instanceof Error ? error.message : "Image upload failed." };
-  }
+  const coverImage = String(formData.get("coverImageUrl") ?? "").trim();
   if (!coverImage) return { error: "A cover image is required." };
 
   await prisma.post.create({
@@ -89,13 +83,8 @@ export async function updatePostAction(
     return { error: `The slug "${fields.slug}" is already in use. Choose a different one.` };
   }
 
-  let coverImage = existing.coverImage;
-  try {
-    const uploaded = await uploadImageIfProvided(formData.get("coverImageFile") as File | null);
-    if (uploaded) coverImage = uploaded;
-  } catch (error) {
-    return { error: error instanceof Error ? error.message : "Image upload failed." };
-  }
+  const uploadedCover = String(formData.get("coverImageUrl") ?? "").trim();
+  const coverImage = uploadedCover || existing.coverImage;
 
   await prisma.post.update({
     where: { id },

@@ -141,6 +141,26 @@ export default function About() {
               </span>
             ))}
           </motion.div>
+
+          <motion.p
+            variants={blurIn}
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewportOnce}
+            custom={5}
+            className="mt-6 text-xs text-stone/70"
+          >
+            Website design and digital growth by{" "}
+            <a
+              href="https://www.rivavya.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold/80 hover:text-gold transition-colors"
+            >
+              Rivavya Create and Trade LLP
+            </a>
+            .
+          </motion.p>
         </div>
       </div>
     </section>

@@ -3,7 +3,6 @@
 import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { prisma } from "@/lib/prisma";
-import { uploadImageIfProvided } from "@/lib/blobUpload";
 import { toYouTubeEmbedUrl } from "@/lib/youtube";
 
 export type VideoFormState = { error?: string };
@@ -15,12 +14,7 @@ export async function addVideoAction(_prev: VideoFormState, formData: FormData):
 
   if (!title) return { error: "Title is required." };
 
-  let posterUrl: string | null;
-  try {
-    posterUrl = await uploadImageIfProvided(formData.get("posterFile") as File | null);
-  } catch (error) {
-    return { error: error instanceof Error ? error.message : "Poster image upload failed." };
-  }
+  const posterUrl = String(formData.get("posterUrl") ?? "").trim();
   if (!posterUrl) return { error: "A poster (thumbnail) image is required." };
 
   let videoUrl: string;
@@ -29,12 +23,7 @@ export async function addVideoAction(_prev: VideoFormState, formData: FormData):
     if (!embed) return { error: "That doesn't look like a valid YouTube link." };
     videoUrl = embed;
   } else {
-    let uploaded: string | null;
-    try {
-      uploaded = await uploadImageIfProvided(formData.get("videoFile") as File | null);
-    } catch (error) {
-      return { error: error instanceof Error ? error.message : "Video upload failed." };
-    }
+    const uploaded = String(formData.get("videoUrl") ?? "").trim();
     if (!uploaded) return { error: "Please choose a video file to upload." };
     videoUrl = uploaded;
   }
@@ -69,13 +58,8 @@ export async function updateVideoAction(
   const existing = await prisma.video.findUnique({ where: { id } });
   if (!existing) return { error: "Video not found." };
 
-  let posterUrl = existing.posterUrl;
-  try {
-    const uploadedPoster = await uploadImageIfProvided(formData.get("posterFile") as File | null);
-    if (uploadedPoster) posterUrl = uploadedPoster;
-  } catch (error) {
-    return { error: error instanceof Error ? error.message : "Poster image upload failed." };
-  }
+  const uploadedPoster = String(formData.get("posterUrl") ?? "").trim();
+  const posterUrl = uploadedPoster || existing.posterUrl;
 
   let videoUrl = existing.videoUrl;
   if (existing.type === "youtube" && youtubeUrl) {
@@ -83,12 +67,8 @@ export async function updateVideoAction(
     if (!embed) return { error: "That doesn't look like a valid YouTube link." };
     videoUrl = embed;
   } else if (existing.type === "mp4") {
-    try {
-      const uploadedVideo = await uploadImageIfProvided(formData.get("videoFile") as File | null);
-      if (uploadedVideo) videoUrl = uploadedVideo;
-    } catch (error) {
-      return { error: error instanceof Error ? error.message : "Video upload failed." };
-    }
+    const uploadedVideo = String(formData.get("videoUrl") ?? "").trim();
+    if (uploadedVideo) videoUrl = uploadedVideo;
   }
 
   await prisma.video.update({

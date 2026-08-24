@@ -1,10 +1,10 @@
 "use client";
 
 import { useActionState } from "react";
-import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import SubmitButton from "@/components/admin/SubmitButton";
+import FileUploadField from "@/components/admin/FileUploadField";
 import type { VideoFormState } from "./actions";
 
 type Defaults = {
@@ -36,33 +36,21 @@ export default function VideoEditForm({
           <p className="text-xs text-stone">Leave blank to keep the current video.</p>
         </div>
       ) : (
-        <div className="space-y-1.5">
-          <Label htmlFor="videoFile">Replace video file (optional)</Label>
-          <input
-            id="videoFile"
-            name="videoFile"
-            type="file"
-            accept="video/*"
-            className="block w-full text-sm text-stone file:mr-3 file:rounded-lg file:border-0 file:bg-primary file:px-3 file:py-1.5 file:text-sm file:text-primary-foreground"
-          />
-          <p className="text-xs text-stone">Leave blank to keep the current video.</p>
-        </div>
+        <FileUploadField
+          name="videoUrl"
+          label="Replace video file"
+          kind="video"
+          helpText="Leave blank to keep the current video."
+        />
       )}
 
-      <div className="space-y-1.5">
-        <Label htmlFor="posterFile">Thumbnail image</Label>
-        <div className="relative mb-2 aspect-video w-48 overflow-hidden rounded-lg border border-border">
-          <Image src={defaults.posterUrl} alt="Current thumbnail" fill className="object-cover" />
-        </div>
-        <input
-          id="posterFile"
-          name="posterFile"
-          type="file"
-          accept="image/*"
-          className="block w-full text-sm text-stone file:mr-3 file:rounded-lg file:border-0 file:bg-primary file:px-3 file:py-1.5 file:text-sm file:text-primary-foreground"
-        />
-        <p className="text-xs text-stone">Leave blank to keep the current thumbnail.</p>
-      </div>
+      <FileUploadField
+        name="posterUrl"
+        label="Thumbnail image"
+        kind="image"
+        currentUrl={defaults.posterUrl}
+        helpText="Leave blank to keep the current thumbnail."
+      />
 
       {state.error && <p className="text-sm text-destructive">{state.error}</p>}
       <SubmitButton>Save changes</SubmitButton>

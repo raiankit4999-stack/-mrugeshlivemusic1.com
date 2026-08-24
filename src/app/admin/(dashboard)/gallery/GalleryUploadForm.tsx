@@ -1,13 +1,15 @@
 "use client";
 
-import { useActionState, useRef, useEffect } from "react";
+import { useActionState, useRef, useEffect, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import SubmitButton from "@/components/admin/SubmitButton";
+import FileUploadField from "@/components/admin/FileUploadField";
 import { addGalleryImageAction, type GalleryFormState } from "./actions";
 
 export default function GalleryUploadForm() {
   const [state, formAction] = useActionState(addGalleryImageAction, {} as GalleryFormState);
+  const [resetKey, setResetKey] = useState(0);
   const formRef = useRef<HTMLFormElement>(null);
   const prevErrorRef = useRef<string | undefined>(undefined);
 
@@ -15,22 +17,15 @@ export default function GalleryUploadForm() {
     // Clear the form after a successful submit (no error this time, but a previous action ran).
     if (prevErrorRef.current !== undefined && !state.error) {
       formRef.current?.reset();
+      setResetKey((k) => k + 1);
     }
     prevErrorRef.current = state.error ?? "";
   }, [state]);
 
   return (
     <form ref={formRef} action={formAction} className="grid gap-4 sm:grid-cols-2 max-w-2xl">
-      <div className="space-y-1.5 sm:col-span-2">
-        <Label htmlFor="imageFile">Image</Label>
-        <input
-          id="imageFile"
-          name="imageFile"
-          type="file"
-          accept="image/*"
-          required
-          className="block w-full text-sm text-stone file:mr-3 file:rounded-lg file:border-0 file:bg-primary file:px-3 file:py-1.5 file:text-sm file:text-primary-foreground"
-        />
+      <div className="sm:col-span-2">
+        <FileUploadField key={resetKey} name="imageUrl" label="Image" kind="image" required />
       </div>
       <div className="space-y-1.5 sm:col-span-2">
         <Label htmlFor="alt">Alt text (for SEO)</Label>

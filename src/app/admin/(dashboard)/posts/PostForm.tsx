@@ -1,11 +1,11 @@
 "use client";
 
 import { useActionState } from "react";
-import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import SubmitButton from "@/components/admin/SubmitButton";
+import FileUploadField from "@/components/admin/FileUploadField";
 import type { PostFormState } from "./actions";
 
 type PostDefaults = {
@@ -57,22 +57,13 @@ export default function PostForm({
         <p className="text-xs text-stone">Shows up as crystalbeats.com/blog/your-slug</p>
       </div>
 
-      <div className="space-y-1.5">
-        <Label htmlFor="coverImageFile">Cover image</Label>
-        {defaults.coverImage && (
-          <div className="relative mb-2 aspect-video w-full max-w-sm overflow-hidden rounded-lg border border-border">
-            <Image src={defaults.coverImage} alt="Current cover" fill className="object-cover" />
-          </div>
-        )}
-        <input
-          id="coverImageFile"
-          name="coverImageFile"
-          type="file"
-          accept="image/*"
-          className="block w-full text-sm text-stone file:mr-3 file:rounded-lg file:border-0 file:bg-primary file:px-3 file:py-1.5 file:text-sm file:text-primary-foreground"
-          required={!defaults.coverImage}
-        />
-      </div>
+      <FileUploadField
+        name="coverImageUrl"
+        label="Cover image"
+        kind="image"
+        currentUrl={defaults.coverImage}
+        required
+      />
 
       <div className="space-y-1.5">
         <Label htmlFor="coverAlt">Cover image alt text (for SEO)</Label>
