@@ -1,5 +1,11 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Admin panel
+
+Content (blog posts, events, gallery images, videos) is managed at `/admin`.
+See `.env.example` for the environment variables it needs (database,
+image storage, and admin login).
+
 ## Getting Started
 
 First, run the development server:
