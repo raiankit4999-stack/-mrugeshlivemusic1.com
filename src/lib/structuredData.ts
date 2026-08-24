@@ -1,6 +1,7 @@
 import siteConfig from "@/data/siteConfig.json";
 import services from "@/data/services.json";
-import testimonials from "@/data/testimonials.json";
+
+type TestimonialLike = { name: string; quote: string; rating: number };
 
 const address = {
   "@type": "PostalAddress",
@@ -25,65 +26,72 @@ export const personJsonLd = {
   sameAs: Object.values(siteConfig.social),
 };
 
-export const localBusinessJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: siteConfig.brand,
-  image: `${siteConfig.siteUrl}/about-mrugesh.jpg`,
-  description: siteConfig.description,
-  url: siteConfig.siteUrl,
-  telephone: siteConfig.phone,
-  priceRange: "$$",
-  address,
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 22.6939,
-    longitude: 72.8615,
-  },
-  areaServed: [
-    { "@type": "AdministrativeArea", name: "Gujarat, India" },
-    { "@type": "City", name: "Ahmedabad" },
-    { "@type": "City", name: "Surat" },
-    { "@type": "City", name: "Vadodara" },
-    { "@type": "City", name: "Rajkot" },
-    { "@type": "City", name: "Bhavnagar" },
-    { "@type": "City", name: "Jamnagar" },
-    { "@type": "City", name: "Gandhinagar" },
-    { "@type": "City", name: "Junagadh" },
-    { "@type": "City", name: "Nadiad" },
-    { "@type": "City", name: "Anand" },
-    { "@type": "City", name: "Mehsana" },
-    { "@type": "City", name: "Navsari" },
-    { "@type": "City", name: "Valsad" },
-    { "@type": "City", name: "Bharuch" },
-    { "@type": "City", name: "Morbi" },
-    { "@type": "City", name: "Patan" },
-    { "@type": "City", name: "Porbandar" },
-  ],
-  hasOfferCatalog: {
-    "@type": "OfferCatalog",
-    name: "Live Music & Event Services",
-    itemListElement: services.map((service) => ({
-      "@type": "Offer",
-      itemOffered: {
-        "@type": "Service",
-        name: service.title,
-        description: service.description,
-      },
+export function buildLocalBusinessJsonLd(testimonials: TestimonialLike[]) {
+  const averageRating =
+    testimonials.length > 0
+      ? testimonials.reduce((sum, t) => sum + t.rating, 0) / testimonials.length
+      : 5;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: siteConfig.brand,
+    image: `${siteConfig.siteUrl}/about-mrugesh.jpg`,
+    description: siteConfig.description,
+    url: siteConfig.siteUrl,
+    telephone: siteConfig.phone,
+    priceRange: "$$",
+    address,
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 22.6939,
+      longitude: 72.8615,
+    },
+    areaServed: [
+      { "@type": "AdministrativeArea", name: "Gujarat, India" },
+      { "@type": "City", name: "Ahmedabad" },
+      { "@type": "City", name: "Surat" },
+      { "@type": "City", name: "Vadodara" },
+      { "@type": "City", name: "Rajkot" },
+      { "@type": "City", name: "Bhavnagar" },
+      { "@type": "City", name: "Jamnagar" },
+      { "@type": "City", name: "Gandhinagar" },
+      { "@type": "City", name: "Junagadh" },
+      { "@type": "City", name: "Nadiad" },
+      { "@type": "City", name: "Anand" },
+      { "@type": "City", name: "Mehsana" },
+      { "@type": "City", name: "Navsari" },
+      { "@type": "City", name: "Valsad" },
+      { "@type": "City", name: "Bharuch" },
+      { "@type": "City", name: "Morbi" },
+      { "@type": "City", name: "Patan" },
+      { "@type": "City", name: "Porbandar" },
+    ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Live Music & Event Services",
+      itemListElement: services.map((service) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: service.title,
+          description: service.description,
+        },
+      })),
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: averageRating.toFixed(1),
+      reviewCount: String(testimonials.length),
+    },
+    review: testimonials.map((t) => ({
+      "@type": "Review",
+      author: { "@type": "Person", name: t.name },
+      reviewRating: { "@type": "Rating", ratingValue: String(t.rating), bestRating: "5" },
+      reviewBody: t.quote,
     })),
-  },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "5",
-    reviewCount: String(testimonials.length),
-  },
-  review: testimonials.map((t) => ({
-    "@type": "Review",
-    author: { "@type": "Person", name: t.name },
-    reviewRating: { "@type": "Rating", ratingValue: String(t.rating), bestRating: "5" },
-    reviewBody: t.quote,
-  })),
-};
+  };
+}
 
 export function buildFaqJsonLd(faqs: { question: string; answer: string }[]) {
   return {

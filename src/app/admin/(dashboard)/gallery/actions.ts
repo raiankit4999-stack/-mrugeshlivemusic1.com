@@ -1,5 +1,6 @@
 "use server";
 
+import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { prisma } from "@/lib/prisma";
 import { uploadImageIfProvided } from "@/lib/blobUpload";
@@ -39,6 +40,38 @@ export async function addGalleryImageAction(
   revalidatePath("/");
   revalidatePath("/admin/gallery");
   return {};
+}
+
+export async function updateGalleryImageAction(
+  id: string,
+  _prev: GalleryFormState,
+  formData: FormData
+): Promise<GalleryFormState> {
+  const alt = String(formData.get("alt") ?? "").trim();
+  const category = String(formData.get("category") ?? "").trim();
+  const orientation = formData.get("orientation") === "portrait" ? "portrait" : "landscape";
+
+  if (!alt) return { error: "Alt text is required for SEO." };
+
+  const existing = await prisma.galleryImage.findUnique({ where: { id } });
+  if (!existing) return { error: "Image not found." };
+
+  let imageUrl = existing.imageUrl;
+  try {
+    const uploaded = await uploadImageIfProvided(formData.get("imageFile") as File | null);
+    if (uploaded) imageUrl = uploaded;
+  } catch (error) {
+    return { error: error instanceof Error ? error.message : "Image upload failed." };
+  }
+
+  await prisma.galleryImage.update({
+    where: { id },
+    data: { imageUrl, alt, category: category || null, orientation },
+  });
+
+  revalidatePath("/");
+  revalidatePath("/admin/gallery");
+  redirect("/admin/gallery");
 }
 
 export async function deleteGalleryImageAction(id: string): Promise<void> {

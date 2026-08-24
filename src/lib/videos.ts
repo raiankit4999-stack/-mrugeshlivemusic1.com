@@ -20,21 +20,23 @@ export async function getVideos(): Promise<VideoItem[]> {
     []
   );
 
-  const unifiedDbVideos: VideoItem[] = dbVideos.map((video) => ({
-    id: video.id,
-    title: video.title,
-    type: video.type === "mp4" ? "mp4" : "youtube",
-    src: video.videoUrl,
-    poster: video.posterUrl,
-  }));
+  // Same fallback pattern as gallery.ts: DB is the source of truth once the
+  // one-time seed has run, static file is the fallback until then.
+  if (dbVideos.length > 0) {
+    return dbVideos.map((video) => ({
+      id: video.id,
+      title: video.title,
+      type: video.type === "mp4" ? "mp4" : "youtube",
+      src: video.videoUrl,
+      poster: video.posterUrl,
+    }));
+  }
 
-  const unifiedStaticVideos: VideoItem[] = staticVideos.map((video) => ({
+  return staticVideos.map((video) => ({
     id: video.id,
     title: video.title,
     type: video.type === "mp4" ? "mp4" : "youtube",
     src: video.src,
     poster: video.poster,
   }));
-
-  return [...unifiedDbVideos, ...unifiedStaticVideos];
 }

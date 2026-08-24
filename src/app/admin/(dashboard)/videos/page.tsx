@@ -1,6 +1,9 @@
+import Link from "next/link";
 import Image from "next/image";
+import { Pencil } from "lucide-react";
 import { prisma } from "@/lib/prisma";
 import { safeQuery } from "@/lib/safeQuery";
+import { buttonVariants } from "@/components/ui/button";
 import DeleteButton from "@/components/admin/DeleteButton";
 import VideoUploadForm from "./VideoUploadForm";
 import { deleteVideoAction } from "./actions";
@@ -15,7 +18,8 @@ export default async function AdminVideosPage() {
     <div>
       <h1 className="text-xl font-semibold text-ink">Videos</h1>
       <p className="mt-1 text-sm text-stone">
-        Videos added here show up in the homepage video section alongside the existing ones.
+        Every video shown in the homepage video section — including the site&apos;s original videos —
+        is listed here and can be edited or removed.
       </p>
 
       <div className="mt-6 rounded-xl border border-border bg-card p-5">
@@ -30,12 +34,26 @@ export default async function AdminVideosPage() {
             </div>
             <div className="flex items-center justify-between gap-2 p-2">
               <p className="truncate text-xs text-stone">{video.title}</p>
-              <DeleteButton action={deleteVideoAction.bind(null, video.id)} confirmMessage={`Delete "${video.title}"?`} />
+              <div className="flex shrink-0 items-center gap-1.5">
+                <Link
+                  href={`/admin/videos/${video.id}/edit`}
+                  className={buttonVariants({ variant: "outline", size: "icon-sm" })}
+                  aria-label="Edit"
+                >
+                  <Pencil size={13} />
+                </Link>
+                <DeleteButton action={deleteVideoAction.bind(null, video.id)} confirmMessage={`Delete "${video.title}"?`} />
+              </div>
             </div>
           </div>
         ))}
       </div>
-      {videos.length === 0 && <p className="mt-8 text-sm text-stone">No videos added yet.</p>}
+      {videos.length === 0 && (
+        <p className="mt-8 text-sm text-stone">
+          No videos yet — they&apos;ll appear here automatically after the next deploy finishes
+          importing the site&apos;s existing videos, or add a new one above.
+        </p>
+      )}
     </div>
   );
 }

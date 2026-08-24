@@ -86,7 +86,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div>
+        <div className="min-w-0">
           <p className="text-sm uppercase tracking-widest text-gold mb-4">Contact</p>
           <ul className="space-y-3 text-sm text-stone">
             <li>{siteConfig.address.line1}, {siteConfig.address.line2}</li>
@@ -96,7 +96,7 @@ export default function Footer() {
                 {siteConfig.phoneDisplay}
               </a>
             </li>
-            <li>
+            <li className="break-all">
               <a href={`mailto:${siteConfig.email}`} className="hover:text-gold transition-colors">
                 {siteConfig.email}
               </a>
