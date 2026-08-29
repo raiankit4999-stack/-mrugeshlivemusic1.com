@@ -25,7 +25,7 @@
 
 ## Blog
 
-The website includes a blog at /blog with practical guides on Garba planning, wedding music, Bhakti Sangeet, learning tabla, and event entertainment, written by the Crystal Beats team in partnership with Rivavya Create and Trade LLP (https://www.rivavya.com).
+The website includes a blog at /blog with practical guides covering every service and instrument offered — event planning (Ring Ceremony, Reception, Vedic ceremonies, Celebrity and VIP events, Milestone birthdays, Destination weddings), instruments (Tabla, Sitar, Harmonium, Keyboard, Bansuri/Flute, Octapad, Electric Guitar, Dhol, Drums, Congo), practical buyer guides (pricing, booking timelines, live band vs orchestra, sound system quality, devotional music terminology, music academy vs private tutoring, and city-by-city coverage across Gujarat), and local music-academy guidance for Nadiad and Anand — written by the Crystal Beats team in partnership with Rivavya Create and Trade LLP (https://www.rivavya.com).
 
 ## Booking
 
