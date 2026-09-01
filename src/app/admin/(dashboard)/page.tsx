@@ -1,10 +1,11 @@
 import Link from "next/link";
-import { Newspaper, CalendarDays, Images, Video } from "lucide-react";
+import { Newspaper, CalendarDays, Images, Video, ClipboardList } from "lucide-react";
 import { prisma } from "@/lib/prisma";
 import { safeQuery } from "@/lib/safeQuery";
 
 export default async function AdminDashboardPage() {
-  const [postCount, eventCount, galleryCount, videoCount] = await Promise.all([
+  const [onboardingCount, postCount, eventCount, galleryCount, videoCount] = await Promise.all([
+    safeQuery(() => prisma.onboardingSubmission.count({ where: { reviewed: false } }), 0),
     safeQuery(() => prisma.post.count(), 0),
     safeQuery(() => prisma.event.count(), 0),
     safeQuery(() => prisma.galleryImage.count(), 0),
@@ -12,6 +13,7 @@ export default async function AdminDashboardPage() {
   ]);
 
   const cards = [
+    { href: "/admin/onboarding", label: "New Onboarding Submissions", count: onboardingCount, icon: ClipboardList },
     { href: "/admin/posts", label: "Blog Posts", count: postCount, icon: Newspaper },
     { href: "/admin/events", label: "Events", count: eventCount, icon: CalendarDays },
     { href: "/admin/gallery", label: "Gallery Images", count: galleryCount, icon: Images },

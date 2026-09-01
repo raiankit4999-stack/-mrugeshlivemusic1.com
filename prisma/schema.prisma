@@ -82,6 +82,34 @@ model Testimonial {
   @@index([published, order])
 }
 
+// Submissions from the public client onboarding / booking form
+// (/onboarding). Filled in by prospective clients and reviewed by the
+// admin from /admin/onboarding.
+model OnboardingSubmission {
+  id               String   @id @default(cuid())
+  customerName     String
+  address          String
+  mobileNumber     String
+  email            String?
+  eventTypes       String[] @default([])
+  eventDate        DateTime
+  eventTime        String?
+  eventVenue       String
+  eventDuration    String?
+  totalAmount      Int?
+  advanceAmount    Int?
+  remainingAmount  Int?
+  paymentMode      String?
+  paymentModeOther String?
+  notes            String?
+  termsAccepted    Boolean  @default(false)
+  reviewed         Boolean  @default(false)
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  @@index([reviewed, createdAt])
+}
+
 // Single-row table holding the current admin login. Falls back to the
 // ADMIN_USERNAME / ADMIN_PASSWORD_HASH env vars until the admin changes
 // their credentials from /admin/settings for the first time.

@@ -6,6 +6,7 @@ import {
   Images,
   Video,
   Quote,
+  ClipboardList,
   Settings,
   LogOut,
   ExternalLink,
@@ -14,6 +15,7 @@ import { logoutAction } from "@/app/admin/actions";
 
 const links = [
   { href: "/admin", label: "Dashboard", icon: LayoutDashboard },
+  { href: "/admin/onboarding", label: "Onboarding", icon: ClipboardList },
   { href: "/admin/posts", label: "Blog Posts", icon: Newspaper },
   { href: "/admin/events", label: "Events", icon: CalendarDays },
   { href: "/admin/gallery", label: "Gallery", icon: Images },

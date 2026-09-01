@@ -1,0 +1,14 @@
+[
+  { "value": "bhakti-sangeet", "label": "Bhakti Sangeet" },
+  { "value": "wedding", "label": "Wedding" },
+  { "value": "reception", "label": "Reception" },
+  { "value": "sangeet-sandhya", "label": "Sangeet Sandhya" },
+  { "value": "mehndi-haldi", "label": "Haldi / Mehndi" },
+  { "value": "garba", "label": "Garba" },
+  { "value": "vedic-wedding-songs", "label": "Vedic Wedding Songs" },
+  { "value": "corporate", "label": "Corporate Event" },
+  { "value": "cultural", "label": "Cultural Event" },
+  { "value": "celebrity", "label": "Celebrity Event" },
+  { "value": "birthday", "label": "Birthday Celebration" },
+  { "value": "live-instrumental", "label": "Live Instrumental" }
+]
