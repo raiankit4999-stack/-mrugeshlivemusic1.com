@@ -69,7 +69,7 @@ export default async function BlogPostPage({
       ? post.coverImage
       : `${siteConfig.siteUrl}${post.coverImage}`,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.lastUpdated,
     author: [
       { "@type": "Person", name: siteConfig.name },
       { "@type": "Organization", name: "Rivavya Create and Trade LLP", url: "https://www.rivavya.com" },

@@ -10,6 +10,8 @@ export type UnifiedPost = {
   metaDescription?: string;
   excerpt: string;
   date: string;
+  /** Genuine last-revision timestamp, when known — falls back to `date` when a post has never been updated. */
+  lastUpdated: string;
   coverImage: string;
   coverAlt: string;
   tags: string[];
@@ -26,6 +28,7 @@ function staticToUnified(post: (typeof staticPosts)[number]): UnifiedPost {
     title: post.title,
     excerpt: post.excerpt,
     date: post.date,
+    lastUpdated: post.updatedAt ?? post.date,
     coverImage: post.coverImage,
     coverAlt: post.coverAlt,
     tags: post.tags,
@@ -65,6 +68,7 @@ export async function getAllPosts(): Promise<UnifiedPost[]> {
     metaDescription: post.metaDescription ?? undefined,
     excerpt: post.excerpt,
     date: post.publishedAt.toISOString(),
+    lastUpdated: post.updatedAt.toISOString(),
     coverImage: post.coverImage,
     coverAlt: post.coverAlt,
     tags: post.tags,
@@ -97,6 +101,7 @@ export async function getPostBySlug(slug: string): Promise<UnifiedPost | null> {
     metaDescription: dbPost.metaDescription ?? undefined,
     excerpt: dbPost.excerpt,
     date: dbPost.publishedAt.toISOString(),
+    lastUpdated: dbPost.updatedAt.toISOString(),
     coverImage: dbPost.coverImage,
     coverAlt: dbPost.coverAlt,
     tags: dbPost.tags,

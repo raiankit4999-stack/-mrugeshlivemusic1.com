@@ -11,6 +11,8 @@ export type BlogPost = {
   title: string;
   excerpt: string;
   date: string;
+  /** Set this when a post is genuinely revised after publishing — leave unset otherwise so dateModified doesn't lie about freshness. */
+  updatedAt?: string;
   coverImage: string;
   coverAlt: string;
   tags: string[];
